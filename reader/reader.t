@@ -11,5 +11,5 @@ Open(path []char8) (*Source, *error.T) {
 Next(s *Source) (bool, *error.T) {
 }
 
-Prev(s *Source) (bool, error.T) {
+Prev(s *Source) (bool, *error.T) {
 }
