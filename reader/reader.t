@@ -13,3 +13,6 @@ Next(s *Source) (bool, *error.T) {
 
 Prev(s *Source) (bool, *error.T) {
 }
+
+Close(s *Source) *error.T {
+}
