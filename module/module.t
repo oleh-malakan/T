@@ -2,33 +2,33 @@
 <structure>
 <function>
 
-_maxNameLen := uint64(256)
+_maxNameLen := uint(256)
 
-_initCap := uint64(64)
-_stepCap := uint64(64)
+_initCap := uint(64)
+_stepCap := uint(64)
 
 T {
     UUID    [16]uint8 // public read-only 
 
-    NameLen uint64  // public read-only 
-    nameCap uint64
+    NameLen uint    // public read-only 
+    nameCap uint
     Name    []uint8 // public read-only
                     // max _maxNameLen
 
-    pathLen uint64
-    pathCap uint64
+    pathLen uint
+    pathCap uint
     path    []uint8 
 
-    varLen uint64
-    varCap uint64
+    varLen uint
+    varCap uint
     varArr []*variable.T
 
-    structLen uint64
-    structCap uint64
+    structLen uint
+    structCap uint
     structArr []*structure.T
     
-    funcLen uint64
-    funcCap uint64
+    funcLen uint
+    funcCap uint
     funcArr []*function.T   
 }
 
