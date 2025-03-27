@@ -4,7 +4,7 @@
 <function>
 
 T {
-    UUID    [16]uint8 // public read-only 
+    ID [256]uint8 // public read-only 
 
     NameLen uint32    // public read-only 
     nameCap uint32
