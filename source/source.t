@@ -4,7 +4,7 @@ T {
     Value uint8 
 }
 
-Open(path []char8, pathLen uint64) (*T, *error.T) {
+Open(path [] uint8, pathLen uint) (*T, *error.T) {
     return @T{}, nil
 }
 
