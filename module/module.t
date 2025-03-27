@@ -10,7 +10,7 @@ _stepCap := uint64(64)
 T {
     UUID    [16]uint8 // public read-only 
 
-    NameLen uint64 // public read-only 
+    NameLen uint64  // public read-only 
     nameCap uint64
     Name    []uint8 // public read-only
                     // max _maxNameLen
