@@ -1,4 +1,4 @@
-<default>
+<define>
 <variable>
 <structure>
 <function>
@@ -9,7 +9,7 @@ T {
     NameLen uint32    // public read-only 
     nameCap uint32
     Name    []uint8   // public read-only
-                      // max default._MaxNameLen
+                      // max define._MaxNameLen
 
     pathLen uint
     pathCap uint
