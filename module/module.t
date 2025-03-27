@@ -1,4 +1,5 @@
 <define>
+<import>
 <variable>
 <structure>
 <function>
@@ -13,7 +14,11 @@ T {
 
     pathLen uint
     pathCap uint
-    path    []uint8 
+    path    []uint8
+
+    impLen uint
+    impCap uint
+    impArr []*import.T
 
     varLen uint
     varCap uint
