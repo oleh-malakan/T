@@ -22,11 +22,11 @@ T {
     varCap uint64
     varArr []*variable.T
 
-	structLen uint64
+    structLen uint64
     structCap uint64
     structArr []*structure.T
     
-	funcLen uint64
+    funcLen uint64
     funcCap uint64
     funcArr []*function.T   
 }
