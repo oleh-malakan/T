@@ -9,7 +9,7 @@ T {
     NameLen uint32    // public read-only 
     nameCap uint32
     Name    []uint8   // public read-only
-                      // max define._MaxNameLen
+                      // max define._MaxNameCap
 
     pathLen uint
     pathCap uint
