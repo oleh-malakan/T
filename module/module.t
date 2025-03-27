@@ -2,15 +2,15 @@
 <structure>
 <function>
 
-_MaxNameLen := uint8(255)
+_MaxNameLen := uint64(256)
 
-_initCap := uint64(10)
-_stepCap := uint64(10)
+_initCap := uint64(64)
+_stepCap := uint64(64)
 
 T {
     UUID [16]uint8
-    Name []uint8 // max _MaxNameLen
-    NameLen uint8 
+    Name []char64 // max _MaxNameLen
+    NameLen uint64
 
     varArr []*variable.T
     varLen uint64
@@ -24,4 +24,3 @@ T {
     funcLen uint64
     funcCap uint64
 }
-
