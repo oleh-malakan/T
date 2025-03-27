@@ -8,8 +8,9 @@ _initCap := uint64(64)
 _stepCap := uint64(64)
 
 T {
-UUID    [16]uint8
-Name    []uint8 // max _MaxNameLen
+	UUID    [16]uint8
+
+	Name    []uint8 // max _MaxNameLen
     NameLen uint64
     nameCap uint64
     path    []uint8 
