@@ -1,7 +1,7 @@
 T {
-    Code uint8 
-    Type uint8 
-    Message [2048]char8
+    Message [2048]uint64
+    Code uint32
+    Type uint32
     Line uint64
     Column uint64
 }
