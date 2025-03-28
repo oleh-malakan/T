@@ -4,7 +4,7 @@ T {
     Line uint64
     Column uint64
     MsgLen uint64
-    MsgArr []uint64 // utf8 data 
+    MsgArr []uint64 // UTF8 data 
 } // public read-only
 
 EOF := new('EOF', _codeEOF, _typeSystem, 0 ,0)
