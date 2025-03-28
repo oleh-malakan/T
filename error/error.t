@@ -23,7 +23,7 @@ Print(e *T) {
 
 _typeSystem uint32 = 0
 _codeEOF uint32 = 0
-_msgEOF, _msgEOFLen = eof()
+_msgEOF, _msgEOFLen := eof()
 
 eof() ([]uint64, uint64) {
 }
