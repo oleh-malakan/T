@@ -4,12 +4,12 @@ T {
     Line uint64
     Column uint64
     MsgLen uint64
-    MsgArr []uint64
+    MsgArr []uint64 // utf8 data 
 } // public read-only
 
 EOF := new('EOF', _codeEOF, _typeSystem, 0 ,0)
 
-new(_msg<char8>, code uint32, type uint32, line uint64, column uint64) *T {
+new(_msg<utf8>, code uint32, type uint32, line uint64, column uint64) *T {
     return @T {
         Code: code
         Type: type 
