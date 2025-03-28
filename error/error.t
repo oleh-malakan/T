@@ -5,7 +5,7 @@ T {
     Column uint64
     MsgLen uint64
     MsgArr []uint64
-}
+} // public read-only
 
 EOF := new('EOF', _codeEOF, _typeSystem, 0 ,0)
 
