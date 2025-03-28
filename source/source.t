@@ -1,21 +1,23 @@
-<error>
-
 T {
     Value uint8 // public read-only
 }
 
-Open(path []uint8, pathLen uint) (*T, *error.T) {
+// return *T or/and error code <error>
+Open(path []uint8, pathLen uint) (*T, uint32) {
     return @T{}, nil
 }
 
-Next(t *T) *error.T {
+// return error code <error>
+Next(t *T) uint32 {
     return nil
 }
 
-Prev(t *T) *error.T {
+// return error code <error>
+Prev(t *T) uint32 {
     return nil
 }
 
-Close(t *T) *error.T {
+// return error code <error>
+Close(t *T) uint32 {
     return nil
 }
