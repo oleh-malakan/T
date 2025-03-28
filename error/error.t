@@ -1,19 +1,4 @@
-T {
-    Code uint64 
-    MsgLen uint64
-    MsgArr []uint64 // UTF8 data 
-} // public read-only
+_EOF := uint64(0)
 
-EOF := eof()
-
-Print(e *T) {
-}
-
-_CodeEOF := uint64(0)
-eof() *T {
-    return @T {
-        Code: _CodeEOF
-        MsgLen: 0
-        MsgArr: nil
-    }
+Print(code uint64) {
 }
