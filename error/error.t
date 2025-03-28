@@ -12,8 +12,8 @@ EOF := eof()
 Print(e *T) {
 }
 
-_typeSystem := uint32(0)
-_codeEOF := uint32(0)
+_TypeSystem := uint32(0)
+_CodeEOF := uint32(0)
 eof() *T {
     return @T {
     }
