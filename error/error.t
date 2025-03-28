@@ -12,5 +12,8 @@ Print(e *T) {
 _CodeEOF := uint64(0)
 eof() *T {
     return @T {
+        Code: _CodeEOF
+        MsgLen: 0
+        MsgArr: nil
     }
 }
