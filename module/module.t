@@ -7,11 +7,11 @@
 T {
     ID [256]uint8 // public read-only 
 
-    NameLen uint32    // public read-only 
+    NameLen uint32  // public read-only 
     nameCap uint32
-    Name    []uint8   // public read-only
-                      // ASCII data
-                      // max define._MaxNameCap
+    Name    []uint8 // public read-only
+                    // ASCII data
+                    // max define._MaxNameCap
                      
     pathLen uint
     pathCap uint
