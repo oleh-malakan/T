@@ -1,26 +1,23 @@
 T {
-    Code uint32:0
-    Type uint32:0
-    Line uint64:0
-    Column uint64:0
-    MsgLen uint64:0
-    msgCap uint64:0
-    MsgArr []uint64:0
+    Code uint32
+    Type uint32
+    Line uint64
+    Column uint64
+    MsgLen uint64
+    MsgArr []uint64
 }
 
-EOF := eof()
+EOF := new('EOF', 0, 0, 0 ,0)
 
-eof() *T {
-    m, l := message('EOF')
-    e := T {
-        MsgLen: l
-        msgCap: l
-        MsgArr: m
+new(_msg<char8>, code uint32, type uint32, line uint64, column uint64) *T {
+    return @T {
+        Code: code
+        Type: type 
+        Line: line
+        Column: column 
+        MsgLen: _msg.len
+        MsgArr: _msg.arr
     }   
-}
-
-message(_msg<char8>) ([]int64, int64) {
-    return _msg.arr, _msg.len
 }
 
 Print(e *T) {
