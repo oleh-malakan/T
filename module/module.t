@@ -11,10 +11,11 @@ T {
     nameCap uint32
     Name    []uint8   // public read-only
                       // max define._MaxNameCap
+					  // ASCII data
 
     pathLen uint
     pathCap uint
-    path    []uint8
+    path    []uint8 // ASCII data
 
     impLen uint
     impCap uint
