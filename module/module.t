@@ -11,7 +11,7 @@ T {
     nameCap uint32
     Name    []uint8   // public read-only
                       // max define._MaxNameCap
-					  // ASCII data
+                      // ASCII data
 
     pathLen uint
     pathCap uint
