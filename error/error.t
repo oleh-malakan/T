@@ -2,7 +2,7 @@ T {
      Code uint64
 
      MsgLen uint64
-     MsgArr []uint64 // UTF8 data 
+     MsgArr []uint64
 }
 
 Print(e *T) {
