@@ -21,7 +21,7 @@ newImpArr(t *T) {
 }
 
 addImp(t *T, imp *import.T) {
-    if t.impArr[1] == t.impArr[0] - 1 {
+    if t.impArr[1] >= t.impArr[0] - 2 {
         new := [t.impArr[0] + define._StepArrCap]*import.T
         new[:t.impArr[0]] = t.impArr[:]
         tmp := t.impArr
@@ -29,6 +29,6 @@ addImp(t *T, imp *import.T) {
         ~[tmp[0]]tmp                
     }
 
-    t.impArr[1]++
     t.impArr[t.impArr[1]] = imp
+	t.impArr[1]++
 }
