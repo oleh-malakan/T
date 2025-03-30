@@ -4,6 +4,7 @@ T {
     Value uint8
 }
 
+// path ASCII
 Open(path []uint8, pathLen uint) (*T, *error.T) {
     return @T{}, nil
 }
