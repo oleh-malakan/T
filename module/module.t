@@ -5,23 +5,9 @@
 <function>
 
 T {
-    pathLen uint
-    pathCap uint
-    path    []uint8
-
-    impLen uint
-    impCap uint
-    impArr []*import.T
-
-    varLen uint
-    varCap uint
-    varArr []*variable.T
-
-    structLen uint
-    structCap uint
+    path      []uint8
+    impArr    []*import.T
+    varArr    []*variable.T
     structArr []*structure.T
-    
-    funcLen uint
-    funcCap uint
-    funcArr []*function.T   
+    funcArr   []*function.T   
 }
