@@ -32,5 +32,5 @@ addImp(t *T, imp *import.T) {
     }
 
     t.impArr[t.impArr[1]] = imp
-	t.impArr[1]++
+    t.impArr[1]++
 }
