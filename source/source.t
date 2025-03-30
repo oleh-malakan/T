@@ -1,7 +1,7 @@
 <error>
 
 T {
-    Value uint8 // public read-only
+    Value uint8
 }
 
 Open(path []uint8, pathLen uint) (*T, *error.T) {
