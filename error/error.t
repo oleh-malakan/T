@@ -3,7 +3,7 @@ T {
 
      MsgLen uint64
      MsgArr []uint64 // UTF8 data 
-} // public read-only
+}
 
 Print(e *T) {
 }
