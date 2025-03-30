@@ -22,9 +22,10 @@ newImpArr(t *T) {
 
 addImp(t *T, imp *import.T) {
     if t.impArr[1] >= t.impArr[0] {
-        new := [t.impArr[0] + define._StepArrCap]*import.T
-        new[1:t.impArr[0]] = t.impArr[1:]
-		new[0] = t.impArr[0] + define._StepArrCap
+        newSize := t.impArr[0] + define._StepArrCap
+        new := [newSize]*import.T
+        new[0] = newSize
+        new[1:t.impArr[0]] = t.impArr[1:]       
         tmp := t.impArr
         t.impArr = new
         ~[tmp[0]]tmp                
