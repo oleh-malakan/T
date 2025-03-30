@@ -7,7 +7,7 @@
 T {
     pathLen uint
     pathCap uint
-    path    []uint8 // ASCII data
+    path    []uint8
 
     impLen uint
     impCap uint
