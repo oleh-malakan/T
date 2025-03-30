@@ -29,6 +29,6 @@ addImp(t *T, imp *import.T) {
         ~[tmp[0]]tmp                
     }
 
-	t.impArr[1]++
+    t.impArr[1]++
     t.impArr[t.impArr[1]] = imp    
 }
