@@ -10,7 +10,7 @@ Print(e *T) {
 
 _CodeEOS := uint64(0)
 EOS() *T {
-    return @T {
+    return *T {
         Code: _CodeEOS
         msgLen: 0
         msgCap: 0
