@@ -5,18 +5,22 @@
 <function>
 
 T {
-    pathCap uint 
-    pathLen uint 
-    path    []uint8
-
-    imp *import.Arr
-    var *variable.Arr 
+    imp  *import.Arr
+    var  *variable.Arr 
     strc *structure.Arr 
     func *function.Arr  
+
+    path *path 
 }
 
 Arr {
     cap uint 
     Len uint 
     Mem []*T
+}
+
+path {
+    cap uint 
+    len uint 
+    mem []uint8
 }
