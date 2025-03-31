@@ -9,21 +9,10 @@ T {
     pathLen uint 
     path    []uint8
 
-    impCap uint
-    impLen uint 
-    impMem []*import.T
-
-    varCap uint 
-    varLen uint 
-    varMem []*variable.T
-
-    structCap uint 
-    structLen uint 
-    structMem []*structure.T
-
-    funcCap uint 
-    funcLen uint 
-    funcMem []*function.T   
+    imp *import.Arr
+    var *variable.Arr 
+    strc *structure.Arr 
+    func *function.Arr  
 }
 
 Arr {
@@ -31,5 +20,3 @@ Arr {
     Len uint 
     Mem []*T
 }
-
-
