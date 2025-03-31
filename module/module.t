@@ -1,4 +1,3 @@
-<define>
 <import>
 <variable>
 <structure>
