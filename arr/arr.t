@@ -2,20 +2,20 @@
 
 T {
     cap uint 
-    Len uint 
-    Mem []*
+    len uint 
+    mem []*
 }
 
 add(t *T, v *) {
-    if t.Len == t.cap {
+    if t.len == t.cap {
         t.cap = t.cap + define._StepMemCap
         new := [t.cap]*
-        new[:] = t.Mem[:t.Len - 1]       
-        tmp := t.Mem
-        t.Mem = new
-        ~[t.Len]tmp                
+        new[:] = t.mem[:t.len - 1]       
+        tmp := t.mem
+        t.mem = new
+        ~[t.len]tmp                
     }
 
-    t.Mem[t.Len] = v
-    t.Len++
+    t.mem[t.len] = v
+    t.len++
 }
