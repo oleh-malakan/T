@@ -9,7 +9,7 @@ T {
     pathLen uint 
     path    []uint8
 
-	impCap uint
+    impCap uint
     impLen uint 
     impArr []*import.T
 
