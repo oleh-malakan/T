@@ -2,7 +2,7 @@ T {
      Code uint64
      msgLen uint 
      msgCap uint 
-     msgArr []uint64
+     msgMem []uint64
 }
 
 Print(e *T) {
@@ -14,7 +14,7 @@ EOF() *T {
         Code: _CodeEOF
         msgLen: 0
         msgCap: 0
-        msgArr: nil
+        msgMem: nil
     }
 }
  
