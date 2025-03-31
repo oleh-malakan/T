@@ -32,16 +32,4 @@ Arr {
     Mem []*T
 }
 
-addImport(t *T, imp *import.T) {
-    if t.impLen == t.impCap {
-        t.impCap = t.impCap + define._StepMemCap
-        new := [t.impCap]*import.T
-        new[:] = t.impMem[:t.impLen - 1]       
-        tmp := t.impMem
-        t.impMem = new
-        ~[t.impLen]tmp                
-    }
 
-    t.impMem[t.impLen] = imp
-    t.impLen++
-}
