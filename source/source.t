@@ -5,7 +5,7 @@ T {
 }
 
 Open(path []uint8, pathLen uint) (*T, *error.T) {
-    return @T{}, nil
+    return *T{}, nil
 }
 
 Next(t *T) *error.T {
