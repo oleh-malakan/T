@@ -9,10 +9,9 @@ T {
 Add(t *T, v *) {
     if t.len == t.cap {
         t.cap = t.cap + define._StepMemCap
-        new := [t.cap]*
-        new[:] = t.mem[:t.len - 1]       
         tmp := t.mem
-        t.mem = new
+        t.mem = [t.cap]*
+        t.mem[:] = tmp[:t.len - 1]
         ~[t.len]tmp                
     }
 
