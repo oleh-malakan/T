@@ -26,6 +26,12 @@ T {
     funcMem []*function.T   
 }
 
+Arr {
+    cap uint 
+    Len uint 
+    Mem []*T
+}
+
 addImport(t *T, imp *import.T) {
     if t.impLen == t.impCap {
         t.impCap = t.impCap + define._StepMemCap
