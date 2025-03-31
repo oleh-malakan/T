@@ -28,14 +28,14 @@ T {
 
 addImport(t *T, imp *import.T) {
     if t.impLen == t.impCap {
-        t.impCap = t.impCap + define._StepArrCap
+        t.impCap = t.impCap + define._StepMemCap
         new := [t.impCap]*import.T
-        new[:] = t.impArr[:t.impLen - 1]       
-        tmp := t.impArr
-        t.impArr = new
+        new[:] = t.impMem[:t.impLen - 1]       
+        tmp := t.impMem
+        t.impMem = new
         ~[t.impLen]tmp                
     }
 
-    t.impArr[t.impLen] = imp
+    t.impMem[t.impLen] = imp
     t.impLen++
 }
