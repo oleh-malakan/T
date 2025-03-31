@@ -11,19 +11,19 @@ T {
 
     impCap uint
     impLen uint 
-    impArr []*import.T
+    impMem []*import.T
 
     varCap uint 
     varLen uint 
-    varArr []*variable.T
+    varMem []*variable.T
 
     structCap uint 
     structLen uint 
-    structArr []*structure.T
+    structMem []*structure.T
 
     funcCap uint 
     funcLen uint 
-    funcArr []*function.T   
+    funcMem []*function.T   
 }
 
 addImport(t *T, imp *import.T) {
