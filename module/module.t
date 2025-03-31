@@ -5,33 +5,37 @@
 <function>
 
 T {
-    path      []uint8
-    impArr    []*import.T
-    varArr    []*variable.T
+    pathCap uint 
+    pathLen uint 
+    path    []uint8
+
+	impCap uint
+    impLen uint 
+    impArr []*import.T
+
+    varCap uint 
+    varLen uint 
+    varArr []*variable.T
+
+    structCap uint 
+    structLen uint 
     structArr []*structure.T
-    funcArr   []*function.T   
+
+    funcCap uint 
+    funcLen uint 
+    funcArr []*function.T   
 }
 
-// to think 
-newImpArr(t *T) {
-    t.impArr = [define._InitArrCap]*import.T
-    t.impArr[0] = *import.T(define._InitArrCap)
-    t.impArr[1] = *import.T(2)
-
-    return nil
-}
-// to think 
-addImp(t *T, imp *import.T) {
-    if uint(t.impArr[1]) >= uint(t.impArr[0]) {
-        newCap := uint(t.impArr[0]) + define._StepArrCap
-        new := [newCap]*import.T
-        new[0] = *import.T(newCap)
-        new[1:] = t.impArr[1: uint(t.impArr[0]) - 1]       
+addImport(t *T, imp *import.T) {
+    if t.impLen == t.impCap {
+        t.impCap = t.impCap + define._StepArrCap
+        new := [t.impCap]*import.T
+        new[:] = t.impArr[:t.impLen - 1]       
         tmp := t.impArr
         t.impArr = new
-        ~[tmp[0]]tmp                
+        ~[t.impLen]tmp                
     }
 
-    t.impArr[t.impArr[1]] = imp
-    t.impArr[1]++
+    t.impArr[t.impLen] = imp
+    t.impLen++
 }
