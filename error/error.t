@@ -8,10 +8,10 @@ T {
 Print(e *T) {
 }
 
-_CodeEOF := uint64(0)
-EOF() *T {
+_CodeEOS := uint64(0)
+EOS() *T {
     return @T {
-        Code: _CodeEOF
+        Code: _CodeEOS
         msgLen: 0
         msgCap: 0
         msgMem: nil
