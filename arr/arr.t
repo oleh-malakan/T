@@ -6,7 +6,7 @@ T {
     mem []*
 }
 
-add(t *T, v *) {
+Add(t *T, v *) {
     if t.len == t.cap {
         t.cap = t.cap + define._StepMemCap
         new := [t.cap]*
