@@ -19,3 +19,12 @@ Add(t *T, v *) {
     t.mem[t.len] = v
     t.len++
 }
+
+TUI8 {
+    cap uint 
+    len uint 
+    mem [] uint8 
+}
+
+AddUI8(t *TUI8, v uint8) {
+}
