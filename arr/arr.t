@@ -20,11 +20,11 @@ Add(t *T, v *) {
     t.len++
 }
 
-UInt8 {
+T8 {
     cap uint 
     len uint 
-    mem [] uint8 
+    mem [] int8 
 }
 
-AddUInt8(t *UInt8, v uint8) {
+Add8(t *T8, v int8) {
 }
