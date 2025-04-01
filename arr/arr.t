@@ -13,7 +13,7 @@ Add(t * T, v *) {
         tmp := t.mem
         t.mem = [t.cap] *
         t.mem[:] = tmp[:t.len - 1]
-        ~[t.len]tmp                
+        ~ [t.len] tmp                
     }
 
     t.mem[t.len] = v
