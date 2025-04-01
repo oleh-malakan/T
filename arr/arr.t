@@ -1,4 +1,5 @@
-<def>
+_InitMemCap := uint(64)
+_StepMemCap := uint(64)
 
 T {
     cap uint 
@@ -8,7 +9,7 @@ T {
 
 Add(t *T, v *) {
     if t.len == t.cap {
-        t.cap = t.cap + def._StepMemCap
+        t.cap = t.cap + _StepMemCap
         tmp := t.mem
         t.mem = [t.cap]*
         t.mem[:] = tmp[:t.len - 1]
