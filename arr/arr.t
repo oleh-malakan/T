@@ -4,14 +4,14 @@ _StepMemCap := uint(64)
 T {
     cap uint 
     len uint 
-    mem []*
+    mem [] *
 }
 
-Add(t *T, v *) {
+Add(t * T, v *) {
     if t.len == t.cap {
         t.cap = t.cap + _StepMemCap
         tmp := t.mem
-        t.mem = [t.cap]*
+        t.mem = [t.cap] *
         t.mem[:] = tmp[:t.len - 1]
         ~[t.len]tmp                
     }
@@ -26,5 +26,5 @@ T8 {
     mem [] int8 
 }
 
-Add8(t *T8, v int8) {
+Add8(t * T8, v int8) {
 }
