@@ -5,9 +5,9 @@ T {
 }
 
 Path {
-    cap uint 
-    len uint 
-    mem [] uint8
+    Cap uint 
+    Len uint 
+    Mem [] uint8
 }
 
 Open(path * Path) (* T, * error.T) {
