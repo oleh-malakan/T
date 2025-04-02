@@ -27,4 +27,14 @@ T8 {
 }
 
 Add8(t * T8, v int8) {
+    if t.len == t.cap {
+        t.cap = t.cap + _StepCap
+        tmp := t.mem
+        t.mem = [t.cap] int8
+        t.mem[:] = tmp[:t.len - 1]
+        ~ [t.len] tmp                
+    }
+
+    t.mem[t.len] = v
+    t.len++
 }
