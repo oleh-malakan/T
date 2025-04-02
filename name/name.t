@@ -1,4 +1,4 @@
-_MaxNameCap := uint32(2048)
+_MaxCap := uint32(2048)
 
 T {
     Len uint 
