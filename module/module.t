@@ -2,6 +2,7 @@
 <variable>
 <structure>
 <function>
+<source>
 
 T {
     imp  * import.Arr
@@ -9,17 +10,11 @@ T {
     strc * structure.Arr 
     func * function.Arr  
 
-    path * path 
+    path * source.Path 
 }
 
 Arr {
     cap uint 
     Len uint 
     Mem [] * T
-}
-
-path {
-    cap uint 
-    len uint 
-    mem [] uint8
 }
