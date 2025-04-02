@@ -1,17 +1,17 @@
 T {
-     Code uint64
+     Code   uint64
      msgLen uint 
      msgCap uint 
-     msgMem []uint64
+     msgMem [] uint64
 }
 
-Print(e *T) {
+Print(e * T) {
 }
 
 _CodeEOS := uint64(0)
-EOS() *T {
-    return *T {
-        Code: _CodeEOS
+EOS() * T {
+    return * T {
+        Code:   _CodeEOS
         msgLen: 0
         msgCap: 0
         msgMem: nil
