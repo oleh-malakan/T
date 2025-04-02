@@ -3,8 +3,14 @@
 T {
     Value uint8
 }
- 
-Open(path [] uint8, pathLen uint) (* T, * error.T) {
+
+Path {
+    cap uint 
+    len uint 
+    mem [] uint8
+}
+
+Open(path * Path) (* T, * error.T) {
     return * T {}, nil
 }
 
