@@ -12,7 +12,7 @@ Add(t * T, v *) {
         t.cap = t.cap + _StepCap
         tmp := t.mem
         t.mem = [t.cap] *
-        t.mem[:] = tmp[:t.len - 1]
+        t.mem[:] = tmp[:t.len]
         ~ [t.len] tmp                
     }
 
@@ -31,7 +31,7 @@ Add8(t * T8, v int8) {
         t.cap = t.cap + _StepCap
         tmp := t.mem
         t.mem = [t.cap] int8
-        t.mem[:] = tmp[:t.len - 1]
+        t.mem[:] = tmp[:t.len]
         ~ [t.len] tmp                
     }
 
