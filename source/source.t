@@ -11,7 +11,18 @@ Path {
 }
 
 Open(path * Path) (* T, * error.T) {
-    return * T {}, nil
+	t := * T {}
+    // ...
+    for i := uint(0); i < path.Len; i++ {
+        path.Mem[i] = 0
+    }
+    path.Len = 0
+    d := path.Cap
+    path.Cap = 0
+    ~ [d] path 
+    d = 0
+    // ...
+    return t, nil
 }
 
 Next(t * T) * error.T {
