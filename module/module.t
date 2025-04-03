@@ -10,7 +10,7 @@ T {
     strc * structure.Arr 
     func * function.Arr  
 
-    path * source.Path 
+    src * source.T 
 }
 
 Arr {
