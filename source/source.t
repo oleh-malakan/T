@@ -11,7 +11,9 @@ Path {
 }
 
 Open(path * Path) (* T, * error.T) {
-    t := * T {}
+    t := * T {
+        Value: 0
+    }
     // ...
     for i := uint(0); i < path.Len; i++ {
         path.Mem[i] = 0
