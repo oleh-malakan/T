@@ -16,15 +16,15 @@ Open(path * Path) (* T, * error.T) {
     }
 
     // ...
-
-    for i := uint(0); i < path.Len; i++ {
+    i uint 
+    for i = 0; i < path.Len; i++ {
         path.Mem[i] = 0
     }
     path.Len = 0
-    c := path.Cap
+    i = path.Cap
     path.Cap = 0
-    ~ [c] path 
-    c = 0
+    ~ [i] path 
+    i = 0
 
     // ...
 
