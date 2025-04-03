@@ -16,6 +16,7 @@ Open(path * Path) (* T, * error.T) {
     }
 
     // ...
+
     i uint 
     for i = 0; i < path.Len; i++ {
         path.Mem[i] = 0
