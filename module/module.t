@@ -5,12 +5,15 @@
 <source>
 
 T {
+    src  * source.T 
+    comp * comp
+}
+
+comp {
     imp  * import.Arr
     var  * variable.Arr 
     strc * structure.Arr 
-    func * function.Arr  
-
-    src * source.T 
+    func * function.Arr
 }
 
 Arr {
