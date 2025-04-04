@@ -3,6 +3,7 @@
 <structure>
 <function>
 <source>
+<ascii>
 <arr>
 <error>
 
@@ -28,8 +29,8 @@ Free(t * T) {
 }
 
 Compile() (* error.T) {
-    path := arr.New64()
-    arr.Add64(path, 0x2E)
+    path := arr.New8()
+    arr.Add8(path, ascii._Dot)
 
     t, err := compile(path)
     if err != nil {
