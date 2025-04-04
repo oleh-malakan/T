@@ -9,7 +9,7 @@ Main() {
         Len: 0
         Cap: 0
     }
-    arr.Add64(path, 46)
+    arr.Add64(path, 0x2E)
 
     m, err := module.Parse(path)
     if err != nil {
