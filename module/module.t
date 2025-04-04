@@ -27,8 +27,8 @@ Free(t * T) {
 
 Parse(path * source.Path) (* T, * error.T) {
     err * error.T
-    t := * {
-        comp: comp * {
+    t := * T {
+        comp: * comp {
         }
     }
 
