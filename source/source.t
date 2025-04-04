@@ -18,7 +18,7 @@ Open(path * Path) (* T, * error.T) {
 
     // ...
 
-    arr.Zero8Free(path)
+    arr.ZeroFree8(path)
     ~ path 
 
     // ...
