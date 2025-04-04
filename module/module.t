@@ -1,8 +1,8 @@
-<source>
 <import>
 <variable>
 <structure>
 <function>
+<source>
 <arr>
 <error>
 
