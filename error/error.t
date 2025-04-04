@@ -12,7 +12,7 @@ msg {
 }
 
 Free(t * T) {
-    arr.Free64(t.msg)
+//    arr.Free64(t.msg)
     ~t
 }
 
