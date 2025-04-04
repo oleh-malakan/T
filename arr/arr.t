@@ -1,4 +1,3 @@
-_InitCap := uint(64)
 _StepCap := uint(64)
 
 T {
@@ -48,6 +47,14 @@ T64 {
     mem [] int64
     len uint
     cap uint          
+}
+
+New64() * T64 {
+    return * T64 {
+        mem: nil
+        len: 0
+        cap: 0
+    }
 }
 
 Add64(t * T64, v int64) {
