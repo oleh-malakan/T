@@ -44,8 +44,8 @@ Zero8Free(t * T8) {
     for i = 0; i < t.cap; i++ {
         t.mem[i] = 0
     }
-    t.cap = 0
-    t.len = 0
     ~ [i] t.mem
+    t.len = 0
+    t.cap = 0    
     i = 0
 }
