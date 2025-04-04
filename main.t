@@ -13,7 +13,6 @@ Main() {
 
     m, err := module.Parse(path)
     if err != nil {
-        module.Free(m)
         error.Print(err)
         error.Free(err)
     }
