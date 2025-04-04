@@ -38,3 +38,14 @@ Add8(t * T8, v int8) {
     t.mem[t.len] = v
     t.len++
 }
+
+Zero8(t * T) {
+    i uint 
+    for i = 0; i < path.Cap; i++ {
+        path.Mem[i] = 0
+    }
+    path.Len = 0
+    path.Cap = 0
+    ~ [i] path 
+    i = 0
+}
