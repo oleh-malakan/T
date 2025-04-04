@@ -39,7 +39,7 @@ Add8(t * T8, v int8) {
     t.len++
 }
 
-Zero8(t * T) {
+Zero8(t * T8) {
     i uint 
     for i = 0; i < path.Cap; i++ {
         path.Mem[i] = 0
