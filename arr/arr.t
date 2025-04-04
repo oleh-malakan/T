@@ -2,9 +2,9 @@ _InitCap := uint(64)
 _StepCap := uint(64)
 
 T {
-    cap uint 
-    len uint 
     mem [] *
+    len uint
+    cap uint    
 }
 
 Add(t * T, v *) {
@@ -21,9 +21,9 @@ Add(t * T, v *) {
 }
 
 T8 {
-    cap uint 
-    len uint 
-    mem [] int8 
+    mem [] int8
+    len uint
+    cap uint          
 }
 
 Add8(t * T8, v int8) {
