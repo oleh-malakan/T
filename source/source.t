@@ -6,7 +6,7 @@ T {
 }
 
 Path {
-    Mem [] * T
+    Mem [] uint8 
     Len uint
     cap uint    
 }
