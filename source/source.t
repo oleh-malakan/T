@@ -18,8 +18,8 @@ Open(path * Path) (* T, * error.T) {
 
     // ...
 
-    arr.ZeroFree8(path)
-    ~ path 
+    ~ [path.cap] path.Mem
+    ~ path
 
     // ...
 
