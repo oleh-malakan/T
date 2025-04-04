@@ -1,3 +1,5 @@
+<arr>
+
 T {
     Code uint64
     msg  * msg      
@@ -9,7 +11,12 @@ msg {
      cap uint
 }
 
-Print(e * T) {
+Free(t * T) {
+    arr.Free64(t.msg)
+    ~t
+}
+
+Print(t * T) {
 }
 
 _CodeEOS := uint64(0)
