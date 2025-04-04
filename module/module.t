@@ -21,3 +21,6 @@ Arr {
     Len uint
     cap uint    
 }
+
+Parse(path source.Path) (* T, * error.T) {
+}
