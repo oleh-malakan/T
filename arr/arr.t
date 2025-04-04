@@ -39,6 +39,11 @@ Add8(t * T8, v int8) {
     t.len++
 }
 
+Free8(t * T8) {
+    ~ [t.cap] t.mem
+    ~ t
+}
+
 T64 {
     mem [] int64
     len uint
@@ -56,4 +61,9 @@ Add64(t * T64, v int64) {
 
     t.mem[t.len] = v
     t.len++
+}
+
+Free64(t * T64) {
+    ~ [t.cap] t.mem
+    ~ t
 }
