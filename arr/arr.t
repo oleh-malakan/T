@@ -39,7 +39,7 @@ Add8(t * T8, v int8) {
     t.len++
 }
 
-Zero8Free(t * T8) {
+ZeroFree8(t * T8) {
     i uint 
     for i = 0; i < t.cap; i++ {
         t.mem[i] = 0
