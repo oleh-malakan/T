@@ -5,7 +5,7 @@ T {
 }
 
 Arr {
-    cap uint 
-    Len uint 
     Mem [] * T
+    Len uint
+    cap uint    
 }
