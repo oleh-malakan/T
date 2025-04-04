@@ -1,9 +1,10 @@
-<error>
 <source>
 <import>
 <variable>
 <structure>
 <function>
+<arr>
+<error>
 
 T {
     src  * source.T 
@@ -34,11 +35,11 @@ Parse() (* T, * error.T) {
 }
 
 parse(path * source.Path) (* T, * error.T) {
-    err * error.T
     t := * T {
         comp: * comp {
         }
     }
+    err * error.T
 
     t.src, err = source.Open(path) 
     if err != nil {
