@@ -25,7 +25,13 @@ Arr {
 Free(t * T) {
 }
 
-Parse(path * source.Path) (* T, * error.T) {
+Parse() (* T, * error.T) {
+
+
+    return parse(path)
+}
+
+parse(path * source.Path) (* T, * error.T) {
     err * error.T
     t := * T {
         comp: * comp {
