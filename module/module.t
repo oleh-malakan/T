@@ -26,7 +26,8 @@ Free(t * T) {
 }
 
 Parse() (* T, * error.T) {
-
+    path := arr.New64()
+    arr.Add64(path, 0x2E)
 
     return parse(path)
 }
