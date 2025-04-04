@@ -1,3 +1,4 @@
+<error>
 <source>
 <import>
 <variable>
