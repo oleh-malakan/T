@@ -22,5 +22,22 @@ Arr {
     cap uint    
 }
 
-Parse(path source.Path) (* T, * error.T) {
+Free(t * T) {
+}
+
+Parse(path * source.Path) (* T, * error.T) {
+    err * error.T
+    t := * {
+        comp: comp * {
+        }
+    }
+
+    t.src, err = source.Open(path) 
+    if err != nil {
+        Free(t)
+
+        return nil, err
+    }
+
+    return t, nil
 }
