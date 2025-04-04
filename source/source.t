@@ -18,9 +18,7 @@ Open(path * Path) (* T, * error.T) {
 
     // ...
 
-    _inline {
-        arr.Free8(path)
-    }
+    arr.Free8(path)
 
     // ...
 
