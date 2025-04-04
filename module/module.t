@@ -27,11 +27,17 @@ Arr {
 Free(t * T) {
 }
 
-Compile() (* T, * error.T) {
+Compile() (* error.T) {
     path := arr.New64()
     arr.Add64(path, 0x2E)
 
-    return compile(path)
+    t, err := compile(path)
+    if err != nil {
+        return err
+    }
+    Free(t)
+
+    return nil
 }
 
 compile(path * source.Path) (* T, * error.T) {
