@@ -4,11 +4,7 @@
 <error>
 
 Main() {
-    path := source.Path {
-        Mem: nil
-        Len: 0
-        Cap: 0
-    }
+    path := arr.New64()
     arr.Add64(path, 0x2E)
 
     m, err := module.Parse(path)
