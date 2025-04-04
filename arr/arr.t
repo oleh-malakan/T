@@ -49,3 +49,33 @@ ZeroFree8(t * T8) {
     t.cap = 0    
     i = 0
 }
+
+T64 {
+    mem [] int64
+    len uint
+    cap uint          
+}
+
+Add64(t * T64, v int64) {
+    if t.len == t.cap {
+        t.cap = t.cap + _StepCap
+        tmp := t.mem
+        t.mem = [t.cap] int64
+        t.mem[:] = tmp[:t.len]
+        ~ [t.len] tmp                
+    }
+
+    t.mem[t.len] = v
+    t.len++
+}
+
+ZeroFree64(t * T64) {
+    i uint 
+    for i = 0; i < t.cap; i++ {
+        t.mem[i] = 0
+    }
+    ~ [i] t.mem
+    t.len = 0
+    t.cap = 0    
+    i = 0
+}
