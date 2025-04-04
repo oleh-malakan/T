@@ -25,6 +25,14 @@ T8 {
     cap uint          
 }
 
+New8() * T8 {
+    return * T8 {
+        mem: nil
+        len: 0
+        cap: 0
+    }
+}
+
 Add8(t * T8, v int8) {
     if t.len == t.cap {
         t.cap = t.cap + _StepCap
