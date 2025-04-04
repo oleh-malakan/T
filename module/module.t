@@ -27,14 +27,14 @@ Arr {
 Free(t * T) {
 }
 
-Parse() (* T, * error.T) {
+Compile() (* T, * error.T) {
     path := arr.New64()
     arr.Add64(path, 0x2E)
 
-    return parse(path)
+    return compile(path)
 }
 
-parse(path * source.Path) (* T, * error.T) {
+compile(path * source.Path) (* T, * error.T) {
     t := * T {
         comp: * comp {
         }
