@@ -1,3 +1,4 @@
+<arr>
 <error>
 
 T {
@@ -17,15 +18,8 @@ Open(path * Path) (* T, * error.T) {
 
     // ...
 
-    i uint 
-    for i = 0; i < path.Len; i++ {
-        path.Mem[i] = 0
-    }
-    path.Len = 0
-    i = path.Cap
-    path.Cap = 0
-    ~ [i] path 
-    i = 0
+    arr.Zero8Free(path)
+    ~ path 
 
     // ...
 
