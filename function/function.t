@@ -6,20 +6,20 @@ T {
 }
 
 Arr {
-    Mem [] * T
-    Len uint
+    mem [] * T
+    len uint
     cap uint    
 }
 
 Add(a * Arr, t * T) {
-    if a.Len == a.cap {
-        tmp := a.Mem
+    if a.len == a.cap {
+        tmp := a.mem
         a.cap += def._StepMemCap
-        a.Mem = [a.cap] * T
-        a.Mem[:] = tmp[:t.Len]
-        ~ [t.Len] tmp                
+        a.mem = [a.cap] * T
+        a.mem[:] = tmp[:t.len]
+        ~ [t.len] tmp                
     }
 
-    t.Mem[t.Len] = t
-    t.Len++
+    t.mem[t.len] = t
+    t.len++
 }
