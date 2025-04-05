@@ -1,24 +1,25 @@
 <ascii>
+<def>
 
 T {
-    Name * ascii.T
-}
-
-Arr {
-    Mem [] * T
-    Len uint
+    mem [] * imp
+    len uint
     cap uint    
 }
 
-Add(a * Arr, t * T) {
-    if a.Len == a.cap {
-        tmp := a.Mem
-        a.cap += def._StepMemCap
-        a.Mem = [a.cap] * T
-        a.Mem[:] = tmp[:t.Len]
-        ~ [t.Len] tmp                
+imp {
+    name * ascii.T
+}
+
+add(t * T, v * imp) {
+    if t.len == t.cap {
+        tmp := t.mem
+        t.cap += def._StepMemCap
+        t.mem = [t.cap] * imp
+        t.mem[:] = tmp[:t.len]
+        ~ [t.len] tmp                
     }
 
-    t.Mem[t.Len] = t
-    t.Len++
+    t.mem[t.len] = v
+    t.len++
 }
