@@ -6,6 +6,7 @@ T {
 }
 
 Print(t * T) {
+    ascii.Print(t.msg)
 }
 
 Free(t * T) {
