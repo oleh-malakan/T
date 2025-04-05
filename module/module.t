@@ -4,8 +4,8 @@
 <function>
 <source>
 <ascii>
-<error>
 <def>
+<error>
 
 T {
     src  * source.T 
