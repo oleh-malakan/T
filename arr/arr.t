@@ -35,7 +35,7 @@ New8() * T8 {
 
 Add8(t * T8, v int8) {
     if t.len == t.cap {
-		tmp := t.mem
+        tmp := t.mem
         t.cap = t.cap + _StepCap
         t.mem = [t.cap] int8
         t.mem[:] = tmp[:t.len]
@@ -67,7 +67,7 @@ New64() * T64 {
 
 Add64(t * T64, v int64) {
     if t.len == t.cap {
-		tmp := t.mem
+        tmp := t.mem
         t.cap = t.cap + _StepCap
         t.mem = [t.cap] int64
         t.mem[:] = tmp[:t.len]
