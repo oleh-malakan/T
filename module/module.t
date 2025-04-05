@@ -8,33 +8,33 @@
 <error>
 
 T {
+    mem [] * mod
+    len uint
+    cap uint    
+}
+
+mod {
     src  * source.T 
     comp * comp
 }
 
 comp {
-    imp  * import.Arr
-    var  * variable.Arr 
-    strc * structure.Arr 
-    func * function.Arr
+    imp  * import.T
+    var  * variable.T 
+    strc * structure.T 
+    func * function.T
 }
 
-Arr {
-    mem [] * T
-    len uint
-    cap uint    
-}
-
-Add(a * Arr, t * T) {
-    if a.len == a.cap {
-        tmp := a.mem
-        a.cap += def._StepMemCap
-        a.mem = [a.cap] * T
-        a.mem[:] = tmp[:t.len]
+add(t * T, v * mod) {
+    if t.len == t.cap {
+        tmp := t.mem
+        t.cap += def._StepMemCap
+        t.mem = [t.cap] * mod
+        t.mem[:] = tmp[:t.len]
         ~ [t.len] tmp                
     }
 
-    t.mem[t.len] = t
+    t.mem[t.len] = v
     t.len++
 }
 
@@ -56,8 +56,6 @@ Compile() * error.T {
 
 compile(path * ascii.T) (* T, * error.T) {
     t := * T {
-        comp: * comp {
-        }
     }
     err * error.T
 
