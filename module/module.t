@@ -4,7 +4,6 @@
 <function>
 <source>
 <ascii>
-<arr>
 <error>
 
 T {
@@ -25,12 +24,25 @@ Arr {
     cap uint    
 }
 
+Add(a * Arr, t * T) {
+    if a.Len == a.cap {
+        tmp := a.Mem
+        a.cap += def._StepMemCap
+        a.Mem = [a.cap] * T
+        a.Mem[:] = tmp[:t.Len]
+        ~ [t.Len] tmp                
+    }
+
+    t.Mem[t.Len] = t
+    t.Len++
+}
+
 Free(t * T) {
 }
 
-Compile() (* error.T) {
-    path := arr.New8()
-    arr.Add8(path, ascii._Dot)
+Compile() * error.T {
+    path := ascii.New()
+    ascii.Add(path, ascii._Dot)
 
     t, err := compile(path)
     if err != nil {
@@ -41,7 +53,7 @@ Compile() (* error.T) {
     return nil
 }
 
-compile(path * source.Path) (* T, * error.T) {
+compile(path * ascii.T) (* T, * error.T) {
     t := * T {
         comp: * comp {
         }
