@@ -1,18 +1,12 @@
-<arr>
+<ascii>
 
 T {
     Code uint64
-    msg  * msg      
-}
-
-msg {
-     mem [] uint64
-     len uint 
-     cap uint
+    msg  * ascii.T    
 }
 
 Free(t * T) {
-//    arr.Free64(t.msg)
+    ascii.Free(t.msg)
     ~t
 }
 
@@ -23,6 +17,6 @@ _CodeEOS := uint64(0)
 EOS() * T {
     return * T {
         Code: _CodeEOS
-        msg:  nil       
+        msg:  ascii.New()      
     }
 }
