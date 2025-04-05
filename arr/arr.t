@@ -8,8 +8,8 @@ T {
 
 Add(t * T, v *) {
     if t.len == t.cap {
+		tmp := t.mem
         t.cap = t.cap + _StepCap
-        tmp := t.mem
         t.mem = [t.cap] *
         t.mem[:] = tmp[:t.len]
         ~ [t.len] tmp                
