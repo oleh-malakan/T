@@ -1,24 +1,18 @@
-<arr>
+<ascii>
 <error>
 
 T {
     Value uint8
 }
 
-Path {
-    Mem [] uint8 
-    Len uint
-    Cap uint    
-}
-
-Open(path * Path) (* T, * error.T) {
+Open(path * ascii.T) (* T, * error.T) {
     t := * T {
         Value: 0
     }
 
     // ...
 
-    arr.Free8(path)
+    ascii.Free(path)
 
     // ...
 
