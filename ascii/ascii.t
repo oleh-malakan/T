@@ -1,7 +1,5 @@
 <def>
 
-_Dot = uint8(0x2E)
-
 T {
     Mem [] uint8 
     Len uint 
@@ -33,3 +31,5 @@ Free(t * T) {
     ~ [t.cap] t.Mem
     ~ t
 }
+
+_Dot = uint8(0x2E)
