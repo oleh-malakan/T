@@ -2,7 +2,7 @@
 <def>
 
 T {
-    Name * ascii.T
+    name * ascii.T
 }
 
 Arr {
