@@ -5,6 +5,7 @@
 <source>
 <ascii>
 <error>
+<def>
 
 T {
     src  * source.T 
