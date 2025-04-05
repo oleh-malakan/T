@@ -5,12 +5,12 @@ T {
     msg  * ascii.T    
 }
 
+Print(t * T) {
+}
+
 Free(t * T) {
     ascii.Free(t.msg)
     ~t
-}
-
-Print(t * T) {
 }
 
 _CodeEOS := uint64(0)
