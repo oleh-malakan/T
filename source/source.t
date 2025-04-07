@@ -1,4 +1,4 @@
-_MemCap = uint(2048)
+_MemCap = uint(8192)
 
 T { 
     Mem [_MemCap] uint8 
