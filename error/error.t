@@ -1,6 +1,1 @@
-<ascii>
-
-T {    
-}
-
-_CodeEOS := uint64(0)
+_EOS := uint64(999)
