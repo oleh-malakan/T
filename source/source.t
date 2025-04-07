@@ -10,7 +10,6 @@ Open(path [] uint8, len uint) * T {
 }
 
 Next(t * T) {
-    return 0
 }
 
 Free(t * T) {
