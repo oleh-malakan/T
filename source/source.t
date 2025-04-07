@@ -1,3 +1,5 @@
+<def>
+
 T {
     Mem [] uint8 
     Len uint 
@@ -6,7 +8,12 @@ T {
 }
 
 Open(path [] uint8, len uint) * T {
-    return * T, 0
+    return * T {
+        Mem: [def._StepMemCap] uint8 
+        Len: 0
+        Cap: def._StepMemCap
+        Err: 0
+    }
 }
 
 Next(t * T) {
