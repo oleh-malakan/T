@@ -1,7 +1,7 @@
-_MemCap = uint(8192)
+_memCap = uint(8192)
 
 T { 
-    Mem [_MemCap] uint8 
+    Mem [_memCap] uint8 
     Len uint
     Err int32
 }
