@@ -10,6 +10,7 @@ Next(t * T, mem [] uint8, cap uint) (len uint, err int32) {
     return cap, 0
 }
 
-Close(t * T) {
+Close(t * T) (err int32) {
     ~ t
+    return 0
 }
