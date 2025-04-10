@@ -1,5 +1,3 @@
-_MemCap = uint(8192)
-
 T { 
 }
 
