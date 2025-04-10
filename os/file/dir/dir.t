@@ -9,6 +9,10 @@ Open(path [] uint8, len uint) (t * T, err int8) {
 Next(t * T) (mem [] uint8, len uint, err int8) {
 }
 
+IsDir(mem [] uint8, len uint) int8 {
+    return 0
+}
+
 Free(t * T) (err int8) {
     ~ t
     return 0
