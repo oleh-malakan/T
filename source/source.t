@@ -1,19 +1,15 @@
-_memCap = uint(8192)
+_MemCap = uint(8192)
 
 T { 
-    Mem [_memCap] uint8 
-    Len uint
-    Err int32
 }
 
 Open(path [] uint8, len uint) * T {
     return * T {
-        Len: 0
-        Err: 0 
     }
 }
 
-Next(t * T) {
+Next(t * T, mem [] uint8, cap uint) (uint, int32) {
+    return cap, 0
 }
 
 Free(t * T) {
