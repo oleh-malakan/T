@@ -11,7 +11,7 @@ Open(path [] uint8, size uint) (t * T, err int8) {
 Next(t * T) (mem [] uint8, size uint, err int8) {
 }
 
-IsDir(mem [] uint8, size uint) int8 {
+Is(mem [] uint8, size uint) int8 {
     return 0
 }
 
