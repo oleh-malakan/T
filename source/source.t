@@ -3,12 +3,12 @@ _MemCap = uint(8192)
 T { 
 }
 
-Open(path [] uint8, len uint) (* T, int32) {
+Open(path [] uint8, len uint) (* T, err int32) {
     return * T {
     }, 0
 }
 
-Next(t * T, mem [] uint8, cap uint) (uint, int32) {
+Next(t * T, mem [] uint8, cap uint) (len uint, err int32) {
     return cap, 0
 }
 
