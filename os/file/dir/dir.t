@@ -16,6 +16,6 @@ IsDir(mem []uint8, len uint) int8 {
 }
 
 Free(t *T) (err int8) {
-    ~ t
+    ~t
     return 0
 }
