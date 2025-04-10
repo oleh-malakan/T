@@ -1,7 +1,7 @@
 T { 
 }
 
-Open(path [] uint8, len uint) (* T, err int32) {
+Open(path [] uint8, len uint) (t * T, err int32) {
     return * T {
     }, 0
 }
