@@ -11,6 +11,9 @@ Next(t * T, mem [] uint8, cap uint) (len uint, err int32) {
 }
 
 Close(t * T) (err int32) {
-    ~ t
     return 0
+}
+
+Free(t * T) {
+    ~ t
 }
