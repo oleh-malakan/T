@@ -21,6 +21,14 @@ Arr {
     cap uint 
 }
 
+New() * Arr {
+    return * Arr {
+        Mem: nil
+        Len: 0
+        cap: 0
+    }
+}
+
 Add(a * Arr, t * T) {
     if a.Len == a.cap {
         tmp := a.Mem
