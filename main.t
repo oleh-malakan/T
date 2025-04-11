@@ -9,13 +9,13 @@ Main() {
 
     for {
         m, err := module.Parse(path, pathSize)
+        ~ [pathSize] path
         if err != 0 {
             // print(err)
             break 
         }
         module.Add(modArr, m)
-
-        ~ [pathSize] path
+       
         // path =
         // pathSize =
 
