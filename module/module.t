@@ -41,3 +41,6 @@ Add(a * Arr, t * T) {
     a.Mem[a.Len] = t
     a.Len++
 }
+
+Free(a * Arr) {
+}
