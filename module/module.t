@@ -24,7 +24,7 @@ Arr {
 Add(a * Arr, t * T) {
     if a.Len == a.cap {
         tmp := a.Mem
-        a.cap += def._StepCap
+        a.cap += def._StepMemCap
         a.Mem = [a.cap] * T
         a.Mem[:] = tmp[:a.cap]
         ~ [a.Len] tmp
@@ -33,4 +33,3 @@ Add(a * Arr, t * T) {
     a.Mem[a.Len] = t
     a.Len++
 }
-
