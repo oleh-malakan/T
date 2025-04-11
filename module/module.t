@@ -34,7 +34,7 @@ Add(arr * Arr, t * T) {
         tmp := arr.Mem
         arr.cap += def._StepMemCap
         arr.Mem = [arr.cap] * T
-        arr.Mem[:] = tmp[:arr.cap]
+        arr.Mem[:] = tmp[:arr.Len]
         ~ [arr.Len] tmp
     }
 
