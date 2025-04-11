@@ -5,7 +5,7 @@
 <ascii>
 <def>
 
-_srcMemCap := uint(1024)
+_srcMemCap := uint(2048)
 
 T {    
 }
