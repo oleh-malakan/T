@@ -29,18 +29,18 @@ New() * Arr {
     }
 }
 
-Add(a * Arr, t * T) {
-    if a.Len == a.cap {
-        tmp := a.Mem
-        a.cap += def._StepMemCap
-        a.Mem = [a.cap] * T
-        a.Mem[:] = tmp[:a.cap]
-        ~ [a.Len] tmp
+Add(arr * Arr, t * T) {
+    if arr.Len == arr.cap {
+        tmp := arr.Mem
+        arr.cap += def._StepMemCap
+        arr.Mem = [arr.cap] * T
+        arr.Mem[:] = tmp[:arr.cap]
+        ~ [arr.Len] tmp
     }
 
-    a.Mem[a.Len] = t
-    a.Len++
+    arr.Mem[arr.Len] = t
+    arr.Len++
 }
 
-Free(a * Arr) {
+Free(arr * Arr) {
 }
