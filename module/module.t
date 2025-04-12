@@ -5,7 +5,7 @@
 <function>
 <ascii>
 
-_srcMemCap := uint(2048)
+_srcMemCap := uint(256)
 
 T {    
 }
