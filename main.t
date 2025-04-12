@@ -3,30 +3,30 @@
 <def>
 
 modArr {
-    Mem [] * module.T
-    Len uint 
+    mem [] * module.T
+    len uint 
     cap uint 
 }
 
 newModArr() * modArr {
     return * modArr {
-        Mem: nil
-        Len: 0
+        mem: nil
+        len: 0
         cap: 0
     }
 }
 
 addMod(arr * modArr, t * module.T) {
-    if arr.Len == arr.cap {
-        tmp := arr.Mem
+    if arr.len == arr.cap {
+        tmp := arr.mem
         arr.cap += def._StepMemCap
-        arr.Mem = [arr.cap] * T
-        arr.Mem[:] = tmp[:arr.Len]
-        ~ [arr.Len] tmp
+        arr.mem = [arr.cap] * module.T
+        arr.mem[:] = tmp[:arr.len]
+        ~ [arr.len] tmp
     }
 
-    arr.Mem[arr.Len] = t
-    arr.Len++
+    arr.mem[arr.len] = t
+    arr.len++
 }
 
 freeModArr(arr * modArr) {
