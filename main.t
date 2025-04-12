@@ -10,9 +10,9 @@ modArr {
 
 newModArr() * modArr {
     return * modArr {
-        mem: nil
+        mem: [def._StepMemCap] module.T
         len: 0
-        cap: 0
+        cap: def._StepMemCap
     }
 }
 
