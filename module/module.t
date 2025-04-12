@@ -1,6 +1,7 @@
 <import>
-<variable>
+<definition>
 <structure>
+<variable>
 <function>
 <ascii>
 
