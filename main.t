@@ -45,7 +45,7 @@ Main() {
         }
         addMod(arr, m)
 
-       ~ [pathSize] path
+        ~ [pathSize] path
         // path =
         // pathSize =
 
