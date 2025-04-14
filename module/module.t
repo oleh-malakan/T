@@ -44,6 +44,5 @@ parse(path [] uint8, size uint) (m * module, err int8) {
     }, 0
 }
 
-Build() (err int8) {
-    return 0
+Build() {
 }
