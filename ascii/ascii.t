@@ -1,1 +1,1 @@
-_Dot = uint8(0x2E)
+_Dot := uint8(0x2E)
