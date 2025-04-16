@@ -16,7 +16,7 @@ newModArr() * modArr {
 }
 
 addMod(arr * modArr, t * module.T) {
-    if arr.len == arr.cap {
+	if arr.len == arr.cap {
         tmp := arr.mem
         arr.cap += def._StepMemCap
         arr.mem = [arr.cap] * module.T
