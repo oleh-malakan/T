@@ -5,13 +5,10 @@
 
 _srcMemCap := uint(256)
 
-module { 
+T { 
 }
 
-parse(path [] uint8, size uint) (m * module, err int8) {
+Parse(path [] uint8, size uint) (m * module, err int8) {
     return * module {
     }, 0
-}
-
-Build() {
 }
