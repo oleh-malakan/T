@@ -3,7 +3,7 @@
 <structure>
 <function>
 
-_srcMemCap := uint(256)
+_srcMemCap := uint(4192)
 
 module { 
 }
