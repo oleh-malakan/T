@@ -2,7 +2,6 @@
 <definition>
 <structure>
 <function>
-<ascii>
 
 _srcMemCap := uint(256)
 
