@@ -8,7 +8,7 @@ _srcMemCap := uint(256)
 T { 
 }
 
-Parse(path [] uint8, size uint) (m * module, err int8) {
-    return * module {
+Parse(path [] uint8, size uint) (t * T, err int8) {
+    return * T {
     }, 0
 }
