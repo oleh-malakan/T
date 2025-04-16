@@ -4,7 +4,7 @@
 modArr {
     mem [] * module.T
     len uint 
-     \cap uint 
+    cap uint 
 }
  
 newModArr() * modArr {
