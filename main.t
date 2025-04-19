@@ -8,7 +8,7 @@ modArr {
 }
  
 newModArr() * modArr {
-    return <> * modArr {
+    return * <> modArr {
         mem: nil
         len: 0
         cap: 0
