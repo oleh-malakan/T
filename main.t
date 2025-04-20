@@ -34,8 +34,8 @@ freeModArr(arr * modArr) {
 Main() {
     arr := newModArr()  
  
-    path := ([]) <> uint32(0x2E)
-    pathSize := _size(uint32)
+    path := <> [] { 0x2E }
+    pathSize := _size()
     for {
         m, err := module.Parse(path, pathSize)
         if err != 0 {
