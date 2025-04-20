@@ -1,4 +1,5 @@
 <module>
+<error>
 <def>
  
 modArr {
@@ -37,10 +38,11 @@ Main() {
     pathSize := uint(2)
     path := <> [] { 0x2E, 0x00 }
     for {
-        err
+        err * error.T
         m, err = module.Parse(path, pathSize)
-        if err != 0 {
+        if err != nil {
             // print(err)
+            error.Free(err)
             break 
         }
         addMod(arr, m)
