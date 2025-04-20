@@ -9,6 +9,6 @@ T {
 }
 
 Parse(path [], size uint) (* T, err) {
-    return * T {
+    return * <> T {
     }, 0
 }
