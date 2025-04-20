@@ -8,7 +8,7 @@ _srcMemCap := uint(256)
 T { 
 }
 
-Parse(path [] uint8, size uint) (t * T, err int8) {
+Parse(path [], size uint) (* T, err) {
     return * T {
     }, 0
 }
