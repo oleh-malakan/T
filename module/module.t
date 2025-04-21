@@ -4,12 +4,12 @@
 <function>
 <error>
 
-_srcMemCap := uint(256)
+_srcMemCap uint = 256
 
 T { 
 }
 
 Parse(path [], size uint) (* T, * error.T) {
-    return * <> T {
+    return * <:> T {
     }, nil
 }
