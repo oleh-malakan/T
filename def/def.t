@@ -1,1 +1,1 @@
-_StepMemCap := uint(64)
+_StepMemCap uint = 64
