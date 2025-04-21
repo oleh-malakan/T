@@ -47,10 +47,12 @@ Main() {
             break 
         }
         addMod(arr, m)
- 
+
+        ~ <:> [pathSize] path 
         // pathSize =
         // path =
     }
+    ~ <:> [pathSize] path
  
     freeModArr(arr)
 }
