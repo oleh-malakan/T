@@ -9,7 +9,7 @@ modArr {
 }
  
 newModArr() * modArr {
-    return * <:> modArr {
+    return * <> modArr {
         mem: nil
         len: 0
         cap: 0
@@ -20,7 +20,7 @@ addMod(arr * modArr, t * module.T) {
     if arr.len == arr.cap {
         tmp := arr.mem
         arr.cap += def._StepMemCap
-        arr.mem = <:> [arr.cap] * module.T
+        arr.mem = <> [arr.cap] * module.T
         arr.mem[:] = tmp[:arr.len]
         ~ [arr.len] tmp
     }
