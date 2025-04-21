@@ -39,7 +39,7 @@ Main() {
         m        * module.T
         err      * error.T
         path     [] 
-        pathSize := uint(2)               
+        pathSize uint = 2             
     }
     arr  = newModArr()
     path = <:> [] { 0x2E, 0x00 }
