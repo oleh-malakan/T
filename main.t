@@ -35,14 +35,13 @@ freeModArr(arr * modArr) {
 
 Main() {
     <:> {
-        arr := newModArr()  
-        m        * module.T
-        pathSize uint
-        path     [] 
-        err      * error.T
+        arr      := newModArr()  
+        m         * module.T
+        pathSize := uint(2)
+        path     := <:> [] { 0x2E, 0x00 } 
+        err       * error.T
     }
-    pathSize = 2
-    path     = <:> [] { 0x2E, 0x00 }
+   
     for {
         m, err = module.Parse(path, pathSize)
         if err != nil {
