@@ -18,9 +18,9 @@ newModArr() * modArr {
 
 addMod(arr * modArr, t * module.T) {
     if arr.len == arr.cap {
-        tmp := arr.mem
-        arr.cap += def._StepMemCap
-        arr.mem = <:> [arr.cap] * module.T
+        tmp       := arr.mem
+        arr.cap   += def._StepMemCap
+        arr.mem    = <:> [arr.cap] * module.T
         arr.mem[:] = tmp[:arr.len]
         ~ <:> [arr.len] tmp
     }
@@ -35,11 +35,14 @@ freeModArr(arr * modArr) {
 
 Main() {
     arr := newModArr()  
-    m * module.T
-    pathSize := uint(2)
-    path := <:> [] { 0x2E, 0x00 }
+    m        * module.T
+    pathSize uint
+    path     [] 
+    err      * error.T
+
+    pathSize = 2
+    path     = <:> [] { 0x2E, 0x00 }
     for {
-        err * error.T
         m, err = module.Parse(path, pathSize)
         if err != nil {
             // print(err)
@@ -50,7 +53,7 @@ Main() {
 
         ~ <:> [pathSize] path 
         // pathSize =
-        // path =
+        // path     =
     }
     ~ <:> [pathSize] path
  
