@@ -30,6 +30,7 @@ addMod(arr * modArr, t * module.T) {
 }
  
 freeModArr(arr * modArr) {
+		~ <:> arr
 }
 
 Main() {
