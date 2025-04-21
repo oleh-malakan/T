@@ -22,7 +22,7 @@ addMod(arr * modArr, t * module.T) {
         arr.cap += def._StepMemCap
         arr.mem = <:> [arr.cap] * module.T
         arr.mem[:] = tmp[:arr.len]
-        ~ <:> [arr.len] tmp
+        ~ <> [arr.len] tmp
     }
  
     arr.mem[arr.len] = t
@@ -48,11 +48,11 @@ Main() {
         }
         addMod(arr, m)
 
-        ~ <:> [pathSize] path 
+        ~ <> [pathSize] path 
         // pathSize =
         // path =
     }
-    ~ <:> [pathSize] path
+    ~ <> [pathSize] path
  
     freeModArr(arr)
 }
