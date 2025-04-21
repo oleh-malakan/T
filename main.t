@@ -9,7 +9,7 @@ modArr {
 }
  
 newModArr() * modArr {
-    return * <> modArr {
+    return * <:> modArr {
         mem: nil
         len: 0
         cap: 0
@@ -20,7 +20,7 @@ addMod(arr * modArr, t * module.T) {
     if arr.len == arr.cap {
         tmp := arr.mem
         arr.cap += def._StepMemCap
-        arr.mem = <> [arr.cap] * module.T
+        arr.mem = <:> [arr.cap] * module.T
         arr.mem[:] = tmp[:arr.len]
         ~ [arr.len] tmp
     }
@@ -36,7 +36,7 @@ Main() {
     arr := newModArr()  
     m * module.T
     pathSize := uint(2)
-    path := [] { 0x2E, 0x00 }
+    path := <:> [] { 0x2E, 0x00 }
     for {
         err * error.T
         m, err = module.Parse(path, pathSize)
