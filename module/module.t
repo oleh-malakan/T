@@ -10,6 +10,6 @@ T {
 }
 
 Parse(path [], size uint) (* T, * error.T) {
-    return * <:> T {
+    return <:> * T {
     }, nil
 }
