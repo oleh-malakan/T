@@ -4,7 +4,7 @@
 <function>
 <error>
 
-_srcMemCap uint = 256
+_srcMemCap uint = 512
 
 T { 
 }
