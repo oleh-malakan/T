@@ -4,7 +4,7 @@
 
 Main() {
     <:> {
-        arr      * module.Arr 
+        a        * module.Arr 
         m        * module.T
         path     [] 
         pathSize uint = 2
@@ -20,7 +20,7 @@ Main() {
             error.Free(err)
             break 
         }
-        arr.Add(arr, m)
+        arr.Add(a, m)
 
         ~ <:> [pathSize] path
         // path     =
