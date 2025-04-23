@@ -13,9 +13,9 @@ Arr {
     cap uint 
 }
 
-Parse(path [], size uint) (* T, * error.T) {
-    return <:> * T {
-    }, nil
+Parse(path [], size uint) (t * T, * error.T) {
+    t = * <:> T
+    return t, nil
 }
 
 FreeArr(arr * Arr) {
