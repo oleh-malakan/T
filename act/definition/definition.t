@@ -6,3 +6,6 @@ Arr {
     len uint 
     cap uint
 }
+
+Free(arr * Arr) {
+}
