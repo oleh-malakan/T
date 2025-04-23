@@ -7,5 +7,5 @@ Arr {
     cap uint
 }
 
-Free(arr * Arr) {
+FreeArr(arr * Arr) {
 }
