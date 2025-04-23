@@ -9,11 +9,12 @@ Main() {
         path     []
         pathSize uint
     }
-    modArr   = arr.New()
+    modArr   = arr.New() 
+    path     = <:> [2] 
+    path[0]  = 0x2E
+    path[1]  = 0x00
     pathSize = 2
-    path     = <:> [pathSize]
-    path { 0x2E, 0x00 }
-           
+
     for {
         err * error.T
         mod, err = module.Parse(path, pathSize)
