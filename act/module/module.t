@@ -1,7 +1,7 @@
-<import>
-<definition>
-<structure>
-<function>
+<act/import>
+<act/definition>
+<act/structure>
+<act/function>
 <error>
 
 T { 
