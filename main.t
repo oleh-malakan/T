@@ -1,46 +1,15 @@
+<arr>
 <module>
 <error>
-<def>
- 
-modArr {
-    mem [] * module.T
-    len uint 
-    cap uint 
-}
- 
-newModArr() * modArr {
-    return <:> * modArr {
-        mem: nil
-        len: 0
-        cap: 0
-    }
-}
-
-addMod(arr * modArr, t * module.T) {
-    if arr.len == arr.cap {
-        tmp       := arr.mem
-        arr.cap   += def._StepMemCap
-        arr.mem    = <:> [arr.cap] * module.T
-        arr.mem[:] = tmp[:arr.len]
-        ~ <:> [arr.len] tmp
-    }
- 
-    arr.mem[arr.len] = t
-    arr.len++
-}
- 
-freeModArr(arr * modArr) {
-    ~ <:> arr
-}
 
 Main() {
     <:> {
-        arr      * modArr 
+        arr      * module.Arr 
         m        * module.T
         path     [] 
         pathSize uint = 2
     }
-    arr  = newModArr()
+    arr  = arr.New()
     path = <:> [] { 0x2E, 0x00 }
            
     for {
@@ -51,7 +20,7 @@ Main() {
             error.Free(err)
             break 
         }
-        addMod(arr, m)
+        arr.Add(arr, m)
 
         ~ <:> [pathSize] path
         // path     =
@@ -59,5 +28,5 @@ Main() {
     }
     ~ <:> [pathSize] path
  
-    freeModArr(arr)
+    module.Free(arr)
 }
