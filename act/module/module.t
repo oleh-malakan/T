@@ -14,7 +14,8 @@ Arr {
 }
 
 Parse(path [], size uint) (t * T, * error.T) { 
-    return <:> * T, nil
+    t = <:> * T
+    return t, nil
 }
 
 FreeArr(arr * Arr) {
