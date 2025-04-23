@@ -7,10 +7,11 @@ Main() {
         modArr   * module.Arr 
         mod      * module.T
         path     [] 
-        pathSize uint = 2
+        pathSize uint
     }
-    modArr  = arr.New()
-    path    = <:> [] { 0x2E, 0x00 }
+    modArr   = arr.New()
+    path     = <:> [] { 0x2E, 0x00 }
+	pathSize = 2
            
     for {
         err * error.T
