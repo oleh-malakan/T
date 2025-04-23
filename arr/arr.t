@@ -6,11 +6,12 @@ arr {
  
 New() * arr {
     a := <:> * arr
-    return a {
+    a {
         mem: nil
         len: 0
         cap: 0
-    }
+    } 
+    return a
 }
 
 Add(arr * arr, t *) {
