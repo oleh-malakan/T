@@ -5,7 +5,7 @@ arr {
 }
  
 New() (arr * arr) {
-    arr = <:> * arr
+    arr = * <:> arr
     arr.mem = nil
     arr.len = 0
     arr.cap = 0
