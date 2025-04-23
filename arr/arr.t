@@ -5,7 +5,8 @@ arr {
 }
  
 New() * arr {
-    return <:> * arr {
+    a := <:> * arr
+    return a {
         mem: nil
         len: 0
         cap: 0
