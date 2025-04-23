@@ -4,23 +4,23 @@
 
 Main() {
     <:> {
-        a        * module.Arr 
-        m        * module.T
+        modArr   * module.Arr 
+        mod      * module.T
         path     [] 
         pathSize uint = 2
     }
-    arr  = arr.New()
-    path = <:> [] { 0x2E, 0x00 }
+    modArr  = arr.New()
+    path    = <:> [] { 0x2E, 0x00 }
            
     for {
         err * error.T
-        m, err = module.Parse(path, pathSize)
+        mod, err = module.Parse(path, pathSize)
         if err != nil {
             // print(err)
             error.Free(err)
             break 
         }
-        arr.Add(a, m)
+        arr.Add(modArr, mod)
 
         ~ <:> [pathSize] path
         // path     =
@@ -28,5 +28,5 @@ Main() {
     }
     ~ <:> [pathSize] path
  
-    module.Free(arr)
+    module.FreeArr(modArr)
 }
