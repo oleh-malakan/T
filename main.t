@@ -9,8 +9,8 @@ Main() {
         path     []
         pathSize uint
     }
-    modArr   = arr.New() 
-    path     = <:> [2] 
+    modArr = arr.New() 
+    path   = <:> [2] 
     path { 
         0x2E 
         0x00
