@@ -5,7 +5,7 @@ arr {
 }
  
 New() (arr * arr) {
-    arr = <:> * arr
+    arr = * <:> arr
     arr {
         mem: nil
         len: 0
