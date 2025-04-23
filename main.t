@@ -4,13 +4,11 @@
 
 Main() {
     <:> {
-        modArr   * module.Arr 
-        mod      * module.T
-        path     [] 
-        pathSize uint = 2
+        modArr   := (module.Arr) arr.New()
+        mod       * module.T
+        path     := <:> [] { 0x2E, 0x00 }
+        pathSize := uint(2)
     }
-    modArr   = arr.New()
-    path     = <:> [] { 0x2E, 0x00 }
            
     for {
         err * error.T
