@@ -5,11 +5,11 @@ arr {
 }
  
 New() (arr * arr) {
-    return <:> * arr <- {
-        mem: nil
-        len: 0
-        cap: 0
-    }, 0
+    arr = <:> * arr
+    arr.mem = nil
+    arr.len = 0
+    arr.cap = 0
+    return arr, 0
 }
 
 Add(arr * arr, t *) {    
