@@ -10,8 +10,9 @@ Main() {
         pathSize uint
     }
     modArr   = arr.New()
-    path     = <:> [] { 0x2E, 0x00 }
     pathSize = 2
+    path     = <:> [pathSize]
+    path { 0x2E, 0x00 }
            
     for {
         err * error.T
