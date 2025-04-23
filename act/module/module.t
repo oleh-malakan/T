@@ -18,5 +18,5 @@ Parse(path [], size uint) (* T, * error.T) {
     }, nil
 }
 
-Free(arr * Arr) {
+FreeArr(arr * Arr) {
 }
