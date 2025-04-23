@@ -7,9 +7,9 @@ arr {
 New() * arr {
     a := <:> * arr
     a {
-        mem: nil
-        len: 0
-        cap: 0
+        mem = nil
+        len = 0
+        cap = 0
     } 
     return a
 }
