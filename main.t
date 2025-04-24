@@ -16,7 +16,7 @@ Main() {
     path[1]  = 0x00
     pathSize = 2
 
-    loop { 
+    for { 
         mod, err = module.Parse(path, pathSize)
         if err != nil {
             // print(err)
