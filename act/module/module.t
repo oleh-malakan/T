@@ -19,4 +19,9 @@ Parse(path [], size uint) (t * T, * error.T) {
 }
 
 FreeArr(arr * Arr) {
+    for i := uint(0); i < arr.len; i++ {
+        ~ <> arr.mem[i]
+    }
+    ~ <> [are.cap] arr.mem
+    ~ <> arr
 }
