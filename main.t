@@ -8,6 +8,7 @@ Main() {
         mod      * module.T
         path     []
         pathSize uint
+        err      * error.T
     }
     modArr   = arr.New() 
     path     = <:> [2]
@@ -15,7 +16,7 @@ Main() {
     path[1]  = 0x00
     pathSize = 2
 
-    loop err * error.T {        
+    loop { 
         mod, err = module.Parse(path, pathSize)
         if err != nil {
             // print(err)
