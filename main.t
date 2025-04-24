@@ -4,13 +4,13 @@
 
 Main() {
     <> { 
-        modArr * module.Arr       
+        modArr   * module.Arr       
         mod      * module.T
         path     []
         pathSize uint
         err      * error.T
     } 
-    modArr = arr.New()    
+    modArr   = arr.New()    
     path     = <> [2]
     path[0]  = 0x2E 
     path[1]  = 0x00
