@@ -22,6 +22,6 @@ FreeArr(arr * Arr) {
     for i := uint(0); i < arr.len; i++ {
         ~ <> arr.mem[i]
     }
-    ~ <> [are.cap] arr.mem
+    ~ <> [arr.cap] arr.mem
     ~ <> arr
 }
