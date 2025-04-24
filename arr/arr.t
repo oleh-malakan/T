@@ -1,8 +1,8 @@
-arr {
+arr (
     mem [] *
     len uint 
     cap uint 
-}
+)
  
 New() (arr * arr) {
     arr = <> * arr
