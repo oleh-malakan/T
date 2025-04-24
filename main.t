@@ -4,7 +4,7 @@
 
 Main() {
     <> {
-        modArr   * module.Arr
+        modArr * module.Arr
     } 
     modArr   = arr.New()
 
