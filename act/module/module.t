@@ -4,14 +4,14 @@
 <act/function>
 <error>
 
-T { 
-}
+T ( 
+)
 
-Arr {
+Arr (
     mem [] * T
     len uint 
     cap uint 
-}
+)
 
 Parse(path [], size uint) (t * T, * error.T) { 
     t = <> * T
