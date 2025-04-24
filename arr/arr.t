@@ -19,9 +19,8 @@ Add(arr * arr, t *) {
         arr.mem    = <> [arr.cap] *
         arr.mem[:] = tmp[:arr.len]
         ~ <> [arr.len] tmp
-        }
- 
-        arr.mem[arr.len] = t
-        arr.len++
     }
+ 
+    arr.mem[arr.len] = t
+    arr.len++
 }
