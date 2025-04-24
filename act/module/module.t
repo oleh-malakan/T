@@ -14,7 +14,7 @@ Arr (
 )
 
 Parse(path [], size uint) (* T, * error.T) { 
-    t := * <> T
+    t := <> * T
     return t, nil
 }
 
