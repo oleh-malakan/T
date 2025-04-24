@@ -13,8 +13,8 @@ Arr (
     cap uint 
 )
 
-Parse(path [], size uint) (t * T, * error.T) { 
-    t = <> * T
+Parse(path [], size uint) (* T, * error.T) { 
+    t := <> * T
     return t, nil
 }
 
