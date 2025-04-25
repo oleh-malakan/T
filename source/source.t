@@ -23,3 +23,9 @@ Open(path [], size uint) (* T, err) {
 Next(t * T) err {
     return 0
 }
+
+Free(t * T) {
+    file.Free(curFile)
+    ~ <> [t.cap] t.Mem
+    ~ t
+}
