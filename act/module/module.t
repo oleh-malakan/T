@@ -2,6 +2,7 @@
 <act/definition>
 <act/structure>
 <act/function>
+<source>
 <error>
 
 T ( 
@@ -13,7 +14,7 @@ Arr (
     cap uint 
 )
 
-Parse(path [], size uint) (* T, * error.T) { 
+Parse(src * source.T) (* T, * error.T) { 
     t := <> * T
     return t, nil
 }
