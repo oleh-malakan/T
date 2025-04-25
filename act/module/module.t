@@ -14,11 +14,6 @@ Arr (
     cap uint 
 )
 
-Parse(src * source.T) (* T, * error.T) { 
-    t := <> * T
-    return t, nil
-}
-
 FreeArr(arr * Arr) {
     for i := uint(0); i < arr.len; i++ {
         ~ <> arr.mem[i]
