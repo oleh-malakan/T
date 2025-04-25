@@ -4,8 +4,8 @@ T (
 )
 
 Arr (
-    mem [] * T
-    len uint 
+    Mem [] * T
+    Len uint 
     cap uint
 )
 
