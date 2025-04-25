@@ -2,7 +2,7 @@
 
 T (
     Mem []
-    cur uint 
-    len uint 
+    Cur uint 
+    Len uint 
     cap uint
 )
