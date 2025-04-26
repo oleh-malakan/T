@@ -13,7 +13,7 @@ Arr (
 )
 
 FreeArr(arr * Arr) {
-    for i := uint(0); i < arr.Len; i++ {
+    for i uint = 0; i < arr.Len; i++ {
         ~ <> arr.Mem[i]
     }
     ~ <> [arr.cap] arr.Mem
