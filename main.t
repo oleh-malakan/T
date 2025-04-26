@@ -8,9 +8,11 @@ Main() {
     <> ( 
         modArr   * module.Arr       
         mod      * module.T
+        src      * source.T
+        err      * error.T
         path     []
         pathSize uint
-        err      * error.T
+        
     ) 
     modArr   = arr.New()    
     path     = <> [2]
@@ -18,10 +20,10 @@ Main() {
     path[1]  = symbol._EOS
     pathSize = 2
 
-    
+   
 
 
-    ~ <> [pathSize] path
+
  
     module.FreeArr(modArr)
 }
