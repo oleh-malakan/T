@@ -1,6 +1,6 @@
 <github.com/oleh-malakan/t-lib/os/file>
 
-_EOS := 0xFF
+_EOS = 0xFF
 
 T (
     Mem []
