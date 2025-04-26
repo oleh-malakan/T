@@ -6,9 +6,6 @@
 Main() {
     <> ( 
         modArr   * module.Arr       
-        mod      * module.T
-    )
-    <> (
         src      * source.T
         path     []
         pathSize uint      
