@@ -1,6 +1,5 @@
 <github.com/oleh-malakan/t-lib/os/file>
-
-_EOS = 0xFF
+<error>
 
 T (
     Mem []
@@ -11,7 +10,7 @@ T (
     file * file.T
 )
 
-Open(path [], size uint) (* T, err) {
+Open(path [], size uint) (* T, * error.T) {
     t := <> * T
 
     t.Mem = nil
@@ -19,7 +18,7 @@ Open(path [], size uint) (* T, err) {
     t.Len = 0
     t.cap = 0
     
-    return t, 0
+    return t, nil
 }
 
 Next(t * T) err {
