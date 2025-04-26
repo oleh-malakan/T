@@ -1,15 +1,15 @@
 <act/module>
 <source>
 <arr>
-<error>
 <symbol>
 
 Main() {
     <> ( 
         modArr   * module.Arr       
         mod      * module.T
+    )
+    <> (
         src      * source.T
-        err      * error.T
         path     []
         pathSize uint      
     ) 
