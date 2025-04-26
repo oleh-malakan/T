@@ -6,9 +6,11 @@ arr (
  
 New() (arr * arr) {
     arr = <> * arr
-    arr.mem = nil
-    arr.len = 0
-    arr.cap = 0
+    arr (
+        mem = nil
+        len = 0
+        cap = 0
+    )
     return arr, 0
 }
 
