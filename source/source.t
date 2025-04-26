@@ -9,8 +9,8 @@ T (
     file * file.T
 )
 
-Open(path [], size uint) (* T, err) {
-    t := <> * T
+Open(path [], size uint) (t * T, err) {
+    t = <> * T
 
     t.Mem = nil
     t.Cur = 0
