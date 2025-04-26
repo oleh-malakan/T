@@ -11,8 +11,7 @@ Main() {
         src      * source.T
         err      * error.T
         path     []
-        pathSize uint
-        
+        pathSize uint      
     ) 
     modArr   = arr.New()    
     path     = <> [2]
