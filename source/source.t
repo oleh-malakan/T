@@ -27,7 +27,7 @@ Next(t * T) err {
 }
 
 Free(t * T) {
-    file.Free(t.file)
     ~ <> [t.cap] t.Mem
+    file.Free(t.file)
     ~ <> t
 }
