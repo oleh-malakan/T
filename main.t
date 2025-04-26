@@ -2,6 +2,7 @@
 <source>
 <arr>
 <error>
+<symbol>
 
 Main() {
     <> ( 
@@ -13,8 +14,8 @@ Main() {
     ) 
     modArr   = arr.New()    
     path     = <> [2]
-    path[0]  = 0x2E
-    path[1]  = 0x00
+    path[0]  = symbol._Dot
+    path[1]  = symbol._EOS
     pathSize = 2
 
     
