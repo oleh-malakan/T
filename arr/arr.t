@@ -11,7 +11,7 @@ New() (arr * arr) {
     arr.len = 0
     arr.cap = 0
 
-    return arr, 0
+    <- arr, 0
 }
 
 Add(arr * arr, t *) {    
