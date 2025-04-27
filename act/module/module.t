@@ -16,7 +16,6 @@ FreeArr(arr * Arr) {
     & i uint = 0; i < arr.Len; i++ {
         ~ <> arr.Mem[i]
     } 
-
     ~ <> [arr.cap] arr.Mem
     ~ <> arr
 }
