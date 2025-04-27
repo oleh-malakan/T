@@ -17,11 +17,11 @@ Open(path [], size uint) (t * T, err) {
     t.Len = 0
     t.cap = 0
     
-    return t, 0
+    <- t, 0
 }
 
 Next(t * T) err {
-    return 0
+    <- 0
 }
 
 Free(t * T) {
