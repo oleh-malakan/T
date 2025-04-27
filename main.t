@@ -1,12 +1,10 @@
 <act/module>
-<source>
 <arr>
 <symbol>
 
 Main() {
     <> ( 
         modArr   * module.Arr       
-        src      * source.T
         path     []
         pathSize uint      
     ) 
