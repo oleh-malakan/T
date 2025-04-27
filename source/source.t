@@ -12,7 +12,7 @@ T (
 Open(path [], size uint) (t * T, err) {
     t = <> * T
 
-    t.Mem = nil
+    t.Mem = 0
     t.Cur = 0
     t.Len = 0
     t.cap = 0
