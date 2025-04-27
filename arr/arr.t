@@ -15,7 +15,7 @@ New() (arr * arr) {
 }
 
 Add(arr * arr, t *) {    
-    if arr.len == arr.cap {
+    ? arr.len == arr.cap {
         tmp       := arr.mem
         arr.cap   += 64
         arr.mem    = <> [arr.cap] *
