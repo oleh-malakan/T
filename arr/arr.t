@@ -7,7 +7,7 @@ arr (
 New() (arr * arr) {
     arr = <> * arr
 
-    arr.mem = nil
+    arr.mem = 0
     arr.len = 0
     arr.cap = 0
 
