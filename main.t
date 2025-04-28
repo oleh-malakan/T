@@ -14,10 +14,4 @@ Main() {
     path[1]  = symbol._EOS
     pathSize = 2
 
-   
-
-
-
- 
-    module.FreeArr(modArr)
 }
