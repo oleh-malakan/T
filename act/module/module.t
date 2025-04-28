@@ -9,13 +9,9 @@ T (
 Arr (
     Mem [] * T
     Len uint 
-    cap uint 
+    Cap uint 
 )
 
-FreeArr(arr * Arr) {
-    & i uint = 0; i < arr.Len; i++ 
-        ~ <> arr.Mem[i]
-
-    ~ <> [arr.cap] arr.Mem
-    ~ <> arr
+Free(t * T) {
+    ~ <> t
 }
