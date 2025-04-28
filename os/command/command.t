@@ -1,17 +1,17 @@
 _EOS = 0xFF
 
-Out (
+T (
 )
 
-Exec(cmd [], size uint) (out * Out, err) {
-    out = <> * Out
-    <- out, 0
+Exec(cmd [], size uint) (t * T, err) {
+    t = <> * T
+    <- t, 0
 }
 
-ReadOut(out * Out, mem [], size uint) (n uint, err) {
+Read(t * T, mem [], size uint) (n uint, err) {
     <- size, 0
 }
 
-FreeOut(out * Out) {
-    ~ <> out
+Free(t * T) {
+    ~ <> t
 }
