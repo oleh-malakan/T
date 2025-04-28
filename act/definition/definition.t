@@ -4,8 +4,9 @@ T (
 Arr (
     Mem [] * T
     Len uint 
-    cap uint
+    Cap uint
 )
 
-FreeArr(arr * Arr) {
+Free(t * T) {
+    ~ <> t
 }
