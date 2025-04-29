@@ -1,3 +1,5 @@
+_step uint = _cpu_cache_line_size
+
 T (
     Mem [] *
     Len uint 
@@ -17,7 +19,7 @@ New() (t * T) {
 Add(t * T, v *) {    
     ? t.Len == t.cap {
         tmp     := t.Mem
-        t.cap   += 64
+        t.cap   += _step
         t.Mem    = <> [t.cap] *
         t.Mem[:] = tmp[:t.Len]
         ~ <> [t.Len] tmp
