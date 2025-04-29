@@ -4,7 +4,7 @@
 
 Main() {
     <> ( 
-        modArr   * module.Arr       
+        modArr   * arr.T       
         path     []
         pathSize uint      
     ) 
