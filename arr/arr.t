@@ -16,7 +16,7 @@ New() (t * T) {
 
 Add(t * T, v *) {    
     ? t.Len == t.cap {
-        tmp      = t.Mem
+        tmp     := t.Mem
         t.cap   += 64
         t.Mem    = <> [t.cap] *
         t.Mem[:] = tmp[:t.Len]
