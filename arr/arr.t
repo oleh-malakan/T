@@ -9,9 +9,9 @@ T (
 New() (t * T) {
     t = <> * T
 
-    t.Mem  = nil
-    t.Len  = 0
-    t.cap  = 0
+    t.Mem = nil
+    t.Len = 0
+    t.cap = 0
 
     <- t, 0
 }
