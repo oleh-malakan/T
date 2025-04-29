@@ -11,7 +11,7 @@ New() (t * T) {
     t.Len = 0
     t.cap = 0
 
-    return arr, 0
+    return t, 0
 }
 
 Add(t * T, v *) {    
@@ -23,7 +23,7 @@ Add(t * T, v *) {
         ~ <> [t.Len] tmp
     }
  
-    t.Mem[arr.Len] = v
+    t.Mem[t.Len] = v
     t.Len++
 }
 
