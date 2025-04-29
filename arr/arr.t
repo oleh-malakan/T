@@ -28,5 +28,5 @@ Add(arr * Arr, t *) {
 }
 
 Free(arr * Arr) {
-    ~ <> [arr.cap] arr.Mem; arr
+    ~ <>: [arr.cap] arr.Mem, arr
 }
