@@ -1,32 +1,33 @@
-Arr (
+T (
     Mem [] *
     Len uint 
     cap uint 
 )
  
-New() (arr * Arr) {
-    arr = <> * Arr
+New() (t * T) {
+    t = <> * T
 
-    arr.Mem = nil
-    arr.Len = 0
-    arr.cap = 0
+    t.Mem = nil
+    t.Len = 0
+    t.cap = 0
 
     return arr, 0
 }
 
-Add(arr * Arr, t *) {    
-    ? arr.Len == arr.cap {
-        tmp       := arr.Mem
-        arr.cap   += 64
-        arr.Mem    = <> [arr.cap] *
-        arr.Mem[:] = tmp[:arr.Len]
-        ~ <> [arr.Len] tmp
+Add(t * T, v *) {    
+    ? t.Len == t.cap {
+        tmp     := t.Mem
+        t.cap   += 64
+        t.Mem    = <> [t.cap] *
+        t.Mem[:] = tmp[:t.Len]
+        ~ <> [t.Len] tmp
     }
  
-    arr.Mem[arr.Len] = t
-    arr.Len++
+    t.Mem[arr.Len] = v
+    t.Len++
 }
 
-Free(arr * Arr) {
-    ~ <>: [arr.cap] arr.Mem, arr
+Free(t * T) {
+    ~ <> [t.cap] t.Mem
+    ~ <> t
 }
