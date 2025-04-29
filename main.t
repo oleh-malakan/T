@@ -1,5 +1,5 @@
+<lib/cont/arr>
 <act/module>
-<arr>
 <symbol>
 
 Main() {
@@ -8,7 +8,7 @@ Main() {
         path     []
         pathSize uint      
     ) 
-    modArr   = arr.New()    
+    modArr   = arr.New(128)    
     path     = <> [2]
     path[0]  = symbol._Dot
     path[1]  = symbol._EOS
