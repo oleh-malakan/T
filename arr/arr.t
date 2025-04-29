@@ -11,7 +11,7 @@ New() (t * T) {
     t.Len = 0
     t.cap = 0
 
-    return t, 0
+    <- t, 0
 }
 
 Add(t * T, v *) {    
