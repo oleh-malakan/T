@@ -1,28 +1,32 @@
-arr (
-    mem [] *
-    len uint 
+Arr (
+    Mem [] *
+    Len uint 
     cap uint 
 )
  
-New() (arr * arr) {
-    arr = <> * arr
+New() (arr * Arr) {
+    arr = <> * Arr
 
-    arr.mem = nil
-    arr.len = 0
+    arr.Mem = nil
+    arr.Len = 0
     arr.cap = 0
 
     return arr, 0
 }
 
-Add(arr * arr, t *) {    
-    if arr.len == arr.cap {
-        tmp       := arr.mem
+Add(arr * Arr, t *) {    
+    ? arr.Len == arr.cap {
+        tmp       := arr.Mem
         arr.cap   += 64
-        arr.mem    = <> [arr.cap] *
-        arr.mem[:] = tmp[:arr.len]
-        ~ <> [arr.len] tmp
+        arr.Mem    = <> [arr.cap] *
+        arr.Mem[:] = tmp[:arr.Len]
+        ~ <> [arr.Len] tmp
     }
  
-    arr.mem[arr.len] = t
-    arr.len++
+    arr.Mem[arr.Len] = t
+    arr.Len++
+}
+
+Free(arr * Arr) {
+    ~ <> [arr.cap] arr.Mem
 }
