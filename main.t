@@ -5,7 +5,7 @@
 
 Main() {
     <> ( 
-        modArr   []       
+        modArr   [] *      
         path     []    
     ) 
     modArr   = ptr.New()    
