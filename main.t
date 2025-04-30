@@ -10,8 +10,9 @@ Main() {
     ) 
     modArr   = ptr.New()    
     path     = arr.New()
-    arr.Append(path, symbol._Dot)
-    arr.Append(path, symbol._EOS)
+
+    path = arr.Append(path, symbol._Dot)
+    path = arr.Append(path, symbol._EOS)
  
 
 }
