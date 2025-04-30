@@ -1,17 +1,17 @@
 <lib/cont/arr>
+<lib/cont/arr/ptr>
 <act/module>
 <symbol>
 
 Main() {
     <> ( 
-        modArr   * arr.T       
-        path     []
-        pathSize uint      
+        modArr   []       
+        path     []    
     ) 
-    modArr   = arr.New()    
-    path     = <> [2]
-    path[0]  = symbol._Dot
-    path[1]  = symbol._EOS
-    pathSize = 2
+    modArr   = ptr.New()    
+    path     = arr.New()
+    arr.Append(path, symbol._Dot)
+    arr.Append(path, symbol._EOS)
+ 
 
 }
