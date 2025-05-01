@@ -18,6 +18,5 @@ Main() {
  
     & i uint = 0; i < ptr._Len(modArr); i++ 
         module.Free(modArr[i])
-
     ptr.Free(modArr)
 }
