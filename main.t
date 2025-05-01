@@ -13,6 +13,11 @@ Main() {
 
     path = arr.Append(path, symbol._Dot)
     path = arr.Append(path, symbol._EOS)
- 
 
+
+ 
+    & i uint = 0; i < ptr._Len(modArr); i++ 
+        module.Free(modArr[i])
+
+    ptr.Free(modArr)
 }
