@@ -1,6 +1,6 @@
-<lib/cont/arr>
-<act/module>
-<symbol>
+”lib/cont/arr”
+”act/module”
+”symbol”
 
 Main() {
     <> (
