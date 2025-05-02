@@ -1,4 +1,4 @@
-<lib/cont/arr>
+<lib/cont/arr/byte>
 <lib/cont/arr/ptr>
 <act/module>
 <symbol>
@@ -9,10 +9,10 @@ Main() {
         path     []    
     ) 
     modArr   = ptr.New(128)    
-    path     = arr.New(128)
+    path     = byte.New(128)
 
-    path = arr.Append(path, symbol._Dot)
-    path = arr.Append(path, symbol._EOS)
+    path = byte.Append(path, symbol._Dot)
+    path = byte.Append(path, symbol._EOS)
 
 
  
