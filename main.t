@@ -4,17 +4,15 @@
 Main() {
     (
         modArr [] * module.T
-        path   []
+        path   []        
     )
     modArr = [128] * module.T
 
     path = [128]
     path = path + symbol._Dot
     path = path + symbol._EOS
-
-
-
-    & i uint = 0; i < _Len(modArr); i++
+ 
+    & i uint = 0; i < _$(modArr); i++
         module.Free(modArr[i])
     ~ [] modArr 
 }
