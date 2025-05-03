@@ -6,9 +6,9 @@ Main() {
         modArr [] * module.T
         path   []        
     )
-    modArr = [128] * module.T
+    modArr = [] * module.T
 
-    path = [128]
+    path = []
     path = path + symbol._Dot
     path = path + symbol._EOS
  
