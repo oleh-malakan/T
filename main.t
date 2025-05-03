@@ -3,7 +3,7 @@
 <symbol>
 
 Main() {
-    <> (
+    (
         modArr [] * module.T
         path   []
     )
