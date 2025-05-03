@@ -2,9 +2,10 @@
 <symbol>
 
 Main() {
-    modArr [] * module.T
-    path   []        
-    
+    (
+        modArr [] * module.T
+        path   []        
+    )
     modArr = [] * module.T
 
     path = []
