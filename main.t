@@ -1,4 +1,3 @@
-<lib/cont/arr>
 <act/module>
 <symbol>
 
@@ -7,15 +6,15 @@ Main() {
         modArr [] * module.T
         path   []
     )
-    modArr = arr.New(_$*, 128)
+    modArr = [128] * module.T
 
-    path = arr.New(_$ , 128)
-    path = arr.Append(path, symbol._Dot)
-    path = arr.Append(path, symbol._EOS)
+    path = [128]
+    path = path + symbol._Dot
+    path = path + symbol._EOS
 
 
 
-    & i uint = 0; i < arr._Len(modArr); i++
+    & i uint = 0; i < _Len(modArr); i++
         module.Free(modArr[i])
-    arr.Free(modArr)
+    ~ [] modArr 
 }
