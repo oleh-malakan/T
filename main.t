@@ -14,5 +14,5 @@ Main() {
  
     & i uint = 0; i < _$(modArr); i++
         module.Free(modArr[i])
-    ~ [] modArr 
+    ~ modArr 
 }
