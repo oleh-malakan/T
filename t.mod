@@ -1,1 +1,1 @@
-github.com/oleh-malakan/t-lib:main -> lib
+github.com/oleh-malakan/t-lib -> lib : main
