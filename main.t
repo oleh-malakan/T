@@ -12,7 +12,7 @@ Main() {
     path += symbol._Dot
     path += symbol._EOS
  
-    & i uint = 0; i < _$(modArr); i++
+    & i uint = 0; i < $(modArr); i++
         module.Free(modArr[i])
     ~ modArr 
 }
