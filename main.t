@@ -8,7 +8,7 @@ Main() {
         err
     )
 
-    path := '.'
+    path := []('.')
     act, err = act.Parse(path)
     ~ path
     ? err != 0 {
