@@ -4,7 +4,7 @@
 
 Main() {
     (
-        act  * act.T
+        act * act.T
         err
     )
 
