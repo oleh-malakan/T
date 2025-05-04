@@ -1,6 +1,6 @@
 (
     act/module
-    mod
+    act/mod
 )
 
 T (
