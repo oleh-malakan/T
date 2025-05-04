@@ -1,6 +1,6 @@
-<
+(
     act/variable
->
+)
 
 T (
 )
