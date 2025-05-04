@@ -3,7 +3,6 @@
 )
 
 T (
-    tMod * tMod
 )
 
 Parse(path []) (t * T, err) {
