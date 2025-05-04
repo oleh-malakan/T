@@ -1,3 +1,0 @@
-Is(path []) bool {
-    = true
-}
