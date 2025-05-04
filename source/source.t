@@ -10,8 +10,8 @@ Open(path [] char) (t * T, err) {
     = t, 0
 }
 
-Next(t * T, b []) err {
-    = 0
+Next(t * T, b []) (n uint, err) {
+    = _$(b), 0
 }
 
 Free(t * T) {
