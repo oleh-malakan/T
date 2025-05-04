@@ -1,7 +1,9 @@
-<act/import>
-<act/definition>
-<act/structure>
-<act/function>
+<
+    act/import
+    act/definition
+    act/structure
+    act/function
+>
 
 T ( 
 )
