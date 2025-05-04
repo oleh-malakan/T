@@ -1,6 +1,8 @@
-t-lib/os/file
-act/module
-symbol
+<
+    t-lib/os/file
+    act/module
+    symbol
+>
 
 Main() {
     (
