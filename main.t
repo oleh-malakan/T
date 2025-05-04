@@ -1,21 +1,21 @@
 <
     t-lib/os/file
     act/module
-    symbol
+    sml
 >
 
 Main() {
     (
-        modArr [] * module.T
-        path   []        
+        mods [] * module.T
+        path []        
     )
-    modArr = [] * module.T
+    mods = [] * module.T
 
     path  = []
-    path += symbol._Dot
-    path += symbol._EOS
+    path += sml._Dot
+    path += sml._EOS
  
-    & i uint = 0; i < _$(modArr); i++
-        module.Free(modArr[i])
-    ~ modArr 
+    & i uint = 0; i < _$(mods); i++
+        module.Free(mods[i])
+    ~ mods
 }
