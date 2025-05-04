@@ -1,9 +1,12 @@
 (
     act/module
-    act/mod
 )
 
 T (
+    tMod * tMod
+)
+
+tMod(
 )
 
 Parse(path []) (t * T, err) {
