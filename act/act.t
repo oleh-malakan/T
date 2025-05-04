@@ -5,7 +5,7 @@
 T (
 )
 
-Parse(path []) (t * T, err) {
+Parse(path [] char) (t * T, err) {
     t = * T
     = t, 0
 }
