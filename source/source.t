@@ -5,7 +5,7 @@
 T (
 )
 
-Open(path [] char) (t * T, err) {
+Open(path []) (t * T, err) {
     t = * T
     = t, 0
 }
