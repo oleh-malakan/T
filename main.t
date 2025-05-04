@@ -1,4 +1,4 @@
-t-lib/os/file
+lib/os/file
 act/module
 symbol
 
