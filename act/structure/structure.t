@@ -1,4 +1,6 @@
-<act/variable>
+<
+    act/variable
+>
 
 T (
 )
