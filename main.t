@@ -7,20 +7,21 @@ Main() {
     (
         mods [] * module.T
         path []
-        src     * source.T     
+        src     * source.T 
+        err    
     )
-    mods = [] * module.T
-    path = []('.')
 
-    err
+    path = []('.')
     src, err = source.Open(path)
     ? err != 0 {
         // print(err)
-        RETURN 
+        ~ path
+        = 
     }
 
-RETURN:
-    ~ path 
+    mods = [] * module.T
+
+
     & i uint = 0; i < _$(mods); i++
         module.Free(mods[i])
     ~ mods
