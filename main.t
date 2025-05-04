@@ -1,19 +1,16 @@
 (
     t-lib/os/file
     act/module
-    symbol
 )
 
 Main() {
     (
         mods [] * module.T
-        path []        
+        path string        
     )
     mods = [] * module.T
 
-    path  = []
-    path += symbol._Dot
-    path += symbol._EOS
+    path = '.'
  
     & i uint = 0; i < _$(mods); i++
         module.Free(mods[i])
