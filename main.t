@@ -2,7 +2,6 @@ t-lib/os/file
 act/module
 symbol
 
-
 Main() {
     (
         mods [] * module.T
