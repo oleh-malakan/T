@@ -6,11 +6,13 @@
 Main() {
     (
         mods [] * module.T
-        path string        
+        path [] char       
     )
     mods = [] * module.T
 
-    path = '.'
+    path  = [] char
+    path += '.'
+    path += 0x00
  
     & i uint = 0; i < _$(mods); i++
         module.Free(mods[i])
