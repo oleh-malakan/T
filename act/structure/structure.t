@@ -1,10 +1,8 @@
-<
-    act/variable
->
+act/variable
 
 T (
 )
 
 Free(t * T) {
-    ~ <> t
+    ~ t
 }
