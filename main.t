@@ -4,17 +4,17 @@
 
 Main() {
     (
-        act * act.T
+        t * act.T
         err
     )
 
     path := []('.')
-    act, err = act.Parse(path)
+    t, err = act.Parse(path)
     ~ path
     ? err != 0 {
         // print(err)
         =
     }   
 
-    act.Free(act)
+    act.Free(t)
 }
