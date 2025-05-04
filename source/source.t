@@ -1,5 +1,5 @@
 (
-    t-lib/os/file
+    os/file
 )
 
 T (
