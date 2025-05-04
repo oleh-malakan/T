@@ -1,0 +1,3 @@
+Is(path []) bool {
+    = true
+}
