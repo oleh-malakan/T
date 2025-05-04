@@ -1,15 +1,26 @@
 (
     act/module
+    source 
 )
 
 Main() {
     (
         mods [] * module.T
-        path [] char       
+        path []
+        src     * source.T     
     )
     mods = [] * module.T
-    path = '.'
- 
+    path = []('.')
+
+    err
+    src, err = source.Open(path)
+    ? err != 0 {
+        // print(err)
+        RETURN 
+    }
+
+RETURN:
+    ~ path 
     & i uint = 0; i < _$(mods); i++
         module.Free(mods[i])
     ~ mods
