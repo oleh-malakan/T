@@ -5,14 +5,15 @@
     definition
     structure
     function
+    error
 )
 
 T (
 )
 
-Parse(path []) (t * T, err) {
+Parse(path []) (t * T, * error.T) {
     t = * T
-    = t, 0
+    = t, nil
 }
 
 Free(t * T) {
