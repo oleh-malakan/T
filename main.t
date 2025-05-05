@@ -1,26 +1,21 @@
 (
-    module
-    import
-    definition
-    structure
-    function
+    act
+    error
 )
-
-act (
-)
-
-parse(path []) (t * act, err) {
-    t = * act
-    = t, 0
-}
 
 Main() {
     (
-        t * act
-        path []
-        err
+        t   * act.T
+        err * error.T
+        path []        
     )
 
     path = '.'
+    t, err = act.Parse(path); ~ path
+    ? err != nil {
+        error.Print(err)
+        error.Free(err)
+    }
 
+    act.Free(t)
 }
