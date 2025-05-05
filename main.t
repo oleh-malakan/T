@@ -16,6 +16,7 @@ parse(path []) (t * act, err) {
 
 Main() {
     (
+        t * act
         path []
         err
     )
