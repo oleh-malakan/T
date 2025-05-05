@@ -11,7 +11,7 @@ T (
 )
 
 Parse(path []) (t * T, * error.T) {
-    t = * T
+    t = @ T
     = t, nil
 }
 
