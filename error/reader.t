@@ -1,6 +1,6 @@
-ReaderOpen(path []) (t * T) {
+ReaderOpen(path [], code) (t * T) {
     t = @T
-    t.msg = 'error reader open path: '
-    t.msg += path
+    t.msg = 'error reader open path: ' + path
+          + '; code: ' + ''     
     = t
 }
