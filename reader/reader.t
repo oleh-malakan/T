@@ -11,6 +11,7 @@ New(path []) (t * T, err) {
 }
 
 Next(t * T) (v char, err) {
+    = 0, 0
 }
 
 Free(t * T) {
