@@ -11,9 +11,8 @@
 T (
 )
 
-Parse(path []) (* T, * error.T) {
+Parse(path []) (t * T, * error.T) {
     (
-        t * T
         r * reader.T
         err
     )
