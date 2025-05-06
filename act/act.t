@@ -1,4 +1,5 @@
 (
+    lib/os/file
     module
     import
     definition
