@@ -12,6 +12,15 @@ T (
 )
 
 Parse(path []) (t * T, * error.T) {
+    (
+        r * reader.T
+        err
+    )
+    r, err = reader.Open(path)
+    if err != 0 {
+        = nil, error.OpenReader(path)
+    }
+
     t = @ T
     = t, nil
 }
