@@ -1,6 +1,6 @@
 ReaderOpen(path []) (t * T) {
     t = @T
-    t.msg = [_$(path)]
-    t.msg[:] = path
+    t.msg = 'error reader open path: '
+    t.msg += path
     = t
 }
