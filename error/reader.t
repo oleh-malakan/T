@@ -1,6 +1,15 @@
+(
+    lib/os/file
+)
+
 ReaderOpen(path [], code) (t * T) {
     t = @ T
-    t.msg = 'error reader open path: ' + path
-          + '; code: ' + ''     
+    t.msg = 'Error reader, open path: ' + path + '; '
+    (
+        b []
+    ) 
+    b = file.ErrorMessage(code)
+    t.msg += b
+    ~ b 
     = t
 }
