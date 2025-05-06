@@ -1,6 +1,6 @@
 (
     reader
-    veritable
+    variable
 )
 
 T (
