@@ -10,7 +10,7 @@ New(path []) (t * T, err) {
     = t, 0
 }
 
-Next(t * T) (v char, err) {
+Next(t * T) (v, err) {
     = 0, 0
 }
 
