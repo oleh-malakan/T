@@ -7,7 +7,7 @@
 T (
 )
 
-Create(name [], param [] * variable.T) t * T {
+New(name [], param [] * variable.T) t * T {
     t = @ T
     = t
 }
