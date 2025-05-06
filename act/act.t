@@ -1,10 +1,11 @@
 (
+    reader
+    error
     module
     import
     definition
     structure
     function
-    error
 )
 
 T (
