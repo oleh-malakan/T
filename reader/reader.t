@@ -2,6 +2,8 @@
     lib/os/file
 )
 
+_EOS = 0xFF
+
 T (
 )
 
