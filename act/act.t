@@ -18,7 +18,7 @@ Parse(path []) (* T, * error.T) {
         err
     )
     r, err = reader.Open(path)
-    if err != 0 
+    ? err != 0 
         = nil, error.ReaderOpen(path, err)    
 
     t = @ T
