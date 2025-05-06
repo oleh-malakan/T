@@ -7,10 +7,7 @@
 T (
 )
 
-Parse(r * reader.T, name []) (t * T, param [] * variable.T, * error.T) {
-
-
-
+Create(name [], param [] * variable.T) t * T {
     t = @ T
     = t, nil, nil
 }
