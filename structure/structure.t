@@ -9,7 +9,7 @@ T (
 
 Create(name [], param [] * variable.T) t * T {
     t = @ T
-    = t, nil, nil
+    = t
 }
 
 Free(t * T) {
