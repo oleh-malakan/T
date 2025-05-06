@@ -7,10 +7,10 @@
 T (
 )
 
-Parse(r * reader.T) (t * T, * error.T) {
+Parse(r * reader.T, name []) (t * T, v [] * variable.T, * error.T) {
     t = @ T
 
-    = t, nil
+    = t, nil, nil
 }
 
 Free(t * T) {
