@@ -1,4 +1,5 @@
 T (
+    msg []
 )
 
 Print(t * T) {
