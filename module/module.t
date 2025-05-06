@@ -1,17 +1,17 @@
 (
     reader
+    error
     definition
     structure
     function
 )
 
 T (
-    r * reader.T
 )
 
 Parse(r * reader.T) (t * T, * error.T) {
     t = @ T
-    t.r = r
+
     = t, nil
 }
 
