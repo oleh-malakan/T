@@ -1,12 +1,17 @@
 (
-    reader
-    error
+    import
     definition
     structure
     function
+    reader
+    error
 )
 
 T (
+    imp [] * import.T
+    def [] * definition.T
+    str [] * structure.T
+    fnc [] * function.T
 )
 
 Parse(path []) (t * T, * error.T) {
