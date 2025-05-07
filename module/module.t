@@ -8,26 +8,25 @@
 )
 
 T (
-    impt [] * import.T
     defn [] * definition.T
     strc [] * structure.T
     func [] * function.T
 )
 
-Parse(path []) (t * T, * error.T) {
+Parse(path []) (t * T, impt [] * import.T, * error.T) {
     (
         r   * reader.T
         err * error.T
     )
     r, err = reader.Open(path)
     ? err != nil
-        = nil, err
+        = nil, nil, err
  
     t = @ T
 
 
 
-    = t, nil
+    = t, nil, nil
 }
 
 Free(t * T) {
