@@ -8,7 +8,7 @@
 )
 
 T (
-    impr [] * import.T
+    impt [] * import.T
     defn [] * definition.T
     strc [] * structure.T
     func [] * function.T
