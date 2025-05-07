@@ -3,8 +3,6 @@
     error
 )
 
-_EOS = 0xFF
-
 T (
 )
 
