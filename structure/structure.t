@@ -1,7 +1,6 @@
 (
-    reader
-    error
     variable
+    reader
 )
 
 T (
