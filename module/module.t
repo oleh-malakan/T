@@ -14,11 +14,10 @@ T (
 
 Parse(path []) (t * T, impt [] * import.T, err) {
     (
-        r  * reader.T
-        im * import.T      
-        df * definition.T
-        st * structure.T
-        fn * function.T
+        r * reader.T     
+        d * definition.T
+        s * structure.T
+        f * function.T
     )
 
     r, err = reader.Open(path)
