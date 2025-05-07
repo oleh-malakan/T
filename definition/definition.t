@@ -3,8 +3,8 @@
     error
 )
 
-T {
-}
+T (
+)
 
 Parse(r * reader.T) (t * T, * error.T) {
     t = @ T
