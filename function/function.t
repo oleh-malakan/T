@@ -1,18 +1,14 @@
 (
-    reader
-    error
     variable
+    reader
 )
 
-T (
-)
+T {
+}
 
-Parse(r * reader.T, name []) (t * T, param [] * variable.T, * error.T) {
-
-
-
+Parse(r * reader.T, name []) (t * T, err) {
     t = @ T
-    = t, nil, nil
+    = t, nil
 }
 
 Free(t * T) {
