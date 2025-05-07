@@ -7,19 +7,17 @@
 )
 
 T (
-    impt [] * import.T
     defn [] * definition.T
     strc [] * structure.T
     func [] * function.T
 )
 
-Parse(path []) (t * T, err) {
+Parse(path []) (t * T, [] * import.T, err) {
     (
-        r  * reader.T
-        im * import.T    
-        df * definition.T
-        st * structure.T
-        fn * function.T
+        r * reader.T    
+        d * definition.T
+        s * structure.T
+        f * function.T
     )
 
     r, err = reader.Open(path)
@@ -30,7 +28,6 @@ Parse(path []) (t * T, err) {
     }
  
     t = @ T
-    t.impt = []  * import.T
     t.defn = [0] * definition.T
     t.strc = []  * structure.T
     t.func = []  * function.T
