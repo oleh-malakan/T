@@ -5,7 +5,7 @@
 
 Main() {
     (
-        r * reader.T
+        r   * reader.T
         err * error.T 
     )
     r, err = reader.Open(path)
