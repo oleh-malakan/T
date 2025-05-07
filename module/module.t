@@ -13,10 +13,9 @@ T (
     func [] * function.T
 )
 
-Parse(path []) (t * T, impt [] * import.T, * error.T) {
+Parse(path []) (t * T, impt [] * import.T, e * error.T) {
     (
         r * reader.T
-        e * error.T
         err        
     )
     r, err = reader.Open(path)
