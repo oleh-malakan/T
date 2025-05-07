@@ -1,11 +1,13 @@
 (
     module
     error
+    symbol
 )
 
 Main() {
     (
         path []
     )
-    path = '.'
+    path += symbol._Dot
+    path += symbol._EOS
 }
