@@ -3,8 +3,8 @@
     reader
 )
 
-T {
-}
+T (
+)
 
 Parse(r * reader.T, name []) (t * T, err) {
     t = @ T
