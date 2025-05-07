@@ -1,5 +1,6 @@
 (
     lib/os/file
+    error
 )
 
 _EOS = 0xFF
@@ -7,7 +8,7 @@ _EOS = 0xFF
 T (
 )
 
-New(path []) (t * T, err) {
+New(path []) (t * T, * error.T) {
     t = @ T
     = t, 0
 }
