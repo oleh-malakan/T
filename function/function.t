@@ -6,7 +6,7 @@
 T (
 )
 
-Parse(r * reader.T, name []) (t * T, err) {
+Parse(r * reader.T, name [], v [] * variable.T) (t * T, err) {
     t = @ T
     = t, nil
 }
