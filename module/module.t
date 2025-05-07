@@ -13,17 +13,18 @@ T (
     func [] * function.T
 )
 
-Parse(path []) (t * T, impt [] * import.T, e * error.T) {
+Parse(path []) (t * T, impt [] * import.T, err) {
     (
-        r * reader.T
-        err        
+        r * reader.T        
     )
     r, err = reader.Open(path)
-    ? err != nil
-        = nil, nil, error.ReaderOpen(path,err)
+    ? err != nil {
+        errorReaderOpen(path,err)
+
+        = nil, nil, 0xFF
+    }
  
     t = @ T
-
 
 
     = t, nil, nil
