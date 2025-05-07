@@ -15,6 +15,9 @@ T (
 Parse(path []) (t * T, impt [] * import.T, err) {
     (
         r * reader.T        
+        d * definition.T
+        s * structure.T
+        f * function.T
     )
     r, err = reader.Open(path)
     ? err != nil {
@@ -24,6 +27,9 @@ Parse(path []) (t * T, impt [] * import.T, err) {
     }
  
     t = @ T
+    t.defn = [0] * definition.T
+    t.strc = []  * structure.T
+    t.func = []  * function.T
 
 
     = t, nil, nil
