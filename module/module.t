@@ -4,7 +4,6 @@
     structure
     function
     reader
-    error
 )
 
 T (
