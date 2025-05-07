@@ -8,10 +8,10 @@
 )
 
 T (
-    imp [] * import.T
-    def [] * definition.T
-    str [] * structure.T
-    fnc [] * function.T
+    impt [] * import.T
+    defn [] * definition.T
+    strc [] * structure.T
+    func [] * function.T
 )
 
 Parse(path []) (t * T, * error.T) {
