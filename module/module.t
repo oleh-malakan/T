@@ -6,11 +6,11 @@
     reader
 )
 
-T (
+T {
     defn [] * definition.T
     strc [] * structure.T
     func [] * function.T
-)
+}
 
 Parse(path []) (t * T, impt [] * import.T, err) {
     (
