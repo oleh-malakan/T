@@ -1,21 +1,16 @@
 (
-    act
+    reader
     error
 )
 
 Main() {
     (
-        t   * act.T
-        err * error.T
-        path []        
+        r * reader.T
+        err * error.T 
     )
-
-    path = '.'
-    t, err = act.Parse(path); ~ path
+    r, err = reader.Open(path)
     ? err != nil {
         error.Print(err)
         error.Free(err)
     }
-
-    act.Free(t)
 }
