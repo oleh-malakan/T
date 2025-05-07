@@ -32,7 +32,7 @@ Parse(path []) (t * T, impt [] * import.T, err) {
     t.strc = []  * structure.T
     t.func = []  * function.T
 
-   
+
 
     = t, nil, nil
 }
