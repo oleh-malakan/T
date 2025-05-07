@@ -7,9 +7,9 @@ T (
     var [] * variable.T
 )
 
-Parse(r * reader.T, name []) t * T {
+Parse(r * reader.T, name []) (t * T, err) {
     t = @ T
-    t.var = v
+
     = t, 0
 }
 
