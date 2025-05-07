@@ -9,7 +9,7 @@
 T (
 )
 
-Parse(r * reader.T) (t * T, * error.T) {
+Parse(path []) (t * T, * error.T) {
     t = @ T
 
     = t, nil
