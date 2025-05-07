@@ -1,6 +1,6 @@
 (
-    error
     module
+    error
 )
 
 Main() {
