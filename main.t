@@ -7,5 +7,5 @@ Main() {
     (
         path []
     )
-    path = `.`
+    path = '.'
 }
