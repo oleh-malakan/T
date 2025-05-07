@@ -11,8 +11,8 @@ New(path []) (t * T, * error.T) {
     = t, nil
 }
 
-Next(t * T) (v, * error.T) {
-    = 0, nil
+Next(t * T) (v, ok bool, * error.T) {
+    = 0, true, nil
 }
 
 Free(t * T) {
