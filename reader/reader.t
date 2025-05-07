@@ -1,18 +1,19 @@
 (
     lib/os/file
-    error
 )
+
+_EOS = 0xFF
 
 T (
 )
 
-New(path []) (t * T, * error.T) {
+New(path []) (t * T, err) {
     t = @ T
-    = t, nil
+    = t, 0
 }
 
-Next(t * T) (v, ok bool, * error.T) {
-    = 0, true, nil
+Next(t * T) (v, err) {
+    = 0, 0
 }
 
 Free(t * T) {
