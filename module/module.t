@@ -24,7 +24,7 @@ Parse(path []) (t * T, [] * import.T, err) {
     ? err != nil {
         errorReaderOpen(path,err)
 
-        = nil, 0xFF
+        = nil, nil, 0xFF
     }
  
     t = @ T
@@ -33,7 +33,7 @@ Parse(path []) (t * T, [] * import.T, err) {
     t.func = []  * function.T
 
 
-    = t, nil
+    = t, nil, nil
 }
 
 Free(t * T) {
