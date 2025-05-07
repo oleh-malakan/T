@@ -19,6 +19,7 @@ Parse(path []) (t * T, impt [] * import.T, err) {
         s * structure.T
         f * function.T
     )
+
     r, err = reader.Open(path)
     ? err != nil {
         errorReaderOpen(path,err)
@@ -31,6 +32,7 @@ Parse(path []) (t * T, impt [] * import.T, err) {
     t.strc = []  * structure.T
     t.func = []  * function.T
 
+   
 
     = t, nil, nil
 }
