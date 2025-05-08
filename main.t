@@ -6,7 +6,7 @@
 
 Main() {
     (
-        b * basic
+        b * basic.T
         path []
     )
     b = basic.New()
