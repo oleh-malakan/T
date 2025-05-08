@@ -1,12 +1,11 @@
 (
     reader
-    error
 )
 
 T (
 )
 
-Parse(r * reader.T, name [], type uint) (t * T, * error.T) {
+Parse(r * reader.T, name uint, type uint) (t * T, err) {
     t = @ T
 
     = t, nil
