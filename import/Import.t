@@ -1,12 +1,11 @@
 (
     reader
-    error
 )
 
 T (
 )
 
-Parse(r * reader.T) (t * T, * error.T) {
+Parse(r * reader.T) (t * T, err) {
     t = @ T
 
     = t, nil
