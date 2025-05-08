@@ -1,6 +1,4 @@
 (
-    basic
-    dic
     reader
     definition
     structure
@@ -13,8 +11,6 @@ T (
     strc [] * structure.T
     func [] * function.T
     impt [] * import.T
-    b       * basic.T
-    d       * dic.T
 )
 
 Parse(b * basic.T, path []) (t * T, err) {
@@ -34,8 +30,6 @@ Parse(b * basic.T, path []) (t * T, err) {
     }
  
     t = @ T
-    t.b    = b
-    t.d    = dic.New()
     t.defn = [0] * definition.T
     t.strc = []  * structure.T
     t.func = []  * function.T
@@ -63,8 +57,6 @@ Free(t * T) {
 
     & i = 0, l = _$(t.impt); i < l; i++
         import.Free(t.impt[i])
-
-    dic.Free(t.d)
 
     ~ t
 }
