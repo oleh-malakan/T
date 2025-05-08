@@ -16,12 +16,12 @@ T (
 
 Parse(path []) (t * T, err) {
     (
+        r  * reader.T
+
         df * definition.T
         st * structure.T
         fn * function.T
         im * import.T  
-       
-        r  * reader.T
     )
 
     r, err = reader.Open(path)
