@@ -26,7 +26,7 @@ Parse(path []) (t * T, err) {
     ? err != nil {
         errorReaderOpen(path,err)
 
-        = nil, 0xF
+        = nil, 0xE
     }
  
     t = @ T
