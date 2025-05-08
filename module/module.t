@@ -13,6 +13,7 @@ T (
     strc [] * structure.T
     func [] * function.T
     impt [] * import.T
+    b       * basic.T
     d       * dic.T
 )
 
@@ -33,6 +34,7 @@ Parse(b * basic.T, path []) (t * T, err) {
     }
  
     t = @ T
+    t.b    = b
     t.d    = dic.New()
     t.defn = [0] * definition.T
     t.strc = []  * structure.T
