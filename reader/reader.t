@@ -2,6 +2,7 @@
     lib/os/file
 )
 
+EOF = 0xF
 EOS = 0xFF
 
 T (
