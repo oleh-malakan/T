@@ -4,7 +4,7 @@
     function
     import
     reader
-    d
+    dic
 )
 
 T (
@@ -12,9 +12,10 @@ T (
     strc [] * structure.T
     func [] * function.T
     impt [] * import.T
+    d       * dic.T
 )
 
-Parse(d * d.T, path []) (t * T, err) {
+Parse(path []) (t * T, err) {
     (
         r  * reader.T
         df * definition.T
@@ -31,6 +32,7 @@ Parse(d * d.T, path []) (t * T, err) {
     }
  
     t = @ T
+    t.d    = dic.New()
     t.defn = [0] * definition.T
     t.strc = []  * structure.T
     t.func = []  * function.T
