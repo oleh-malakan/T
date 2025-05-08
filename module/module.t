@@ -1,11 +1,11 @@
 (
     basic
     dic
+    reader
     definition
     structure
     function
     import
-    reader
 )
 
 T (
