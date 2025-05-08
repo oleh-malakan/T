@@ -3,8 +3,7 @@
     structure
     function    
     import
-        
-    reader   
+    reader  
 )
 
 T (
