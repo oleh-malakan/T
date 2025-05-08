@@ -38,7 +38,7 @@ Parse(path []) (t * T, err) {
     t.impt = []  * import.T
 
 
-
+    reader.Free(r)
 
     = t, nil
 }
