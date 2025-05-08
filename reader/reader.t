@@ -2,8 +2,8 @@
     lib/os/file
 )
 
-EOF = 0xF
-EOS = 0xFF
+EOF = 0xFF
+EOS = 0xF
 
 T (
 )
