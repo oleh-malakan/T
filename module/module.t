@@ -16,8 +16,9 @@ T (
 
 Parse(path []) (t * T, err) {
     (
-        r  * reader.T
-
+        r * reader.T
+    )
+    (
         df * definition.T
         st * structure.T
         fn * function.T
