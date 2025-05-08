@@ -49,6 +49,8 @@ Free(t * T) {
         i, l uint
     )
 
+    dic.Free(t.d)
+
     & i = 0, l = _$(t.defn); i < l; i++
         definition.Free(t.defn[i])
 
