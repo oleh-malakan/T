@@ -2,7 +2,7 @@
     lib/os/file
 )
 
-EOS = 0xFF
+EOS = 0xF
 
 T (
 )
