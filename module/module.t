@@ -1,39 +1,47 @@
 (
-    import
     definition
     structure
-    function
-    reader
+    function    
+    import
+        
+    reader   
 )
 
 T (
     defn [] * definition.T
     strc [] * structure.T
     func [] * function.T
+    impt [] * import.T    
 )
 
-Parse(path []) (t * T, [] * import.T, err) {
+Parse(path []) (t * T, err) {
     (
-        r * reader.T    
-        d * definition.T
-        s * structure.T
-        f * function.T
+        df * definition.T
+        st * structure.T
+        fn * function.T
+        im * import.T  
+       
+        r  * reader.T
     )
 
     r, err = reader.Open(path)
     ? err != nil {
         errorReaderOpen(path,err)
 
-        = nil, nil, 0xFF
+        = nil, 0xFF
     }
  
     t = @ T
     t.defn = [0] * definition.T
     t.strc = []  * structure.T
     t.func = []  * function.T
+    t.impt = []  * import.T
 
 
-    = t, nil, nil
+
+    reader.Free(r)
+
+    = t, nil
 }
 
 Free(t * T) {
@@ -49,6 +57,9 @@ Free(t * T) {
 
     & i = 0, l = _$(t.func); i < l; i++
         function.Free(t.func[i])
+
+    & i = 0, l = _$(t.impt); i < l; i++
+        import.Free(t.impt[i])
 
     ~ t
 }
