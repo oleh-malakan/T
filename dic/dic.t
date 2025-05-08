@@ -6,14 +6,18 @@ New() t * T {
     = t
 }
 
-Pop(v []) uint {
+Pop(t * T, v []) uint {
     = 0
 }
 
-Id(v []) uint {
+Id(t * T, v []) uint {
     = 0
 }
  
-Get(id uint) v [] {
+Get(t * T, id uint) v [] {
     = nil
+}
+
+Free(t * T) {
+    ~ t
 }
