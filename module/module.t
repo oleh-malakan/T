@@ -39,7 +39,6 @@ Parse(path []) (t * T, err) {
 
 
 
-    reader.Free(r)
 
     = t, nil
 }
