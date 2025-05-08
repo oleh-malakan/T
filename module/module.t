@@ -1,4 +1,5 @@
 (
+    basic
     definition
     structure
     function
@@ -15,7 +16,7 @@ T (
     d       * dic.T
 )
 
-Parse(path []) (t * T, err) {
+Parse(b * basic.T, path []) (t * T, err) {
     (
         r  * reader.T
         df * definition.T
