@@ -8,7 +8,7 @@ T (
 
 Parse(r * reader.T, name uint) (t * T, err) {
     t = @ T
-    = t, nil
+    = t, 0
 }
 
 Free(t * T) {
