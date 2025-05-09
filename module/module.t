@@ -24,7 +24,7 @@ Parse(path []) (t * T, err) {
 
     r, err = reader.Open(path)
     ? err != 0 
-        = nil, 0xF
+        = nil, err
  
     t = @ T
     t.defn = [0] * definition.T
