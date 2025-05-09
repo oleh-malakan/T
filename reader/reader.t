@@ -3,7 +3,6 @@
     lib/os/file
 )
 
-
 EOF = 0xFF
 EOB = 0xBB
 
