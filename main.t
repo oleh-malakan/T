@@ -5,7 +5,7 @@
 
 Main() {
     /*
-        Memory:
+        Memory block:
         (
             var % [] type
         )
