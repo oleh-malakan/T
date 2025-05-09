@@ -6,7 +6,7 @@
 bufSize uint = 8192
 
 EOF = 0xFF
-EOB = 0xBB
+EOS = 0xFE
 
 T (
     Buf  []
