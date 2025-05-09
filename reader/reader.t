@@ -5,13 +5,15 @@
 
 bufSize uint = 8192
 
-EOF = 0xFF
-EOS = 0xFE
+EOF = 0xFE 
+EOS = 0xFF
 
 T (
     Buf  []
+    Len  uint
     Cur  uint
     File []
+
 
     d * dir.T
     f * file.T
@@ -22,7 +24,7 @@ New(path []) (t * T, err) {
     = t, 0
 }
 
-Next(t * T) (err) {
+Next(t * T) (err) {       
     = 0
 }
 
