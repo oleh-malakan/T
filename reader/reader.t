@@ -9,10 +9,10 @@ EOF = 0xF
 EOS = 0xFF
 
 T (
-    Buf  []
-    Cur  uint
-    Len  uint
-    File []
+    Buf % []
+    Cur   uint
+    Len   uint
+    File  []
 
     d * dir.T
     f * file.T
