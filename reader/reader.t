@@ -11,6 +11,7 @@ EOS = 0xFF
 T (
     Buf  []
     Cur  uint
+    Len  uint
     File []
 
     d * dir.T
