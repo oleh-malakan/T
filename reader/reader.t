@@ -10,7 +10,6 @@ EOS = 0xFF
 
 T (
     Buf  []
-    Len  uint
     Cur  uint
 
     d * dir.T
