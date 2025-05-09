@@ -9,9 +9,10 @@ EOF = 0xF
 EOS = 0xFF
 
 T (
-    Buf []
-    Cur uint
-    Len uint
+    Buf  %[]
+    Cur  uint
+    Len  uint
+    File []
 
     d * dir.T
     f * file.T
@@ -27,5 +28,6 @@ Next(t * T) (err) {
 }
 
 Free(t * T) {
+    ~ [bufSize] t.buf
     ~ t
 }
