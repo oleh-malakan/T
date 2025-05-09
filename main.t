@@ -9,9 +9,9 @@ Main() {
         (
             var % [] type
         )
-        var = % [size] type
+        var = % [cap] type
         ...
-        ~ [size] var
+        ~ [cap] var
 
         Array:
         (
