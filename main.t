@@ -4,23 +4,24 @@
 )
 
 Main() {
-    /*         Memory:
+    /*
+        Memory:
         (
-                var % [] type
-            )
-            var = % [size] type
-            ...
-            ~ [size] var
+            var % [] type
+        )
+        var = % [size] type
+        ...
+        ~ [size] var
 
-            Array:
-            (
-                var [] type
-            )
-            var = [] [len] [: cap] [, step] [len: cap, step]
-                            [len: cap] [: cap, step] [len, step] type
-            ...
-            ~ var
-        */
+        Array:
+        (
+            var [] type
+        )
+        var = [] [len] [: cap] [, step] [len: cap, step]
+                        [len: cap] [: cap, step] [len, step] type
+        ...
+        ~ var
+    */
 
     (
         path []
