@@ -1,4 +1,5 @@
 (
+    lib/os/dir
     lib/os/file
 )
 
@@ -10,6 +11,9 @@ T (
     Buf  []
     Cur  uint
     File []
+
+    d * dir.T
+    f * file.T
 )
 
 New(path []) (t * T, err) {
