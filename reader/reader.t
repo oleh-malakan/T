@@ -5,7 +5,7 @@
 
 bufSize uint = 8192
 
-EOF = 0xFF // end of file/files
+EOF = 0xFF
 
 T (
     Buf  []
