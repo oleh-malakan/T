@@ -3,7 +3,7 @@
     lib/os/file
 )
 
-budSize uint = 8192
+bufSize uint = 8192
 
 EOF = 0xFF
 EOB = 0xBB
