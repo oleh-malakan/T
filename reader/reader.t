@@ -3,9 +3,9 @@
     lib/os/file
 )
 
-bufSize uint = 8192
 
 EOF = 0xFF
+EOB = 0xBB
 
 T (
     Buf  []
@@ -22,10 +22,6 @@ New(path []) (t * T, err) {
 }
 
 Next(t * T) (err) {
-    = 0
-}
-
-NextFile(t * T) (err) {
     = 0
 }
 
