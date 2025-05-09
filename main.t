@@ -18,7 +18,7 @@ Main() {
             var [] type
         )
         var = [] [len] [: cap] [, step] [len: cap, step]
-                        [len: cap] [: cap, step] [len, step] type
+                    [len: cap] [: cap, step] [len, step] type
         ...
         ~ var
     */
