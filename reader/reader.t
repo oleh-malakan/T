@@ -3,7 +3,7 @@
 )
 
 EOF = 0xFF
-EOS = 0xF
+EOB = 0xBB
 
 T (
 )
