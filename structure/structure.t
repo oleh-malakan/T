@@ -9,6 +9,7 @@ T (
 
 Parse(r * reader.T, name []) (t * T, err) {
     t = @ T
+    t.var = [] * variable.T
 
     = t, 0
 }
