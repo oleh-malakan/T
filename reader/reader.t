@@ -5,7 +5,7 @@
 
 bufSize uint = 8192
 
-EOF = 0xFE 
+EOF = 0xF
 EOS = 0xFF
 
 T (
