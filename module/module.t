@@ -13,7 +13,7 @@ T (
     impt [] * import.T
 )
 
-Parse(b * basic.T, path []) (t * T, err) {
+Parse(path []) (t * T, err) {
     (
         r  * reader.T
         df * definition.T
