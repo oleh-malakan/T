@@ -9,7 +9,7 @@ EOF = 0xF
 EOS = 0xFF
 
 T (
-    Buf  %[]
+    Buf  % []
     Cur  uint
     Len  uint
     File []
