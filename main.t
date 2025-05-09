@@ -5,6 +5,7 @@
 
 Main() {
     (
+        // [cap, step: len]
         path []
     )
     path += symbol.Dot
