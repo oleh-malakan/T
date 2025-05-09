@@ -12,7 +12,6 @@ T (
     Buf  []
     Len  uint
     Cur  uint
-    File []
 
     d * dir.T
     f * file.T
