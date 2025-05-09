@@ -2,6 +2,8 @@
     lib/os/file
 )
 
+bufSize uint = 8192
+
 EOF = 0xFF // end of file/files
 
 T (
