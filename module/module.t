@@ -48,15 +48,19 @@ Free(t * T) {
 
     & i = 0, l = _$(t.defn); i < l; i++
         definition.Free(t.defn[i])
+    ~ t.defn
 
     & i = 0, l = _$(t.strc); i < l; i++
         structure.Free(t.strc[i])
+    ~ t.strc
 
     & i = 0, l = _$(t.func); i < l; i++
         function.Free(t.func[i])
+    ~ t.func
 
     & i = 0, l = _$(t.impt); i < l; i++
         import.Free(t.impt[i])
+    ~ t.impt   
 
     ~ t
 }
