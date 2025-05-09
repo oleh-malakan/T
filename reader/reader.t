@@ -2,10 +2,12 @@
     lib/os/file
 )
 
-EOF = 0xFF
-EOB = 0xBB
+EOF = 0xFF // end of file/files
 
 T (
+    Buf  []
+    Cur  uint
+    File []
 )
 
 New(path []) (t * T, err) {
@@ -13,8 +15,12 @@ New(path []) (t * T, err) {
     = t, 0
 }
 
-Next(t * T) (v, err) {
-    = 0, 0
+Next(t * T) (err) {
+    = 0
+}
+
+NextFile(t * T) (err) {
+    = 0
 }
 
 Free(t * T) {
