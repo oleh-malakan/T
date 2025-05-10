@@ -7,6 +7,10 @@
 )
 
 T (
+    defn [] * definition.T
+    strc [] * structure.T
+    func [] * function.T
+    impt [] * import.T
 )
 
 Parse(path []) (t * T, err) {
@@ -23,12 +27,11 @@ Parse(path []) (t * T, err) {
         = nil, 0xF
 
     t = @ T
-/*
     t.defn = [0] * definition.T
     t.strc = []  * structure.T
     t.func = []  * function.T
     t.impt = []  * import.T
-*/
+
 
     reader.Free(r)
 
@@ -39,7 +42,7 @@ Free(t * T) {
     (
         i, l uint
     )
-/*
+
     & i = 0, l = _$(t.defn); i < l; i++
         definition.Free(t.defn[i])
     ~ t.defn
@@ -55,6 +58,6 @@ Free(t * T) {
     & i = 0, l = _$(t.impt); i < l; i++
         import.Free(t.impt[i])
     ~ t.impt   
-*/
+
     ~ t
 }
