@@ -4,6 +4,7 @@
 )
 
 T (
+    name []
 )
 
 Parse(r * reader.T, name []) (t * T, err) {
@@ -12,5 +13,6 @@ Parse(r * reader.T, name []) (t * T, err) {
 }
 
 Free(t * T) {
+    // t.name = nil
     ~ t
 }
