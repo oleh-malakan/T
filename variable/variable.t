@@ -1,6 +1,6 @@
 T (
     Name  []
-    Attr  []
+    Pref  []
     Type  []
     Basic bool
 )
@@ -11,8 +11,8 @@ Arr = 2
  
 Free(t * T) {
     ~ t.Name
-    ? t.Attr != nil
-        ~ t.Attr
+    ? t.Pref != nil
+        ~ t.Pref
     ~ t.Type
     ~ t
 }
