@@ -5,6 +5,7 @@ T (
     Arr   bool
     Ptr   bool
     Type  []
+    Basic bool
 )
 
 Free(t * T) {
