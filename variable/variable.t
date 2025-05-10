@@ -1,14 +1,14 @@
 (
-    type
+    vtype
 )
 
 T (
     Name []
-    Type * type.V
+    Type * vtype.T
 )
 
 Free(t * T) {
     ~ t.Name
-    type.FreeV(t.Type)
+    vtype.Free(t.Type)
     ~ t
 }
