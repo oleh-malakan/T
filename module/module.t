@@ -1,5 +1,7 @@
 (
     reader
+    type
+    context
     definition
     structure
     function
@@ -15,7 +17,7 @@ T (
     files [][]
 )
 
-Parse(path []) (t * T, err) {
+Parse(path [], basic * type.T) (t * T, err) {
     (
         r  * reader.T
         df * definition.T
