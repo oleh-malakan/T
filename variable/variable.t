@@ -22,7 +22,7 @@ Free(t * T) {
         ? t.Type.PtrTo == nil
             .
 
-        tmp = t.type
+        tmp = t.Type
         t.Type = t.Type.PtrTo
         ~ tmp
     }
