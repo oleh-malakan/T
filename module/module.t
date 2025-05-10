@@ -12,7 +12,7 @@ T (
     func [] * function.T
     impt [] * import.T
 
-    names [][]
+    files [][]
 )
 
 Parse(path []) (t * T, err) {
