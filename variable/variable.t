@@ -1,9 +1,9 @@
 T (
     Name []
-    Type * type
+    Type * Type
 )
 
-type (
+Type (
     PtrTo * Type
     Raw   bool
     Arr   bool
