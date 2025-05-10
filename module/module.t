@@ -1,6 +1,5 @@
 (
     reader
-    type
     definition
     structure
     function
@@ -20,7 +19,7 @@ file (
     name []
 )
 
-Parse(path [], basic * type.T) (t * T, err) {
+Parse(path []) (t * T, err) {
     (
         r  * reader.T
         df * definition.T
