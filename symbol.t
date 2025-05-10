@@ -1,6 +1,6 @@
 EOS = 0x00
 Dot = 0x2E
-M   =
+Mm   =
 Aa  =
 Ii  =
 Nn  =
