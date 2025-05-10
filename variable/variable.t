@@ -1,14 +1,17 @@
-(
-    vtype
-)
-
 T (
     Name []
-    Type * vtype.T
+    Type * Type
+)
+
+Type (
+    PtrTo * Type
+    Raw   bool
+    Arr   bool
+    Ptr   bool
+    Basic bool
+    Name  []    
 )
 
 Free(t * T) {
-    ~ t.Name
-    vtype.Free(t.Type)
     ~ t
 }
