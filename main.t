@@ -7,6 +7,6 @@ Main() {
     (
         path []
     )
-    path += symbol.Dot + symbol.EOS
+    path += symbol.Mm + symbol.Aa + symbol.Ii + symbol.Nn + symbol.Dot + symbol.Tt + symbol.EOS
 
 }
