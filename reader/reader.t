@@ -1,5 +1,4 @@
 (
-    lib/os/dir
     lib/os/file
 )
 
@@ -11,9 +10,7 @@ T (
     Buf % []
     Cur   uint
     Len   uint
-    File  []
 
-    d * dir.T
     f * file.T
 )
 
