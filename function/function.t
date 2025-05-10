@@ -13,6 +13,6 @@ Parse(r * reader.T, name []) (t * T, err) {
 }
 
 Free(t * T) {
-    // t.file = nil
+    ~ t.file
     ~ t
 }
