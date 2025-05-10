@@ -1,7 +1,6 @@
 (
     reader
     type
-    context
     definition
     structure
     function
