@@ -3,7 +3,7 @@
     lib/os/file
 )
 
-bufCap uint = 1024
+bufCap uint = 128
 
 EOF = 0xF
 EOS = 0xFF
