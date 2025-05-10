@@ -8,7 +8,7 @@
 )
 
 T (
-    files [] * file
+    file [] * file
 )
 
 file (
