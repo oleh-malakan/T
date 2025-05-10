@@ -1,15 +1,14 @@
+(
+    type
+)
+
 T (
-    Name  []
-    PtrTo bool
-    Raw   bool
-    Arr   bool
-    Ptr   bool
-    Type  []
-    Basic bool
+    Name []
+    Type * type.V
 )
 
 Free(t * T) {
     ~ t.Name
-    // t.Type = nil
+    type.FreeV(t.Type)
     ~ t
 }
