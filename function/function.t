@@ -4,7 +4,7 @@
 )
 
 T (
-    file []
+    Name []
 )
 
 Parse(r * reader.T, name [], file []) (t * T, err) {
@@ -13,5 +13,6 @@ Parse(r * reader.T, name [], file []) (t * T, err) {
 }
 
 Free(t * T) {
+    ~ t.Name
     ~ t
 }
