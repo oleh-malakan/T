@@ -4,9 +4,10 @@
 )
 
 T (
+    file []
 )
 
-Parse(r * reader.T, name []) (t * T, err) {
+Parse(r * reader.T, name [], file []) (t * T, err) {
     t = @ T
     = t, 0
 }
