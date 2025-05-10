@@ -6,8 +6,7 @@ T (
 )
 
 Ptr = 0
-Raw = 1
-Arr = 2 
+Arr = 1
  
 Free(t * T) {
     ~ t.Name
