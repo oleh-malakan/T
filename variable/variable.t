@@ -5,11 +5,8 @@ T (
 
 Type (
     PtrTo * Type
-    Raw   bool
-    Arr   bool
-    Ptr   bool
-    Basic bool
-    Name  []    
+    Name  []
+    Attr
 )
 
 Free(t * T) {
