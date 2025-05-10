@@ -6,7 +6,7 @@ T (
 Type (
     PtrTo * Type
     Name  []
-    Attr
+    Attr  // raw arr ptr bsc
 )
 
 Free(t * T) {
