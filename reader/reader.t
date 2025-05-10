@@ -5,8 +5,7 @@
 
 bufCap uint = 256
 
-EOF = 0xF
-EOS = 0xFF
+EOF = 0xFF
 
 T (
     Buf % []
