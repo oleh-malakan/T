@@ -7,16 +7,6 @@
 )
 
 T (
-    file [] * file
-)
-
-file (
-    defn [] * definition.T
-    strc [] * structure.T
-    func [] * function.T
-    impt [] * import.T
-
-    name []
 )
 
 Parse(path []) (t * T, err) {
