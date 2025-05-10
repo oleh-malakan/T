@@ -1,5 +1,6 @@
 (
     reader
+    type
     definition
     structure
     function
@@ -13,7 +14,7 @@ T (
     impt [] * import.T
 )
 
-Parse(path []) (t * T, err) {
+Parse(path [], basic * type.T) (t * T, err) {
     (
         r  * reader.T
         df * definition.T
