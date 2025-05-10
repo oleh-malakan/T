@@ -12,8 +12,6 @@ T (
     strc [] * structure.T
     func [] * function.T
     impt [] * import.T
-
-    files [][]
 )
 
 Parse(path [], basic * type.T) (t * T, err) {
