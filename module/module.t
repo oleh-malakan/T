@@ -11,6 +11,8 @@ T (
     strc [] * structure.T
     func [] * function.T
     impt [] * import.T
+
+    names [][]
 )
 
 Parse(path []) (t * T, err) {
@@ -58,6 +60,8 @@ Free(t * T) {
     & i = 0, l = _$(t.impt); i < l; i++
         import.Free(t.impt[i])
     ~ t.impt   
+
+   &
 
     ~ t
 }
