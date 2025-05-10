@@ -1,32 +1,18 @@
 T (
-    Name []
-    Type * Type
-)
-
-Type (
-    PtrTo * Type
-    Raw   bool
-    Arr   bool
-    Ptr   bool
-    Basic bool
     Name  []
+    Attr  []
+    Type  []
+    Basic bool
 )
 
+Ptr = 0
+Raw = 1
+Arr = 2 
+ 
 Free(t * T) {
-    (
-        tmp * Type
-    )
-    & {
-        ? t.Type.Name != nil
-            ~ t.Type.Name
-        ? t.Type.PtrTo == nil
-            .
-
-        tmp = t.Type
-        t.Type = t.Type.PtrTo
-        ~ tmp
-    }
-    ~ t.Type
     ~ t.Name
+    ? t.Attr != nil
+        ~ t.Attr
+    ~ t.Type
     ~ t
 }
