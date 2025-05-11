@@ -1,15 +1,13 @@
 (
     variable
-    reader
 )
 
 T (
     var [] * variable.T
 )
 
-Parse(r * reader.T, name []) (t * T, err) {
+New(name []) (t * T) {
     t = @ T
-    t.var = [] * variable.T
 
     = t, 0
 }
