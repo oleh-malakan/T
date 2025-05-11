@@ -3,22 +3,22 @@
 )
 
 T (
-    Name []
-    Pref []
-    Term []
-    Type * type.T
+    name []
+    pref []
+    term []
+    type * type.T
 )
 
-Ptr = 0
-Arr = 1
+ptr = 0
+arr = 1
  
 Free(t * T) {
-    ~ t.Name
-    ? t.Pref != nil
-        ~ t.Pref
-    ? t.Term != nil
-        ~ t.Term
-    ? t.Type != nil
-        type.Free(t.Type)
+    ~ t.name
+    ? t.pref != nil
+        ~ t.pref
+    ? t.term != nil
+        ~ t.term
+    ? t.type != nil
+        type.Free(t.type)
     ~ t
 }
