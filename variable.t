@@ -18,6 +18,5 @@ Free(t * T) {
         ~ t.pref
     ? t.term != nil
         ~ t.term
-    // t.type = nil
     ~ t
 }
