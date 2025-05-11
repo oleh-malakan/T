@@ -9,8 +9,6 @@ T (
     type * type.T
 )
 
-ptr = 0
-arr = 1
  
 Free(t * T) {
     ~ t.name
