@@ -8,8 +8,12 @@ T (
 
 New(name []) (t * T) {
     t = @ T
-
+    t.var = [] * variable.T
     = t, 0
+}
+
+AddVar(t * T, v * variable.T) {
+    t.var += v
 }
 
 Free(t * T) {
