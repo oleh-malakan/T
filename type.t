@@ -22,11 +22,11 @@ Add(t * T, v * variable.T) {
 }
 
 Free(t * T) {
-    (
-        i, l uint
-    )
     ~ t.name
     ? t.var != nil {
+        (
+            i, l uint
+        )
         & i = 0, l = _$(t.var); i < l; i++
             variable.Free(t.var[i])
         ~ t.var
