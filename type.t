@@ -5,13 +5,11 @@
 T (
     name []
     var  [] * variable.T
-    strc bool
 )
 
 New(name []) (t * T) {
     t = @ T
     t.name = name
-    t.strc = true
     = t
 }
 
@@ -32,13 +30,6 @@ Free(t * T) {
         ~ t.var
     }
     ~ t
-}
-
-newBasic(name []) (t * T) {
-    t = @ T
-    t.name = name
-    t.strc = false
-    = t
 }
 
 Basic() (arr [] * T) {
