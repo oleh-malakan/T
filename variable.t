@@ -1,14 +1,11 @@
-(
-    type
-)
-
 T (
     name []
-    type * type.T
+    type []
     pref
 )
 
 Free(t * T) {
     ~ t.name
+    ~ t.type
     ~ t
 }
