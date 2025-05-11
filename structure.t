@@ -12,7 +12,7 @@ New(name []) (t * T) {
     = t, 0
 }
 
-AddVar(t * T, v * variable.T) {
+Add(t * T, v * variable.T) {
     t.var += v
 }
 
