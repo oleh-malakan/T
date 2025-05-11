@@ -1,25 +1,21 @@
 (
-    import
     type
     function
     variable
 )
 
 T (
-    impt [] * import.T
     type [] * type.T
     func [] * function.T
 )
 
 Parse(path []) (t * T, err) {
     (
-        im * import .T  
         tp * type.T
         fn * function.T
     )
 
     t = @ T
-    t.impt = [] * import.T
     t.type = [] * type.T
     t.func = [] * function.T
 
@@ -32,10 +28,6 @@ Free(t * T) {
     (
         i, l uint
     )
-
-    & i = 0, l = _$(t.impt); i < l; i++
-        import.Free(t.impt[i])
-    ~ t.impt
 
     & i = 0, l = _$(t.type); i < l; i++
         type.Free(t.type[i])
