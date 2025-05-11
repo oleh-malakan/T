@@ -42,7 +42,7 @@ Free(t * T) {
 
     & i = 0, l = _$(t.type); i < l; i++
         type.Free(t.type[i])
-    ~ t.strc
+    ~ t.type
 
     & i = 0, l = _$(t.func); i < l; i++
         function.Free(t.func[i])
