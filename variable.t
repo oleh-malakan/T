@@ -18,7 +18,6 @@ Free(t * T) {
         ~ t.pref
     ? t.term != nil
         ~ t.term
-    ? t.type != nil
-        type.Free(t.type)
+    // t.type = nil
     ~ t
 }
