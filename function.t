@@ -3,7 +3,7 @@
 )
 
 T (
-    Name []
+    name []
 )
 
 New(name []) (t * T) {
@@ -12,6 +12,6 @@ New(name []) (t * T) {
 }
 
 Free(t * T) {
-    ~ t.Name
+    ~ t.name
     ~ t
 }
