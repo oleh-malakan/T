@@ -1,15 +1,12 @@
 (
-    type
     structure
 )
 
 T (
     Name []
     Pref []
-    Type * type.T
-    Strc * structure.T
-
-    StrcTerm []
+    Type * structure.T
+    Term []
 )
 
 Ptr = 0
@@ -21,9 +18,7 @@ Free(t * T) {
         ~ t.Pref
     ? t.Type != nil
         ~ t.Type
-    ? t.Strc != nil
-        ~ t.Strc
-    ? t.StrcTerm != nil
-        ~ t.StrcTerm
+    ? t.Term != nil
+        ~ t.Term
     ~ t
 }
