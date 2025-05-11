@@ -10,8 +10,7 @@ Arr = 1
  
 Free(t * T) {
     ~ t.Name
-    ? t.Pref != nil
-        ~ t.Pref
+    ~ t.Pref
     ~ t.Type
     ~ t
 }
