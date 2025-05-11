@@ -19,6 +19,6 @@ Free(t * T) {
     ? t.Term != nil
         ~ t.Term
     ? t.Type != nil
-        ~ t.Type
+        structure.Free(t.Type)
     ~ t
 }
