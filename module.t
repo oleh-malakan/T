@@ -12,7 +12,7 @@ T (
     defn [] * variable.T
 )
 
-Parse(path [], basic [] * type.T) (t * T, err) {
+Parse(path []) (t * T, err) {
     (
         im * import.T       
         tp * type.T
