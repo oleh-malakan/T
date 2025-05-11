@@ -1,31 +1,30 @@
 (
-    type
-    variable
-    structure
-    function
     import
+    type
+    function
+    variable
 )
 
 T (
-    defn [] * variable.T
-    strc [] * structure.T
-    func [] * function.T
     impt [] * import.T
+    type [] * type.T
+    func [] * function.T    
+    defn [] * variable.T
 )
 
 Parse(path [], basic [] * type.T) (t * T, err) {
     (
-        df * variable.T
-        st * structure.T
+        im * import.T       
+        tp * type.T
         fn * function.T
-        im * import.T
+        df * variable.T
     )
 
     t = @ T
-    t.defn = [0] * variable.T
-    t.strc = []  * structure.T
-    t.func = []  * function.T
     t.impt = []  * import.T
+    t.type = []  * type.T
+    t.func = []  * function.T
+    t.defn = [0] * variable.T
 
 
 
@@ -37,9 +36,9 @@ Free(t * T) {
         i, l uint
     )
 
-    & i = 0, l = _$(t.defn); i < l; i++
-        variable.Free(t.defn[i])
-    ~ t.defn
+    & i = 0, l = _$(t.impt); i < l; i++
+        import.Free(t.impt[i])
+    ~ t.impt   
 
     & i = 0, l = _$(t.strc); i < l; i++
         structure.Free(t.strc[i])
@@ -49,9 +48,9 @@ Free(t * T) {
         function.Free(t.func[i])
     ~ t.func
 
-    & i = 0, l = _$(t.impt); i < l; i++
-        import.Free(t.impt[i])
-    ~ t.impt   
+    & i = 0, l = _$(t.defn); i < l; i++
+        variable.Free(t.defn[i])
+    ~ t.defn
 
     ~ t
 }
