@@ -1,15 +1,14 @@
 (
     variable
-    reader
 )
 
 T (
     Name []
 )
 
-Parse(r * reader.T, name [], file []) (t * T, err) {
+New(name []) (t * T) {
     t = @ T
-    = t, 0
+    = t
 }
 
 Free(t * T) {
