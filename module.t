@@ -55,5 +55,3 @@ Free(t * T) {
 
     ~ t
 }
-
-sDot = 0x2E
