@@ -1,5 +1,4 @@
 (
-    t-mod
     type
     module
 )
