@@ -12,6 +12,7 @@ Free(t * T) {
     ~ t.Name
     ? t.Pref != nil
         ~ t.Pref
-    ~ t.Type
+    ? t.Type != nil
+        ~ t.Type
     ~ t
 }
