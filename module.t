@@ -1,4 +1,5 @@
 (
+    type
     variable
     structure
     function
@@ -12,7 +13,7 @@ T (
     impt [] * import.T
 )
 
-Parse(path []) (t * T, err) {
+Parse(path [], basic [] * type.T) (t * T, err) {
     (
         df * variable.T
         st * structure.T
