@@ -1,11 +1,7 @@
-(
-    reader
-)
-
 T (
 )
 
-Parse(r * reader.T) (t * T, err) {
+New() (t * T) {
     t = @ T
 
     = t, 0
