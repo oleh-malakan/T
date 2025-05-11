@@ -7,16 +7,11 @@ T (
     var  [] * variable.T
 )
 
-New(name []) (t * T) {
+New(name [], var [] * variabl.T) (t * T) {
     t = @ T
     t.name = name
+    t.var  = var
     = t
-}
-
-Add(t * T, v * variable.T) {
-    ? t.var == nil
-        t.var = [] * variable.T
-    t.var += v
 }
 
 Free(t * T) {
