@@ -21,5 +21,5 @@ FreeBasic(arr [] * T) {
     )
     & i = 0, l = _$(arr); i < l; i++
         Free(arr[i])
-    ~ arr 
+    ~ arr
 }
