@@ -40,8 +40,8 @@ Free(t * T) {
         import.Free(t.impt[i])
     ~ t.impt   
 
-    & i = 0, l = _$(t.strc); i < l; i++
-        structure.Free(t.strc[i])
+    & i = 0, l = _$(t.type); i < l; i++
+        type.Free(t.type[i])
     ~ t.strc
 
     & i = 0, l = _$(t.func); i < l; i++
