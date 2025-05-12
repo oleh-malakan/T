@@ -1,13 +1,23 @@
-Types() (basic [][]) {
-    basic = [][]
-    = basic
+T (
+    type [][]
+)
+
+New() (t * T) {
+    t = @ T
+    t.types = [][]
+    = t
 }
 
-FreeTypes(basic [][]) {
+Is(type []) (bool) {
+    = true   
+}
+
+Free(t * T) {
     (
         i, l uint
     )
-    & i = 0, l = _$(basic); i < l; i++
-        ~ basic[i]
-    ~ basic
+    & i = 0, l = _$(t.type); i < l; i++
+        ~ t.type[i]
+    ~ t.type
+    ~ t
 }
