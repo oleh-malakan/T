@@ -1,23 +1,23 @@
 T (
-    basic [] * basic
+    b [] * B
 )
 
-basic (
+B (
     name []
     size uint
 )
 
 New() (t * T) {
     t = @ T
-    t.basic = [] * basic
+    t.b = [] * B
     = t
 }
 
-Basic(type []) (bool) {
-    = true   
+Basic(name []) (b * B) {
+    = nil   
 }
 
-freeBasic(b * basic) {
+freeBasic(b * B) {
     ~ b.name
     ~ b
 }
@@ -26,8 +26,8 @@ Free(t * T) {
     (
         i, l uint
     )
-    & i = 0, l = _$(t.basic); i < l; i++
-        freeBasic(t.basic[i])
+    & i = 0, l = _$(t.b); i < l; i++
+        freeBasic(t.b[i])
     ~ t.type
     ~ t
 }
