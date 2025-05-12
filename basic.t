@@ -1,5 +1,6 @@
-Types() ([][]) {
-    = nil
+Types() (basic [][]) {
+    basic = [][]
+    = basic
 }
 
 FreeTypes(basic [][]) {
