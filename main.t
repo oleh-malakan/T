@@ -20,6 +20,6 @@ Main() {
         ? err == 0 {        
         
         }        
-        tmod.Close(tMod)
+        tmod.Free(tMod)
     }
 }
