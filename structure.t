@@ -18,11 +18,15 @@ Free(t * T) {
     ~ t.name
     ? t.var != nil {
         (
+            var [] * variable.T
             i, l uint
         )
-        & i = 0, l = _$(t.var); i < l; i++
-            variable.Free(t.var[i])
-        ~ t.var
+        var = t.var
+        i = 0,
+        l = _$(var)
+        & i < l, i++
+            variable.Free(var[i])
+        ~ var
     }
     ~ t
 }
