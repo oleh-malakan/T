@@ -5,7 +5,7 @@
 T (
 )
 
-Open(path []) (t * T, ok bool) {
+Open(path []) (t * T, bool) {
     t = @ T
     = t, true
 }
