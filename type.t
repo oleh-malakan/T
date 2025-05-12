@@ -28,8 +28,7 @@ Free(t * T) {
         i, l uint
     )
     b = t.b
-    i = 0,
-    l = _$(b)
+    i = 0, l = _$(b)
     & i < l
         freeBasic(b[i]); i++
     ~ b
