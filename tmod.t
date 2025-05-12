@@ -10,6 +10,6 @@ Open(path []) (t * T, err) {
     = t, 0
 }
 
-Close(t * T) {
+Free(t * T) {
     - t
 }
