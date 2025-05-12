@@ -5,9 +5,9 @@
 T (
 )
 
-Open(path []) (t * T, err) {
+Open(path []) (t * T, ok bool) {
     t = @ T
-    = t, 0
+    = t, true
 }
 
 Free(t * T) {
