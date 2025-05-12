@@ -15,7 +15,7 @@ New(name [], var [] * variable.T) (t * T) {
 }
 
 Free(t * T) {
-    - t.name
+    ~ t.name
     ? t.var != nil {
         (
             var [] * variable.T
@@ -27,7 +27,7 @@ Free(t * T) {
         & i < l {
             variable.Free(var[i])
         }
-        - var
+        ~ var
     }
-    - t
+    ~ t
 }
