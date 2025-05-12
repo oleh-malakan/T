@@ -28,18 +28,22 @@ Parse(path []) (t * T, err) {
 
 Free(t * T) {
     (
-        i, l uint
         strc [] * structure.T
         func [] * function.T
+        i, l uint
     )
 
     strc = t.strc
-    & i = 0, l = _$(strc); i < l; i++
+    i = 0, 
+    l = _$(strc)
+    &  i < l, i++
         structure.Free(strc[i])
     ~ strc
 
     func = t.func
-    & i = 0, l = _$(func); i < l; i++
+    i = 0,
+    l = _$(func)
+    & i < l, i++
         function.Free(func[i])
     ~ func
 
