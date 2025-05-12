@@ -1,7 +1,6 @@
 (
     tmod
     module
-    c
 )
 
 Main() {
@@ -11,5 +10,5 @@ Main() {
     )
     
     ~ path
-    path += c.Mm + c.Aa + c.Ii + c.Nn + c.Dot + c.Tt + c.EOS
+    path += 0x6D + 0x61 + 0x69 + 0x6E + 0x2E + 0x74 + 0x00
 }
