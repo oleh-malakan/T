@@ -5,7 +5,7 @@
 
 Main() {
     (
-        tmod * tmod.T
+        tm * tmod.T
         path []
     )
     
