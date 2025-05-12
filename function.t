@@ -1,5 +1,5 @@
 (
-    var
+    variable
 )
 
 T (
