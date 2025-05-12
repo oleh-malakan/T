@@ -4,7 +4,7 @@ T (
 )
 
 Free(t * T) {
-    - t.name
-    - t.type
-    - t
+    ~ t.name
+    ~ t.type
+    ~ t
 }
