@@ -24,11 +24,13 @@ freeBasic(b * B) {
 
 Free(t * T) {
     (
-        i, l uint
         b [] * B
+        i, l uint
     )
     b = t.b
-    & i = 0, l = _$(b); i < l; i++
+    i = 0,
+    l = _$(b)
+    & i < l, i++
         freeBasic(b[i])
     ~ b
     ~ t
