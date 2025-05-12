@@ -17,9 +17,9 @@ Basic(type []) (bool) {
     = true   
 }
 
-freeType(t * type) {
-    ~ t.name
-    ~ t
+freeType(type * type) {
+    ~ type.name
+    ~ type
 }
 
 Free(t * T) {
