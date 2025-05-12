@@ -34,7 +34,8 @@ Free(t * T) {
     )
 
     strc = t.strc
-    i = 0, l = _$(strc)
+    i = 0
+    l = _$(strc)
     & i < l {
         structure.Free(strc[i])
         i++
@@ -42,7 +43,8 @@ Free(t * T) {
     - strc
 
     func = t.func
-    i = 0, l = _$(func)
+    i = 0
+    l = _$(func)
     & i < l {
         function.Free(func[i])
         i++
