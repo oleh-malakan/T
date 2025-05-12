@@ -12,6 +12,6 @@ New(name []) (t * T) {
 }
 
 Free(t * T) {
-    ~ t.name
-    ~ t
+    - t.name
+    - t
 }
