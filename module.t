@@ -1,22 +1,22 @@
 (
-    type
+    structure
     function
     variable
 )
 
 T (
-    type [] * type.T
+    strc [] * structure.T
     func [] * function.T
 )
 
 Parse(path []) (t * T, err) {
     (
-        tp * type.T
+        st * structure.T
         fn * function.T
     )
 
     t = @ T
-    t.type = [] * type.T
+    t.strc = [] * structure.T
     t.func = [] * function.T
 
 
@@ -29,9 +29,9 @@ Free(t * T) {
         i, l uint
     )
 
-    & i = 0, l = _$(t.type); i < l; i++
-        type.Free(t.type[i])
-    ~ t.type
+    & i = 0, l = _$(t.strc); i < l; i++
+        structure.Free(t.strc[i])
+    ~ t.strc
 
     & i = 0, l = _$(t.func); i < l; i++
         function.Free(t.func[i])
