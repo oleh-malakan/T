@@ -22,7 +22,7 @@ Free(t * T) {
             i, l uint
         )
         var = t.var
-        i = 0,
+        i = 0
         l = _$(var)
         & i < l {
             variable.Free(var[i])
