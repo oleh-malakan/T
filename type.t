@@ -29,8 +29,10 @@ Free(t * T) {
     )
     b = t.b
     i = 0, l = _$(b)
-    & i < l
-        freeBasic(b[i]); i++
+    & i < l {
+        freeBasic(b[i])
+        i++
+    }
     ~ b
     ~ t
 }
