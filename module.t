@@ -9,7 +9,7 @@ T (
     func [] * function.T
 )
 
-Open(path []) (t * T, err) {
+Parse(path []) (t * T, err) {
     (
         tp * type.T
         fn * function.T
