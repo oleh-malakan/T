@@ -1,5 +1,5 @@
 (
-    lib/os/file
+    reader
     structure
     function
     variable
