@@ -5,6 +5,6 @@ T (
 
 Free(t * T) {
     ~ t.name
-    // t.type = nil
+    ~ t.type
     ~ t
 }
