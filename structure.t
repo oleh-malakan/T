@@ -7,7 +7,7 @@ T (
     var  [] * variable.T
 )
 
-New(name [], var [] * variabl.T) (t * T) {
+New(name [], var [] * variable.T) (t * T) {
     t = @ T
     t.name = name
     t.var  = var
