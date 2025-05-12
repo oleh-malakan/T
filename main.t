@@ -1,7 +1,7 @@
 (
     tmod
     module
-    s symbol
+    s
 )
 
 Main() {
@@ -11,5 +11,5 @@ Main() {
     )
     
     ~ path
-    path += s.Mm + s.Aa + s.Ii + s.Nn + s.Dot + s.Tt + sEOS
+    path += s.Mm + s.Aa + s.Ii + s.Nn + s.Dot + s.Tt + s.EOS
 }
