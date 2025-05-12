@@ -1,5 +1,5 @@
 (
-    t-lib/os/file
+    lib/os/file
 
     structure
     function
