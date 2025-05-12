@@ -1,23 +1,23 @@
 (
     type
-    function
-    variable
+    func
+    var
 )
 
 T (
     type [] * type.T
-    func [] * function.T
+    func [] * func.T
 )
 
 Parse(path []) (t * T, err) {
     (
         tp * type.T
-        fn * function.T
+        fn * func.T
     )
 
     t = @ T
     t.type = [] * type.T
-    t.func = [] * function.T
+    t.func = [] * func.T
 
 
 
@@ -34,7 +34,7 @@ Free(t * T) {
     ~ t.type
 
     & i = 0, l = _$(t.func); i < l; i++
-        function.Free(t.func[i])
+        func.Free(t.func[i])
     ~ t.func
 
     ~ t
