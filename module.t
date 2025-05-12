@@ -39,7 +39,7 @@ Free(t * T) {
         structure.Free(strc[i])
         i++
     }
-    - strc
+    ~ strc
 
     func = t.func
     i = 0
@@ -48,7 +48,7 @@ Free(t * T) {
         function.Free(func[i])
         i++
     }
-    - func
+    ~ func
 
-    - t
+    ~ t
 }
