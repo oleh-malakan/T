@@ -18,8 +18,8 @@ Basic(name []) (b * B) {
 }
 
 freeBasic(b * B) {
-    ~ b.name
-    ~ b
+    - b.name
+    - b
 }
 
 Free(t * T) {
@@ -33,6 +33,6 @@ Free(t * T) {
         freeBasic(b[i])
         i++
     }
-    ~ b
-    ~ t
+    - b
+    - t
 }
