@@ -17,14 +17,17 @@ Basic(name []) (b * B) {
     = nil   
 }
 
+freeBasic(b * B) {
+    ~ b.name
+    ~ b
+}
+
 Free(t * T) {
     (
         i, l uint
     )
-    & i = 0, l = _$(t.b); i < l; i++ {
-        ~ t.b[i].name
-        ~ t.b[i]
-    }
+    & i = 0, l = _$(t.b); i < l; i++
+        freeBasic(t.b[i])
     ~ t.b
     ~ t
 }
