@@ -11,5 +11,5 @@ Open(path []) (t * T, err) {
 }
 
 Close(t * T) {
-    ~ t
+    - t
 }
