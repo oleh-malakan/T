@@ -10,7 +10,7 @@ T (
     func [] * function.T
 )
 
-Parse(path []) (t * T, bool) {
+Parse(path []) (t * T, ok) {
     (
         st * structure.T
         fn * function.T
@@ -22,7 +22,7 @@ Parse(path []) (t * T, bool) {
 
 
 
-    = t, true
+    = t, !0
 }
 
 Free(t * T) {
