@@ -28,6 +28,6 @@ Free(t * T) {
     )
     & i = 0, l = _$(t.b); i < l; i++
         freeBasic(t.b[i])
-    ~ t.type
+    ~ t.b
     ~ t
 }
