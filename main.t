@@ -11,7 +11,8 @@ Main() {
     )
 
     path += 0x74 + 0x2E + 0x6D + 0x6F + 0x64 + 0x00
-    tMod, err = tmod.Open(path); ~ path
+    tMod, err = tmod.Open(path)
+    ~ path
     ? err != 0 {
         =
     }
