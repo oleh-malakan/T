@@ -7,7 +7,7 @@ Main() {
     (
         tm * tmod.T
         path []
-        ok   bool
+        ok
     )
 
     path += 0x74 + 0x2E + 0x6D + 0x6F + 0x64 + 0x00
