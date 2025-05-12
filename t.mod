@@ -1,1 +1,2 @@
-lib github.com/oleh-malakan/t-lib
+// alias path : tag
+github.com/oleh-malakan/t-lib
