@@ -24,5 +24,5 @@ Main() {
         }
     }
 
-    Close(tMod)
+    tmod.Close(tMod)
 }
