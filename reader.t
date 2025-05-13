@@ -2,8 +2,6 @@
     lib/os/file
 )
 
-EOF = 0xFF
-
 bufCap uint = 256
 
 T (
