@@ -1,4 +1,5 @@
 (
+    lib/os/args
     program
 )
 
@@ -6,31 +7,15 @@ Main() {
     (
         p * program.T
         ok
-        path
-    )
-    path = path()
-    p, ok = program.Parse(path)
-    ~ path
-    ? ok {
-
-        program.Free(p)        
-    } 
-}
-
-(
-    lib/os/args
-)
-
-path() (b []) {
-    (
-        a []
-        i uint
-        l uint
+        a
     )
     a = args.Get()
-    
-    b = []
+    ? _$(a) > 1 {   
+        p, ok = program.Parse(a[1])
+        ? ok {
 
-    ~ a
-    =
+            program.Free(p)        
+        }
+        args.Free(a)
+    }
 }
