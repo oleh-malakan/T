@@ -1,7 +1,0 @@
-(
-    tmod
-    module
-)
-
-T (
-)
