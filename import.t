@@ -10,7 +10,11 @@ Parse(r * reader.T) (arr [] * T, ok) {
     = arr, !0
 }
 
-Free(arr [] * T) {
+Free(t * T) {
+    ~ t
+} 
+
+FreeArr(arr [] * T) {
     (
         i uint
         l uint
