@@ -1,5 +1,5 @@
 (
-    module
+
 )
 
 Main() {
@@ -7,5 +7,6 @@ Main() {
         path []
         ok
     )
+    path = path()
 
 }
