@@ -1,19 +1,19 @@
 T (
-    name  []
-    type  []
-    value []
+    Name  []
+    Type  []
+    Value []
 )
 
 New(name [], type [], value []) (t * T) {
     t = @ T
-    t.name  = name
-    t.type  = type
-    t.value = value
+    t.Name  = name
+    t.Type  = type
+    t.Value = value
     = t
 }
 
 Free(t * T) {
-    ~ t.name
-    ~ t.type
-    ~ t.value
+    ~ t.Name
+    ~ t.Type
+    ~ t.Value
 }
