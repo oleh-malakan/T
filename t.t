@@ -1,12 +1,16 @@
 (
-
+    program
 )
 
 Main() {
     (
-        path []
+        p * program.T
         ok
     )
-    path = path()
 
+    p, ok = program.Parse()
+    ? ok {
+
+        act.Free(p)        
+    } 
 }
