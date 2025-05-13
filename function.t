@@ -1,5 +1,4 @@
 (
-    reader
     variable
 )
 
