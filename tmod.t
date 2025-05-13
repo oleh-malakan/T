@@ -31,6 +31,5 @@ parse(f * file.T) (t * T, ok) {
 }
 
 Free(t * T) {
-    file.Free(t.file)
     ~ t
 }
