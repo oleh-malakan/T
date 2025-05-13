@@ -1,5 +1,6 @@
 (
     reader
+    import
     definition
     structure
     function
@@ -7,9 +8,10 @@
 )
 
 T (
-    defn [] * definition.T
-    strc [] * structure.T
-    func [] * function.T
+    Impt [] * import.T
+    Defn [] * definition.T
+    Strc [] * structure.T
+    Func [] * function.T   
 )
 
 Parse(path []) (t * T, ok) {
@@ -23,7 +25,7 @@ Parse(path []) (t * T, ok) {
     t.defn = [0] * definition.T
     t.strc = [] * structure.T
     t.func = [] * function.T
-
+ 
 
 
     = t, !0
