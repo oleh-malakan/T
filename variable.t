@@ -1,7 +1,3 @@
-(
-    reader
-)
-
 T (
     Name []
     Type []
