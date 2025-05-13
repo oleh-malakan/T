@@ -1,31 +1,32 @@
 (
     reader
     import
-    definition
     structure
     function
+    definition
     variable
 )
 
 T (
     Impt [] * import.T
-    Defn [] * definition.T
     Strc [] * structure.T
-    Func [] * function.T   
+    Func [] * function.T
+    Defn [] * definition.T
 )
 
 Parse(path []) (t * T, ok) {
     (
-        df * definition.T
+        imArr [] * import.T
         st * structure.T
         fn * function.T
+        df * definition.T
     )
 
     t = @ T
-    t.defn = [0] * definition.T
+    t.impt = [] * import.T
     t.strc = [] * structure.T
-    t.func = [] * function.T
- 
+    t.func = [] * function.T    
+    t.defn = [0] * definition.T
 
 
     = t, !0
@@ -34,22 +35,21 @@ Parse(path []) (t * T, ok) {
 Free(t * T) {
     (
         impt [] * import.T
-        defn [] * definition.T
         strc [] * structure.T
         func [] * function.T
+        defn [] * definition.T
         i uint
         l uint
     )
 
-
-    defn = t.defn
+    impt = t.impt
     i = 0
-    l = _$(defn)
+    l = _$(impt)
     & i < l {
-        definition.Free(defn[i])
+        import.Free(impt[i])
         i++
     }
-    ~ defn
+    ~ impt
 
     strc = t.strc
     i = 0
@@ -68,6 +68,15 @@ Free(t * T) {
         i++
     }
     ~ func
+
+    defn = t.defn
+    i = 0
+    l = _$(defn)
+    & i < l {
+        definition.Free(defn[i])
+        i++
+    }
+    ~ defn
 
     ~ t
 }
