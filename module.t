@@ -14,7 +14,7 @@ T (
     Defn [] * definition.T
 )
 
-Parse(path []) (t * T, ok) {
+Parse(path []) (t * T, err) {
     (
         imArr [] * import.T
         st * structure.T
@@ -29,7 +29,7 @@ Parse(path []) (t * T, ok) {
     t.Defn = [0] * definition.T
 
 
-    = t, !0
+    = t, 0
 }
 
 Free(t * T) {
