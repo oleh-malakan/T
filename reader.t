@@ -11,9 +11,9 @@ T (
     file * file.T
 )
 
-Open(path []) (t * T, err) {
+Open(path []) (t * T) {
     t = @ T
-    = t, 0
+    = t
 }
 
 Next(t * T) (b, ok) {
