@@ -23,10 +23,10 @@ Parse(path []) (t * T, ok) {
     )
 
     t = @ T
-    t.impt = [] * import.T
-    t.strc = [] * structure.T
-    t.func = [] * function.T    
-    t.defn = [0] * definition.T
+    t.Impt = [] * import.T
+    t.Strc = [] * structure.T
+    t.Func = [] * function.T    
+    t.Defn = [0] * definition.T
 
 
     = t, !0
@@ -42,7 +42,7 @@ Free(t * T) {
         l uint
     )
 
-    impt = t.impt
+    impt = t.Impt
     i = 0
     l = _$(impt)
     & i < l {
@@ -51,7 +51,7 @@ Free(t * T) {
     }
     ~ impt
 
-    strc = t.strc
+    strc = t.Strc
     i = 0
     l = _$(strc)
     & i < l {
@@ -60,7 +60,7 @@ Free(t * T) {
     }
     ~ strc
 
-    func = t.func
+    func = t.Func
     i = 0
     l = _$(func)
     & i < l {
@@ -69,7 +69,7 @@ Free(t * T) {
     }
     ~ func
 
-    defn = t.defn
+    defn = t.Defn
     i = 0
     l = _$(defn)
     & i < l {
