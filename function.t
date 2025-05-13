@@ -4,18 +4,18 @@
 )
 
 T (
-    name []
+    Name []
 )
 
 Parse(r * reader.T, name []) (t * T, ok) {
 
     t = @ T
 
-    t.name = name
+    t.Name = name
     = t, !0
 }
 
 Free(t * T) {
-    ~ t.name
+    ~ t.Name
     ~ t
 }
