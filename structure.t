@@ -11,14 +11,16 @@ T (
 Parse(r * reader.T, name []) (t * T, ok) {
 
     t = @ T
+
     t.Name = name
-    t.Var = [] * variable.T
     = t, !0
 }
 
 Free(t * T) {
     ~ t.Name
-    variable.Free(t.Var[i])
+    ? t.Var != nil {
+        variable.Free(t.var[i])
+    }
     ~ t
 }
 
