@@ -4,8 +4,8 @@
 
 Main() {
     (
-        mArr [] * module.T
         m       * module.T
+        mArr [] * module.T
         path []
         ok        
     )
