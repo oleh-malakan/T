@@ -33,12 +33,14 @@ Parse(path []) (t * T, ok) {
 
 Free(t * T) {
     (
+        impt [] * import.T
         defn [] * definition.T
         strc [] * structure.T
         func [] * function.T
         i uint
         l uint
     )
+
 
     defn = t.defn
     i = 0
