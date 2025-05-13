@@ -8,12 +8,12 @@ T (
     Var  [] * variable.T
 )
 
-Parse(r * reader.T, name []) (t * T, ok) {
+Parse(r * reader.T, name []) (t * T, err) {
 
     t = @ T
     t.Name = name
     t.Var = [] * variable.T
-    = t, !0
+    = t, 0
 }
 
 Free(t * T) {
