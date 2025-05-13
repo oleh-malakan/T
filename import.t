@@ -5,9 +5,9 @@
 T (
 )
 
-Parse(r * reader.T) (arr [] * T, err) {
+Parse(r * reader.T) (arr [] * T) {
     arr = [] @ T
-    = arr, 0
+    = arr
 }
 
 Free(t * T) {
