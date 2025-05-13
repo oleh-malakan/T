@@ -7,14 +7,14 @@ T (
     Type []
 )
 
-ParseBlock(r * reader.T) (arr [] * T, ok) (
+ParseBlock(r * reader.T) (arr [] * T, err) (
     arr = [] @ T
-    = arr, !0
+    = arr, 0
 )
 
-ParseParam(r * reader.T) (arr [] * T, ok) (
+ParseParam(r * reader.T) (arr [] * T, err) (
     arr = [] @ T
-    = arr, !0
+    = arr, 0
 )
 
 Free(t * T) {
