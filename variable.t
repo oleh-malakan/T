@@ -3,8 +3,8 @@
 )
 
 T (
-    name []
-    type []
+    Name []
+    Type []
 )
 
 ParseBlock(r * reader.T) (arr [] * T, ok) (
@@ -18,7 +18,7 @@ ParseParam(r * reader.T) (arr [] * T, ok) (
 )
 
 Free(t * T) {
-    ~ t.name
-    ~ t.type
+    ~ t.Name
+    ~ t.Type
     ~ t
 }
