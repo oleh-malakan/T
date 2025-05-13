@@ -7,12 +7,9 @@ T (
     Type []
 )
 
-ParseBlock(r * reader.T) (arr [] * T) {
-    arr = [] @ T
-    = arr
-}
-
-ParseParam(r * reader.T) (arr [] * T) {
-    arr = [] @ T
-    = arr
+New(name [], type []) (t * T) {
+    t = [] @ T
+    t.Name = name
+    t.Type = type
+    = t
 }
