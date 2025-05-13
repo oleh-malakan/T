@@ -1,4 +1,5 @@
 (
+    reader
     variable
 )
 
@@ -7,11 +8,10 @@ T (
     var  [] * variable.T
 )
 
-New(name [], var [] * variable.T) (t * T) {
+Parse(r * reader.T, name []) (t * T, ok) {
     t = @ T
     t.name = name
-    t.var  = var
-    = t
+    = t, !0
 }
 
 Free(t * T) {
