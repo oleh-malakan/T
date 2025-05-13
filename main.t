@@ -24,5 +24,4 @@ Main() {
     }
 
 
-    module.FreeArr(mArr)
 }
