@@ -5,11 +5,11 @@
 T (
 )
 
-Parse(r * reader.T) (t * T, ok) {
-    t = @ T
-    = t, !0
+Parse(r * reader.T) (arr [] * T, ok) {
+    arr = [] @ T
+    = arr, !0
 }
 
-Free(t * T) {
+Free(arr [] * T) {
     ~ t
 }
