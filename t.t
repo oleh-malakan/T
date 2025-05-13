@@ -13,6 +13,6 @@ Main() {
     p, ok = program.Parse(path)
     ? ok {
 
-        act.Free(p)        
+        program.Free(p)        
     } 
 }
