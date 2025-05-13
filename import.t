@@ -12,17 +12,4 @@ Parse(r * reader.T) (arr [] * T, ok) {
 
 Free(t * T) {
     ~ t
-} 
-
-FreeArr(arr [] * T) {
-    (
-        i uint
-        l uint
-    )
-    i = 0
-    l = _$(arr)
-    & i < j {
-        ~ arr[i]
-    }
-    ~ arr
 }
