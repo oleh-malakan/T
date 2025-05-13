@@ -9,7 +9,7 @@ T (
 
 Parse(r * reader.T, name []) (t * T, ok) {
     t = @ T
-    = t. !0
+    = t, !0
 }
 
 Free(t * T) {
