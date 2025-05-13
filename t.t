@@ -7,7 +7,7 @@ Main() {
     (
         p * program.T
         ok
-        a
+        a [][]
     )
     a = args.Get()
     ? _$(a) > 1 {   
