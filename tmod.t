@@ -19,12 +19,8 @@ Open() (t * T, ok) {
         = nil, 0
     }
 
-    t, ok = parse(f)
-    file.Free(f)
-    =
-}
 
-parse(f * file.T) (t * T, ok) {
+
     t = @ T
     = t, !0
 }
