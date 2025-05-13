@@ -1,5 +1,5 @@
 (
-    library
+    package
 )
 
 Main() {
