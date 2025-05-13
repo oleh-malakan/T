@@ -7,13 +7,13 @@ T (
     type []
 )
 
-ParseBlock(r * reader.T) (t * T, ok) (
-    t = @ T
+ParseBlock(r * reader.T) (t [] * T, ok) (
+    t = [] @ T
     = t, !0
 )
 
-ParseParam(r * reader.T) (t * T, ok) (
-    t = @ T
+ParseParam(r * reader.T) (t [] * T, ok) (
+    t = [] @ T
     = t, !0
 )
 
