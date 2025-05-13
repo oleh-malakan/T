@@ -5,7 +5,7 @@
 Main() {
     (
         m       * module.T
-        mods [] * module.T
+        mArr [] * module.T
         path []
         ok        
     )
@@ -14,8 +14,8 @@ Main() {
     m, ok = module.Parse(path)
     ~ path
     ? ok {
-        mods += m
+        mArr += m
 
-        module.FreeArr(mods)
+        module.FreeArr(mArr)
     }
 }
