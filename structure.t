@@ -4,27 +4,27 @@
 )
 
 T (
-    name []
-    var  [] * variable.T
+    Name []
+    Var  [] * variable.T
 )
 
 Parse(r * reader.T, name []) (t * T, ok) {
 
     t = @ T
 
-    t.name = name
+    t.Name = name
     = t, !0
 }
 
 Free(t * T) {
-    ~ t.name
-    ? t.var != nil {
+    ~ t.Name
+    ? t.Var != nil {
         (
             var [] * variable.T
             i uint
             l uint
         )
-        var = t.var
+        var = t.Var
         i = 0
         l = _$(var)
         & i < l {
