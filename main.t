@@ -17,7 +17,7 @@ Main() {
         =
     }
    
-    mArr = [] * module + m
+    mArr = [] * module.T + m
 
 
 
