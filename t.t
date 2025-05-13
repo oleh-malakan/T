@@ -5,9 +5,9 @@
 
 Main() {
     (
-        path
         p * program.T
         ok
+        path
     )
 
     p, ok = program.Parse(path)
