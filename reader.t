@@ -18,7 +18,7 @@ Open(path []) (t * T, err) {
     = t, 0
 }
 
-Next(t * T) (b, err) {
+Next(t * T) (b, ok) {
     = 0, 0
 }
 
