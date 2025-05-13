@@ -21,5 +21,6 @@ Next(t * T) (b, ok) {
 }
 
 Free(t * T) {
+    file.Free(t.file)
     ~ t
 }
