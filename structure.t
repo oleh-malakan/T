@@ -19,7 +19,7 @@ Parse(r * reader.T, name []) (t * T, ok) {
 Free(t * T) {
     ~ t.Name
     ? t.Var != nil {
-        variable.Free(t.var[i])
+        variable.FreeArr(t.var)
     }
     ~ t
 }
