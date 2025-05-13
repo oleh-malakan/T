@@ -38,28 +38,25 @@ Free(t * T) {
         l uint
     )
 
-    defn = t.defn
-    i = 0 
-    l = _$(defn)
-    & i < l {
+    defn = t.defn 
+    l = _$(defn), i = 0
+    & l > i {
         definition.Free(defn[i])
         i++
     }
     ~ defn
 
     strc = t.strc
-    i = 0 
-    l = _$(strc)
-    & i < l {
+    l = _$(strc), i = 0
+    & l > i {
         structure.Free(strc[i])
         i++
     }
     ~ strc
 
     func = t.func
-    i = 0
-    l = _$(func)
-    & i < l {
+    l = _$(func), i = 0
+    & l > i {
         function.Free(func[i])
         i++
     }
