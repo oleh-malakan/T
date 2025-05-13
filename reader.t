@@ -8,6 +8,7 @@ T (
     buf []
     cur uint
     len uint
+    file * file.T
 )
 
 Open(path []) (t * T, ok) {
