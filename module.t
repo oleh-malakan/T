@@ -33,10 +33,10 @@ Parse(path []) (t * T, ok) {
 }
 
 Free(t * T) {
-    import.FreeArr(t.Impt[i])
-    structure.FreeArr(t.Strc[i])
-    function.FreeArr(t.Func[i])
-    definition.FreeArr(t.Defn[i])
+    import.FreeArr(t.Impt)
+    structure.FreeArr(t.Strc)
+    function.FreeArr(t.Func)
+    definition.FreeArr(t.Defn)
     ~ t
 }
 
