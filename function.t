@@ -7,12 +7,12 @@ T (
     Name []
 )
 
-Parse(r * reader.T, name []) (t * T, err) {
+Parse(r * reader.T, name []) (t * T) {
 
     t = @ T
 
     t.Name = name
-    = t, 0
+    = t
 }
 
 Free(t * T) {
