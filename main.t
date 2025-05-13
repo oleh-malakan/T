@@ -16,7 +16,7 @@ Main() {
         m = module.Parse(path)
         ~ path
         ? m == nil {
-            .
+            .&
         }
 
 
