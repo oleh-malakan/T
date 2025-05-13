@@ -16,13 +16,14 @@ Main() {
         m = module.Parse(path)
         ~ path
         ? m == nil {
-            .
+            break
         }
 
 
         mArr += m
     }
 
+break:
 
     module.FreeArr(mArr)
 }
