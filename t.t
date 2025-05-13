@@ -1,0 +1,11 @@
+(
+    module
+)
+
+Main() {
+    (
+        path []
+        ok
+    )
+
+}
