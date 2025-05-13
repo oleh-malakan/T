@@ -5,8 +5,8 @@
 
 Main() {
     (
-        p * program.T
         path
+        p * program.T
         ok
     )
 
