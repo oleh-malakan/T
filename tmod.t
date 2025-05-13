@@ -3,6 +3,7 @@
 )
 
 T (
+    file * file.T
 )
 
 Open(path []) (t * T, ok) {
@@ -11,5 +12,6 @@ Open(path []) (t * T, ok) {
 }
 
 Free(t * T) {
+    file.Free(t.file)
     ~ t
 }
