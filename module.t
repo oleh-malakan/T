@@ -3,7 +3,6 @@
     structure
     function
     definition
-    variable
 )
 
 T (
