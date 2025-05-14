@@ -26,6 +26,5 @@ Parse(r * reader.T, name []) (t * T) {
     t = @ T
     t.Name = name
     t.In   = in
-    t.Out  = out
     =
 }
