@@ -14,7 +14,7 @@ T (
     Defn [] * definition.T
 )
 
-Parse(r * reader.T) (t * T) {
+Parse(path []) (t * T) {
     (
         imArr [] * import.T
         st * structure.T
