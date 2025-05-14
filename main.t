@@ -13,7 +13,7 @@ Main() {
     mArr = [] * module.T
 
     & {
-        
+        m = module.Parse(path)        
         ? m == nil {
             =
         }
@@ -22,5 +22,4 @@ Main() {
 
         mArr += m
     }
-
 }
