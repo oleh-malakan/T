@@ -1,4 +1,5 @@
 (
+    reader
     import
     structure
     function
@@ -13,7 +14,7 @@ T (
     Defn [] * definition.T
 )
 
-New() (t * T) {
+Parse(r * reader.T) (t * T) {
     t = @ T
     t.Impt = [] * import.T
     t.Strc = [] * structure.T
