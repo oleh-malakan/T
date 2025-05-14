@@ -3,8 +3,8 @@
 )
 
 T (
-    Name []
-    Type []
+    name []
+    type []
 )
 
 ParseBlock(r * reader.T) (arr [] * T, err) {
