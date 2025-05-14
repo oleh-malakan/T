@@ -14,9 +14,9 @@ T (
 
 New() (t * T)
     t = @ T
-    t.Impt = [] * import.T
-    t.Strc = [] * structure.T
-    t.Func = [] * function.T    
-    t.Defn = [0] * definition.T
+    t.Impt = nil
+    t.Strc = nil
+    t.Func = nil    
+    t.Defn = nil
     =
 }
