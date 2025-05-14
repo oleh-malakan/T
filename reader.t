@@ -36,6 +36,10 @@ Next(t * T) (b, ok) {
     = 0, 0
 }
 
+Value(t * T) (b, ok) {
+    = 0, 0
+}
+
 Free(t * T) {
     file.Free(t.file)
     ~ t
