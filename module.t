@@ -7,10 +7,10 @@
 )
 
 T (
-    Impt [] * import.T
-    Strc [] * structure.T
-    Func [] * function.T
-    Defn [] * definition.T
+    impt [] * import.T
+    strc [] * structure.T
+    func [] * function.T
+    defn [] * definition.T
 )
 
 Parse(r * reader.T) (t * T) {
@@ -23,9 +23,9 @@ Parse(r * reader.T) (t * T) {
 
 
     t = @ T
-    t.Impt = [] * import.T
-    t.Strc = [] * structure.T
-    t.Func = [] * function.T    
-    t.Defn = [0] * definition.T
+    t.impt = [] * import.T
+    t.strc = [] * structure.T
+    t.func = [] * function.T    
+    t.defn = [0] * definition.T
     =
 }
