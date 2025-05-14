@@ -1,26 +1,27 @@
 (
-    parser
+    lib/os/file
     module
+)
+
+program (
 )
 
 Main() {
     (
-        m       * module.T
-        mArr [] * module.T
+        p * program
         path []
     )
 
     path = [] + 0x6D + 0x61 + 0x69 + 0x6E + 0x2E + 0x74 + 0x00 // main.t
-    mArr = [] * module.T
-
-    & {
-        m = parser.Parse(path)        
-        ? m == nil {
-            =
-        }
-        ~ path
-
-
-        mArr += m
+    p = parse(path)   
+    ~ path
+    ? p == nil {
+        =
     }
+
+}
+
+parse(path []) (p * program) {
+    p = @ program
+    =
 }
