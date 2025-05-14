@@ -9,5 +9,5 @@ New(name [], type [], value []) (t * T) {
     t.Name  = name
     t.Type  = type
     t.Value = value
-    = t
+    =
 }
