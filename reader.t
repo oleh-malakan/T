@@ -2,7 +2,7 @@
     os/file
 )
 
-bufCap uint = 0
+bufCap    uint = 0
 
 T (
     buf []
