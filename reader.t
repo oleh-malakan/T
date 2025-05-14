@@ -2,7 +2,7 @@
     lib/os/file
 )
 
-bufCap uint = 0
+bufCap uint = 128
 
 T (
     buf []
