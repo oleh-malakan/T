@@ -2,23 +2,30 @@
     lib/os/file
 )
 
+bufCap uint = 256
+
 T (
     buf []
-    len uint
     cur uint
+    len uint
 
     file * file.T
 )
 
 Open(path []) (t * T) {
     (
+        f * file.T
         err
     )
 
-    t, err = file.Open(path)
+    f, err = file.Open(path)
     ? err != nil {
         // Print(err)
+        = nil
     }
+
+    t = @ T
+    t.file = f
     =
 }
 
