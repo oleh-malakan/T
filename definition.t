@@ -4,10 +4,8 @@ T (
     Value []
 )
 
-New(name [], type [], value []) (t * T) {
+New(name []) (t * T) {
     t = @ T
     t.Name  = name
-    t.Type  = type
-    t.Value = value
     =
 }
