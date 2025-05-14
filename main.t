@@ -6,7 +6,7 @@
 Main() {
     (
         arg [] 
-        i #64
+        i uint64
     )
     arg = args.Get()
 
