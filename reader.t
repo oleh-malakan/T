@@ -2,12 +2,12 @@
     lib/os/file
 )
 
-bufCap uint = 128
+bufCap = 128
 
 T (
     buf []
-    cur uint
-    len uint
+    cur
+    len
 
     f * file.T
 )
