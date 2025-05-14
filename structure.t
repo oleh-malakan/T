@@ -4,8 +4,8 @@
 )
 
 T (
-    Name []
-    Var  [] * variable.T
+    name []
+    var  [] * variable.T
 )
 
 Parse(r * reader.T, name []) (t * T) {
@@ -20,7 +20,7 @@ Parse(r * reader.T, name []) (t * T) {
     }
 
     t = @ T
-    t.Name = name
-    t.Var  = var
+    t.name = name
+    t.var  = var
     =
 }
