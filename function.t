@@ -11,12 +11,12 @@ T (
 
 Parse(r * reader.T, name []) (t * T) {
     (
-        in  [] * variable.T
-        out [] * variable.T
+        inParam  [] * variable.T
+        outParam [] * variable.T
         err
     )
 
-    in, err = variable.ParseParam(r)
+    inParam, err = variable.ParseParam(r)
     ? err != 0 {
         = nil
     }
@@ -25,6 +25,7 @@ Parse(r * reader.T, name []) (t * T) {
 
     t = @ T
     t.Name = name
-    t.In   = in
+    t.In   = inParam
+    t.Out  = outParam
     =
 }
