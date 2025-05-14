@@ -18,3 +18,6 @@ ParseParam(r * reader.T) (arr [] * T) {
     arr = [] @ T
     =
 }
+
+FreeArr(arr [] * T) {
+}
