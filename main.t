@@ -7,7 +7,7 @@ Main() {
     (
         arg [] []
     )
-
+    arg = args.Get()
 
 
 }
