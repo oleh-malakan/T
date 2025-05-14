@@ -1,9 +1,15 @@
 (
+    lib/os/file
     module
 )
 
 program (
 )
+
+parse(path []) (p * program) {
+    p = @ program
+    =
+}
 
 Main() {
     (
@@ -18,13 +24,4 @@ Main() {
         =
     }
 
-}
-
-(
-    lib/os/file
-)
-
-parse(path []) (p * program) {
-    p = @ program
-    =
 }
