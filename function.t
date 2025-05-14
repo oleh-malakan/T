@@ -4,9 +4,9 @@
 )
 
 T (
-    Name []
-    In   [] * variable.T
-    Out  [] * variable.T
+    name []
+    in   [] * variable.T
+    out  [] * variable.T
 )
 
 Parse(r * reader.T, name []) (t * T) {
@@ -24,8 +24,8 @@ Parse(r * reader.T, name []) (t * T) {
 
 
     t = @ T
-    t.Name = name
-    t.In   = inParam
-    t.Out  = outParam
+    t.name = name
+    t.in   = inParam
+    t.out  = outParam
     =
 }
