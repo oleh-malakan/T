@@ -1,10 +1,20 @@
+(
+    reader
+)
+
 T (
     Name []
     Type []
 )
 
-New(name []) (t * T) {
-    t = @ T
-    t.Name = name
+ParseBlock(r * reader.T) (arr [] * T) {
+
+    arr = [] @ T
+    =
+}
+
+ParseParam(r * reader.T) (arr [] * T) {
+
+    arr = [] @ T
     =
 }
