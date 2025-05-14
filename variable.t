@@ -3,9 +3,8 @@ T (
     Type []
 )
 
-New(name [], type []) (t * T) {
+New(name []) (t * T) {
     t = @ T
     t.Name = name
-    t.Type = type
     =
 }
