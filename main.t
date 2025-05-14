@@ -1,5 +1,5 @@
 (
-    file
+    os/file
     module
 )
 
