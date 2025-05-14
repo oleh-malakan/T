@@ -1,5 +1,5 @@
 (
-    os/file
+    lib/os/file
 )
 
 bufCap uint = 0
