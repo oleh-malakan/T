@@ -4,8 +4,8 @@
 
 T (
     buf []
-    cur uint
     len uint
+    cur uint
 
     file * file.T
 )
