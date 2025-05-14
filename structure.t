@@ -11,10 +11,11 @@ T (
 Parse(r * reader.T, name []) (t * T) {
     (
         var [] * variable.T
+        err
     )
 
-    var = variable.ParseBlock(r)
-    ? var != nil {
+    var, ok = variable.ParseBlock(r)
+    ? err != 0 {
         = nil
     }
 
