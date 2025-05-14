@@ -1,4 +1,5 @@
 (
+    parser
     module
 )
 
@@ -13,7 +14,7 @@ Main() {
     mArr = [] * module.T
 
     & {
-        m = module.Parse(path)        
+        m = parser.Parse(path)        
         ? m == nil {
             =
         }
