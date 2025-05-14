@@ -32,11 +32,11 @@ Open(path []) (t * T) {
     =
 }
 
-Next(t * T) (b, ok) {
+Current(t * T) (b, ok) {
     = 0, 0
 }
 
-Current(t * T) (b, ok) {
+Next(t * T) (b, ok) {
     = 0, 0
 }
 
