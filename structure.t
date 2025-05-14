@@ -1,5 +1,4 @@
 (
-    reader
     variable
 )
 
@@ -8,18 +7,9 @@ T (
     Var  [] * variable.T
 )
 
-Parse(r * reader.T, name []) (t * T) {
-    (
-        var [] * variable.T
-    )
-
-    var = variable.Parse(r)
-    ? var == nil {
-        = nil
-    }
-
+New(name []) (t * T) {
     t = @ T
     t.Name = name
-    t.Var = var
+    t.Var  = nil
     =
 }
