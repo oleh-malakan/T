@@ -1,11 +1,17 @@
+(
+    reader
+)
+
 T (
     Name  []
     Type  []
     Value []
 )
 
-New(name []) (t * T) {
+Parse(r * reader.T, name [], type []) (t * T) {
+
     t = @ T
-    t.Name  = name
+    t.Name = name
+    t.Type = type
     =
 }
