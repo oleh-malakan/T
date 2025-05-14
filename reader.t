@@ -36,7 +36,7 @@ Next(t * T) (b, ok) {
     = 0, 0
 }
 
-Value(t * T) (b, ok) {
+Current(t * T) (b, ok) {
     = 0, 0
 }
 
