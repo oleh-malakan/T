@@ -14,7 +14,7 @@ Parse(r * reader.T, name []) (t * T) {
         err
     )
 
-    var, ok = variable.ParseBlock(r)
+    var, err = variable.ParseBlock(r)
     ? err != 0 {
         = nil
     }
