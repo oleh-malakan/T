@@ -1,7 +1,11 @@
+(
+    reader
+)
+
 T (
 )
 
-New() (t * T) {
-    t = @ T
-    = t
+Parse(r * reader.T) (arr [] * T) {
+    arr = [] @ T
+    =
 }
