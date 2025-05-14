@@ -22,7 +22,6 @@ Parse(r * reader.T) (t * T) {
     )
 
 
-
     t = @ T
     t.Impt = [] * import.T
     t.Strc = [] * structure.T
