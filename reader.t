@@ -9,7 +9,7 @@ T (
     cur
     len
 
-    f * file.T
+    file * file.T
 )
 
 Open(path []) (t * T) {
