@@ -1,5 +1,4 @@
 (
-    reader
     import
     structure
     function
@@ -14,14 +13,7 @@ T (
     Defn [] * definition.T
 )
 
-Parse(path []) (t * T) {
-    (
-        imArr [] * import.T
-        st * structure.T
-        fn * function.T
-        df * definition.T
-    )
-
+New() (t * T)
     t = @ T
     t.Impt = [] * import.T
     t.Strc = [] * structure.T
