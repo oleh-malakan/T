@@ -4,7 +4,7 @@ T (
 )
 
 New(alias [], path []) (t * T) {
-    t = @ T
+    t = @
     t.alias = alias
     t.path  = path
 }
