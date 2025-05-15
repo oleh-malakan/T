@@ -6,10 +6,11 @@
 {
     (
         p * param.T
+        err
     )
 
-    p = param.Get()
-    ? p == nil {
+    p, err = param.Get()
+    ? err != 0 {
         =
     }
 
