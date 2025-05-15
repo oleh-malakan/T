@@ -1,5 +1,5 @@
 (
-    ../t-lib/os/args
+    ../t-lib/args
     module
 )
 
