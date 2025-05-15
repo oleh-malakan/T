@@ -5,7 +5,7 @@
 T (
 )
 
-Get() (t * T, err) {
+Read() (t * T, err) {
     t = @ T
     = t, 0
 }
