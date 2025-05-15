@@ -1,11 +1,13 @@
 (
+    ../t-lib/os/args
     param
     module
 )
 
 {
     (
-        p * param.T        
+        arg []
+        p * param.T
     )
 
     p = param.Open()
