@@ -1,6 +1,10 @@
+(
+    ../t-lib/os/args
+)
+
 T (
 )
 
-Parse(arg []) (t * T) {
+Parse() (t * T) {
     t = @ T
 }
