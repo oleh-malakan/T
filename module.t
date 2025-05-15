@@ -30,5 +30,5 @@ Parse(r * reader.T) (t * T) {
 }
 
 parseImptOrDefn(r * reader) (impt * import.T, defn * definition.T, err) {
-
+    = nil, nil, 0xFF
 }
