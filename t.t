@@ -3,7 +3,7 @@
     module
 )
 
-Main() {
+() {
     (
         arg [] []
     )
