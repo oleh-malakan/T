@@ -8,7 +8,7 @@
         p * param.T
     )
 
-    p = param.Parse()
+    p = param.Get()
     ? p == nil {
         =
     }
