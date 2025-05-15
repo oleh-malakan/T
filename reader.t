@@ -2,9 +2,7 @@
     lib/os/file
 )
 
-_ (
-    bufCap = 128
-)
+bufCap = 128
 
 T (
     buf []
