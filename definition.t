@@ -10,6 +10,6 @@ T (
 
 Parse(r * reader, name [], type []) (t * T) {
     t = @
-    t.name  = name
-    t.type  = type
+    t.name = name
+    t.type = type
 }
