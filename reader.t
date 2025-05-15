@@ -8,7 +8,7 @@
 
 T (
     file * file.T
-    buf []
+    buf     []
     prevBuf []
     nextBuf []
     cur
