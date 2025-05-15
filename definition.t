@@ -1,12 +1,15 @@
+(
+    reader
+)
+
 T (
     name  []
     type  []
     value []
 )
 
-New(name [], type [], value []) (t * T) {
+New(r * reader, name [], type []) (t * T) {
     t = @ T
     t.name  = name
     t.type  = type
-    t.value = value
 }
