@@ -27,5 +27,4 @@ Parse(r * reader.T) (t * T) {
     t.strc = [] * structure.T
     t.func = [] * function.T    
     t.defn = [0] * definition.T
-    =
 }
