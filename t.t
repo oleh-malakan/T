@@ -9,7 +9,7 @@
         err
     )
 
-    p, err = param.Get()
+    p, err = param.Read()
     ? err != 0 {
         =
     }
