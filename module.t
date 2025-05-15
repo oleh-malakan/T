@@ -29,6 +29,6 @@ Parse(r * reader.T) (t * T) {
     t.defn = [0] * definition.T
 }
 
-parseImptOrDefn(r * reader) (impt * import.T, defn * definition.T, err) {
+parseImptOrDefn(r * reader) (im * import.T, df * definition.T, err) {
     = nil, nil, 0xFF
 }
