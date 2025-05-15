@@ -2,9 +2,9 @@
     file
 )
 
-_ (
+[
     bufCap = 128
-)
+]
 
 T (
     buf []
