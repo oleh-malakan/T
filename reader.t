@@ -1,5 +1,5 @@
 (
-    ../t-lib/file
+    ../t-lib/os/file
 )
 
 [
