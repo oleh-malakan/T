@@ -1,11 +1,15 @@
+[
+    = t
+    x86-64: linux
+]
+
 (
-    lib/os/args
     module
 )
 
 {
     (
-        arg [] []
+        
     )
 
 
