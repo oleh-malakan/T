@@ -1,5 +1,5 @@
 (
-    os/args
+    lib/os/args
     module
 )
 
