@@ -22,9 +22,9 @@ Parse(r * reader.T) (t * T) {
     )
 
 
-    t = @ T
-    t.impt = [] * import.T
-    t.strc = [] * structure.T
-    t.func = [] * function.T    
-    t.defn = [0] * definition.T
+    t = @
+    t.impt = []
+    t.strc = []
+    t.func = [] 
+    t.defn = [0]
 }
