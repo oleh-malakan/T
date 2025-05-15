@@ -27,5 +27,4 @@ Parse(r * reader.T, name []) (t * T) {
     t.name = name
     t.in   = inParam
     t.out  = outParam
-    =
 }
