@@ -19,7 +19,7 @@ Parse(r * reader.T, name []) (t * T) {
         = nil
     }
 
-    t = @ T
+    t = @
     t.name = name
     t.var  = var
 }
