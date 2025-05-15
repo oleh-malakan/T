@@ -10,13 +10,13 @@ T (
 ParseBlock(r * reader.T) (arr [] * T, err) {
 
     arr = [] @ T
-    = arr, 0
+    err = 0
 }
 
 ParseParam(r * reader.T) (arr [] * T, err) {
 
     arr = [] @ T
-    = arr, 0
+    err = 0
 }
 
 FreeArr(arr [] * T) {
