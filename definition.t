@@ -1,15 +1,12 @@
-(
-    reader
-)
-
 T (
     name  []
     type  []
     value []
 )
 
-Parse(r * reader.T, name []) (t * T) {
-
+New(name [], type [], value []) (t * T) {
     t = @ T
-    t.name = name
+    t.name  = name
+    t.type  = type
+    t.valie = valie
 }
