@@ -5,7 +5,7 @@
 T (
 )
 
-Parse(r * reader.T) (arr [] * T) {
+Parse(r * reader.T, term []) (t * T) {
 
-    arr = [] @ T
+    t = @ T
 }
