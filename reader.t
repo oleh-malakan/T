@@ -8,6 +8,7 @@
 
 T (
     file * file.T
+
     buf     []
     prevBuf []
     nextBuf []
@@ -28,12 +29,13 @@ Open(path []) (t * T) {
     }
     
     t = @ T
+    t.file = f
+
     t.buf = nil
     t.prevBuf = nil
     t.nextBur = nil
     t.cur = 0
     t.len = 0
-    t.file = f
 }
 
 Prev(t * T) (b, ok) {
