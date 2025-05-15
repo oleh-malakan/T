@@ -31,7 +31,6 @@ Open(path []) (t * T) {
     t.cur = 0
     t.len = 0
     t.file = f
-    =
 }
 
 Next(t * T) (b, ok) {
