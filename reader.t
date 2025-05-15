@@ -29,6 +29,8 @@ Open(path []) (t * T) {
     
     t = @ T
     t.buf = nil
+    t.prevBuf = nil
+    t.nextBur = nil
     t.cur = 0
     t.len = 0
     t.file = f
