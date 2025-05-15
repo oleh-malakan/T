@@ -5,6 +5,6 @@
 T (
 )
 
-Parse() (t * T) {
+Get() (t * T) {
     t = @ T
 }
