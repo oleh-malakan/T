@@ -5,6 +5,7 @@
 T (
 )
 
-Get() (t * T) {
+Get() (t * T, err) {
     t = @ T
+    = t, 0
 }
