@@ -9,7 +9,7 @@
 T (
     file * file.T
 
-    buf     []
+    buf []
     cur
     len
 )
