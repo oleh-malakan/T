@@ -9,13 +9,13 @@ T (
 
 ParseBlock(r * reader.T) (arr [] * T, err) {
 
-    arr = [] @ T
+    arr = []
     = arr, 0
 }
 
 ParseParam(r * reader.T) (arr [] * T, err) {
 
-    arr = [] @ T
+    arr = []
     = arr, 0
 }
 
