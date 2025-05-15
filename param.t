@@ -6,6 +6,6 @@ T (
 )
 
 Read() (t * T, err) {
-    t = @ T
+    t = @
     = t, 0
 }
