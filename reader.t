@@ -34,10 +34,6 @@ Open(path []) (t * T) {
     =
 }
 
-Prev(t * T) (b, ok) {
-    = 0, 0
-}
-
 Next(t * T) (b, ok) {
     = 0, 0
 }
