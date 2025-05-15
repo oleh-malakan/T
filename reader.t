@@ -7,11 +7,12 @@
 )
 
 T (
+    file * file.T
     buf []
+    prevBuf []
+    nextBuf []
     cur
     len
-
-    file * file.T
 )
 
 Open(path []) (t * T) {
