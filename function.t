@@ -1,6 +1,6 @@
 (
-    act/reader
-    act/variable
+    reader
+    variable
 )
 
 T (
