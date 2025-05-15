@@ -9,14 +9,14 @@ T (
 
 ParseBlock(r * reader.T) (arr [] * T, err) {
 
-    err = 0
-    arr = [] @ T   
+    arr = [] @ T
+    = arr, 0
 }
 
 ParseParam(r * reader.T) (arr [] * T, err) {
 
-    err = 0
     arr = [] @ T
+    = arr, 0
 }
 
 FreeArr(arr [] * T) {
