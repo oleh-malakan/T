@@ -1,10 +1,10 @@
 T (
     alias []
-    value []
+    path  []
 )
 
-New(alias [], value []) (t * T) {
+New(alias [], path []) (t * T) {
     t = @ T
     t.alias = alias
-    t.value = value
+    t.path  = path
 }
