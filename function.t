@@ -23,7 +23,7 @@ Parse(r * reader.T, name []) (t * T) {
 
 
 
-    t = @ T
+    t = @
     t.name = name
     t.in   = inParam
     t.out  = outParam
