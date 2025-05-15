@@ -5,5 +5,5 @@ t
 ]
 
 (
-    lib github.com/oleh-malakan/t-lib
+    file github.com/oleh-malakan/t-lib/os/file
 )
