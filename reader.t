@@ -33,10 +33,6 @@ Open(path []) (t * T) {
     t.file = f
 }
 
-Prev(t * T) (b, ok) {
-    = 0, 0
-}
-
 Next(t * T) (b, ok) {
     = 0, 0
 }
