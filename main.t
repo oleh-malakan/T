@@ -1,17 +1,11 @@
-[
-    = t
-    x86-64: linux
-    //x86-64: windows
-]
-
 (
+    lib/os/args
     module
 )
 
-
 {
     (
-       
+        arg [] []
     )
 
 
