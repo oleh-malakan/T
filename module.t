@@ -28,3 +28,7 @@ Parse(r * reader.T) (t * T) {
     t.func = [] * function.T    
     t.defn = [0] * definition.T
 }
+
+parseImptOrDefn(r * reader) (impt * import.T, defn * definition.T, err) {
+
+}
