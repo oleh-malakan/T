@@ -18,7 +18,7 @@ Open(path []) (t * T) {
     
     f, err = file.Open: path
     ? err != 0 {
-        // Print(err)
+        // Print: err
         = nil
     }
     
