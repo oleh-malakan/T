@@ -1,5 +1,5 @@
 (
-    ../t-lib/args
+    ../lib/args
 )
 
 T (
