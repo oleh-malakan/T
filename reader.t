@@ -2,10 +2,6 @@
     file
 )
 
-(
-    bufCap = 128
-)
-
 T (
     file * file.T
 
@@ -32,10 +28,6 @@ Open(path []) (t * T) {
     t.buf = nil
     t.cur = 0
     t.len = 0
-}
-
-Prev(t * T) (b, ok) {
-    = 0, 0
 }
 
 Next(t * T) (b, ok) {
