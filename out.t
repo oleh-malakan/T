@@ -1,2 +1,2 @@
-Print(b []) {
+Print(v string) {
 }
