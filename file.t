@@ -25,3 +25,7 @@ WriteAt(t * T, b [], offset uint) (n uint, err) {
 Close(t * T) {
     ~ t
 }
+
+EOF() (v) {
+    = 0xFF
+}
