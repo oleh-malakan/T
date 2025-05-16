@@ -16,7 +16,7 @@ Open(path []) (t * T) {
         err
     )
     
-    f, err = file.Open(path)
+    f, err = file.Open: path
     ? err != 0 {
         // Print(err)
         = nil
@@ -35,7 +35,7 @@ Next(t * T) (b, ok) {
 }
 
 Close(t * T) {
-    file.Close(t.file)
+    file.Close: t.file
     ~ t
 }
 
