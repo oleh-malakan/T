@@ -5,7 +5,7 @@
 T (
 )
 
-Open(path string) (t * T, err) {
+Open(path * string) (t * T, err) {
     t = @
     = t, 0
 }
