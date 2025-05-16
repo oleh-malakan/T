@@ -34,11 +34,11 @@ Open(path string) (t * T) {
     t.len = 0
 }
 
-Prev(t * T) (b, bool) {
+Prev(t * T) (b, ok bool) {
     = 0, false
 }
 
-Next(t * T) (b, bool) {
+Next(t * T) (b, ok bool) {
     = 0, false
 }
 
