@@ -8,5 +8,5 @@ T (
 )
 
 Parse(r * reader) (arr [] * T) {
-    t = []
+    arr = []
 }
