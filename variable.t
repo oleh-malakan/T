@@ -18,6 +18,3 @@ ParseParam(r * reader.T) (arr [] * T, err) {
     arr = []
     = arr, 0
 }
-
-FreeArr(arr [] * T) {
-}
