@@ -16,7 +16,7 @@ Parse(r * reader.T, name []) (t * T) {
         err
     )
 
-    inParam, err = variable.ParseParam: r
+    inParam, err = variable.ParseParam(r)
     ? err != 0 {
         = nil
     }
