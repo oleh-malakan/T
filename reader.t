@@ -1,5 +1,5 @@
 (
-    ../lib-os/file
+    ../os/file
 )
 
 (
