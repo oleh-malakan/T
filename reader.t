@@ -14,7 +14,7 @@ T (
     len
 )
 
-Open(path string) (t * T) {
+Open(path * string) (t * T) {
     (
         f * file.T
         err
