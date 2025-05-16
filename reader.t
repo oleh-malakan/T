@@ -34,8 +34,8 @@ Next(t * T) (b, ok) {
     = 0, 0
 }
 
-Close(t * T) {
-    file.Close(t.file)
+Free(t * T) {
+    file.Free(t.file)
     ~ t
 }
 
