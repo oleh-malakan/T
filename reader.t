@@ -38,3 +38,7 @@ Close(t * T) {
     file.Close(t.file)
     ~ t
 }
+
+bufCap() (v) {
+    = 128
+}
