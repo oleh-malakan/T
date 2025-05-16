@@ -7,6 +7,7 @@ T (
     path  []
 )
 
-Parse(r * reader) (arr [] * T) {
+Parse(r * reader) (arr [] * T, err) {
     arr = []
+    = arr, 0
 }
