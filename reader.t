@@ -34,12 +34,12 @@ Open(path []) (t * T) {
     t.len = 0
 }
 
-Prev(t * T) (b, ok bool) {
-    = 0, false
+Prev(t * T) (b, ok) {
+    = 0, 0
 }
 
-Next(t * T) (b, ok bool) {
-    = 0, false
+Next(t * T) (b, ok) {
+    = 0, 0
 }
 
 Close(t * T) {
