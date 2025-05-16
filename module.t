@@ -13,7 +13,7 @@ T (
 
 Parse(r * reader.T) (t * T) {
     (
-        imArr [] * import.T
+        im [] * import.T
         st * structure.T
         fn * function.T
     )
