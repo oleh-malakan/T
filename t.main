@@ -3,7 +3,7 @@
     module
 )
 
-{
+Main() {
     (
         p * param.T
         err
