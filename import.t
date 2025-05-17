@@ -10,6 +10,4 @@ T (
 Parse(r * reader.T, firstAlias [], firstPath []) (arr [] * T) {
 
     arr = []
-    
-    =
 }
