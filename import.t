@@ -9,7 +9,7 @@ T (
 
 Parse(r * reader.T, alias [], path []) (arr [] * T) {
 
-    t = []
+    arr = []
     
     =
 }
