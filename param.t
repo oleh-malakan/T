@@ -1,5 +1,5 @@
 (
-    args
+    ../std/args
 )
 
 T (
