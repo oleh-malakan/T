@@ -11,6 +11,4 @@ T (
 Parse(r * reader, firstName [], firstType []) (arr [] * T) {
     
     arr = []
-
-    =
 }
