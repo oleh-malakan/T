@@ -8,9 +8,9 @@ T (
     value []
 )
 
-Parse(r * reader, name [], type []) (t * T) {
+Parse(r * reader, firstName [], firstType []) (arr [] * T) {
     
-    t = @ T
-    t.name  = name
-    t.type  = type
+    arr = []
+
+    =
 }
