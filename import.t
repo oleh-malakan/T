@@ -1,11 +1,15 @@
+(
+    reader
+)
+
 T (
     alias []
     path  []
 )
 
-New(alias [], path []) (t * T) {
-    t = @
-    t.alias = alias
-    t.path  = path
+Parse(r * reader.T, alias [], path []) (arr [] * T) {
+
+    t = []
+    
     =
 }
