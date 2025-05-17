@@ -15,10 +15,10 @@ T (
 
 Parse(r * reader.T) (t * T) {
     (
-        im * import.T
-        st * structure.T
-        fn * function.T
-        df * definition.T
+        im [] * import.T
+        st    * structure.T
+        fn    * function.T
+        df [] * definition.T
     )
 
 
