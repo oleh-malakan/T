@@ -1,3 +1,7 @@
+(
+    EOF = 0xFF
+)
+
 T (
 )
 
@@ -24,8 +28,4 @@ WriteAt(t * T, b [], offset uint) (n uint, err) {
 
 Free(t * T) {
     ~ t
-}
-
-EOF() (v) {
-    = 0xFF
 }
