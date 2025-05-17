@@ -2,6 +2,10 @@
     file
 )
 
+(
+    bufCap = 128
+)
+
 T (
     file * file.T
 
@@ -30,6 +34,10 @@ Open(path []) (t * T) {
     t.len = 0
 }
 
+Prev(t * T) (b, ok) {
+    = 0, 0
+}
+
 Next(t * T) (b, ok) {
     = 0, 0
 }
@@ -37,8 +45,4 @@ Next(t * T) (b, ok) {
 Free(t * T) {
     file.Free(t.file)
     ~ t
-}
-
-bufCap() (v) {
-    = 128
 }
