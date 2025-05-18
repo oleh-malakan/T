@@ -5,7 +5,5 @@
 ]
 
 (
-    output github.com/oleh-malakan/std/output
-    file github.com/oleh-malakan/std/file
-    exec github.com/oleh-malakan/std/exec    
+    github.com/oleh-malakan/std
 )
