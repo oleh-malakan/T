@@ -1,5 +1,6 @@
 (
-    std/file
+    std/file.t
+    param.t
 )
 
 (
