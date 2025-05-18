@@ -5,6 +5,5 @@
 ]
 
 (
-    file github.com/oleh-malakan/std/file
-    args github.com/oleh-malakan/std/args
+    github.com/oleh-malakan/std
 )
