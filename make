@@ -5,5 +5,5 @@
 ]
 
 (
-    github.com/oleh-malakan/std
+    ../std
 )
