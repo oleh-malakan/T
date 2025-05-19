@@ -1,18 +1,16 @@
 (
+    param
     catalog
     module
 )
 
 Main() {
     (
-        in  []   
-        out [] 
-        po  [][]
-        action
+        p * param.T
         err
     )
 
-    action, in, out, po, err = param.Read()
+    p, err = param.Read()
     ? err != 0 {
         =
     }
