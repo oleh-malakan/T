@@ -9,3 +9,7 @@ Read() (t * T, err) {
     t = @
     = t, 0
 }
+
+Free(t * T) {
+    ~ t
+}
