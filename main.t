@@ -6,11 +6,11 @@
 
 Main() {
     (
-        o * option.T
+        opt * option.T
         err
     )
 
-    o, err = option.Read()
+    opt, err = option.Read()
     ? err != 0 {
         =
     }
