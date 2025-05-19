@@ -5,7 +5,6 @@
 
 Main() {
     (
-        p * param.T
         in  []   
         out [] 
         po  [][]
