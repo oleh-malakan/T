@@ -6,14 +6,14 @@
 Main() {
     (
         p * param.T
-        path []
+        in  []   
+        out [] 
+        po  [][]
+        action
         err
     )
 
-    path   = []
-    path  += 0x2E + 0x00
-    p, err = param.Open(path)
-    ~ path
+    action, in, out, po, err = param.Read()
     ? err != 0 {
         =
     }
