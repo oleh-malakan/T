@@ -2,14 +2,11 @@
     std/in
 )
 
-T (
+(
+    Run = 0
+    Debug
+    Out
 )
 
-Open() (t * T, err) {
-    t = @
-    = t, 0
-}
-
-Free(t * T) {
-    ~ t
+Read() (type, in [], out [], po [][], err) {
 }
