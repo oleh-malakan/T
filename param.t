@@ -5,7 +5,7 @@
 (
     Run = 0
     Debug
-    Out
+    Build
 )
 
 T (
