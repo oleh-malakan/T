@@ -6,11 +6,11 @@
 
 Main() {
     (
-        p * param.T
+        o * option.T
         err
     )
 
-    p, err = param.Read()
+    o, err = option.Read()
     ? err != 0 {
         =
     }
