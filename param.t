@@ -1,5 +1,5 @@
 (
-    std/in
+    std/input
 )
 
 (
