@@ -8,5 +8,5 @@
     Out
 )
 
-Read() (type, in [], out [], po [][], err) {
+Read() (action, in [], out [], po [][], err) {
 }
