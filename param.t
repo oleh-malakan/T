@@ -11,7 +11,7 @@
 T (
     in  []
     out []
-    po  [][]
+    po  []
     action
 )
 
