@@ -1,5 +1,6 @@
 (
     param
+    catalog
     module
 )
 
