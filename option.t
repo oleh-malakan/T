@@ -9,10 +9,10 @@
 )
 
 T (
-    in  []
-    out []
-    po  [][]
-    action
+    In  []
+    Out []
+    PO  [][]
+    Action
 )
 
 Read() (t * T, err) {
