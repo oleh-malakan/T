@@ -1,5 +1,5 @@
 (
-
+    std/file
 )
 
 (
@@ -42,7 +42,7 @@ Next(t * T) (b, ok) {
     = 0, 0
 }
 
-Free(t * T) {
-    file.Free(t.file)
+Close(t * T) {
+    file.Close(t.file)
     ~ t
 }
