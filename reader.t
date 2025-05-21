@@ -1,5 +1,5 @@
 (
-    std/file
+    ../std/file
 )
 
 (
