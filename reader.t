@@ -8,6 +8,7 @@
 
 T (
     file * file.T
+    offset uint
 
     buf []
     cur
