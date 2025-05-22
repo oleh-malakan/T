@@ -1,8 +1,39 @@
+(
+    ../std/file
+)
+
+import (
+    alias []
+    path  []
+)
+
+variable (
+    name []
+    type []
+)
+
 definition (
-    name  []
-    type  []
+    var * variable
     value []
 )
+
+structure (
+    name []
+    var  [] * variable
+)
+
+function (
+    name []
+    in   [] * variable
+    out  [] * variable
+)
+
+module (
+    impt [] * import
+    strc [] * structure
+    func [] * function
+    defn [] * definition
+}
 
 Main() {
 }
