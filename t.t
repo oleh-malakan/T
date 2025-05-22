@@ -1,6 +1,3 @@
-Main() {
-}
-
 (
     ../std/file
 )
@@ -40,4 +37,8 @@ module (
 
 parse(path []) (m * module) {
     = nil
+}
+
+Main() {
+
 }
