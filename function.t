@@ -1,5 +1,4 @@
 (
-    reader
     variable
 )
 
@@ -9,22 +8,7 @@ T (
     out  [] * variable.T
 )
 
-Parse(r * reader.T, name []) (t * T) {
-    (
-        inParam  [] * variable.T
-        outParam [] * variable.T
-        err
-    )
-
-    inParam, err = variable.ParseParam(r)
-    ? err != 0 {
-        = nil
-    }
-
-
-
+New(name []) (t * T) {
     t = @
     t.name = name
-    t.in   = inParam
-    t.out  = outParam
 }
