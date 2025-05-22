@@ -1,5 +1,5 @@
 (
-    std/file
+    ../std/file
 )
 
 import (
@@ -36,13 +36,6 @@ module (
 }
 
 parse(path []) (m * module) {
-    = nil
-}
-
-tMod (
-)
-
-parseTMod(path []) (t * tMod) {
     = nil
 }
 
