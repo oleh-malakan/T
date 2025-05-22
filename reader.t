@@ -1,5 +1,5 @@
 (
-    fs/file
+    file
 )
 
 (
