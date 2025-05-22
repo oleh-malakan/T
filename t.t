@@ -1,3 +1,6 @@
+Main() {
+}
+
 (
     ../std/file
 )
@@ -35,9 +38,6 @@ module (
     defn [] * definition
 }
 
-Main() {
-}
-
-parse(path []) (m * module.T) {
+parse(path []) (m * module) {
     = nil
 }
