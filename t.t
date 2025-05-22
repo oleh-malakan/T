@@ -40,6 +40,9 @@ parse(path []) (m * module) {
     = nil
 }
 
+parseTMod(path []) (t * ) {
+}
+
 Main() {
 
 }
