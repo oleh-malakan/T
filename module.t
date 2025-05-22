@@ -1,5 +1,4 @@
 (
-    reader
     import
     structure
     function
@@ -13,15 +12,7 @@ T (
     defn [] * definition.T
 )
 
-Parse(r * reader.T) (t * T) {
-    (
-        im [] * import.T
-        st    * structure.T
-        fn    * function.T
-        df [] * definition.T
-    )
-
-
+New() (t * T) {
     t = @
     t.impt = []
     t.strc = []
