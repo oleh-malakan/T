@@ -1,3 +1,3 @@
 (
-    std/base/file
+    std/file
 )
