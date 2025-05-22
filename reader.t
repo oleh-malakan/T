@@ -1,5 +1,5 @@
 (
-    std/base/file
+    base/file
 )
 
 (
