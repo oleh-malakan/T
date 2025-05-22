@@ -1,4 +1,0 @@
-T (
-    Alias []
-    Path  []
-)
