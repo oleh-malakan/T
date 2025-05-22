@@ -1,13 +1,8 @@
-(
-    reader
-)
-
 T (
     alias []
     path  []
 )
 
-Parse(r * reader.T, firstAlias [], firstPath []) (arr [] * T) {
-
-    arr = []
+Parse(alias [], path []) (t * T) {
+    t = []
 }
