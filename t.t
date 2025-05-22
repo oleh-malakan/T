@@ -1,5 +1,4 @@
 (
-    t-mod
     std/file
 )
 
@@ -40,7 +39,11 @@ parse(path []) (m * module) {
     = nil
 }
 
-parseTMod(path []) (t * ) {
+tMod (
+)
+
+parseTMod(path []) (t * tMod) {
+    = nil
 }
 
 Main() {
