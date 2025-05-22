@@ -3,11 +3,6 @@
 )
 
 T (
-    name []
-    var  [] * variable.T
+    Name []
+    Var  [] * variable.T
 )
-
-New(name []) (t * T) {
-    t = @
-    t.name = name
-}
