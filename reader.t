@@ -28,7 +28,8 @@ Open(path []) (t * T) {
     }
     
     t = @
-    t.file = f
+    t.file   = f
+    t.offset = 0
 
     t.buf = nil
     t.cur = 0
