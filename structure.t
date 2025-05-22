@@ -1,5 +1,4 @@
 (
-    reader
     variable
 )
 
@@ -8,18 +7,7 @@ T (
     var  [] * variable.T
 )
 
-Parse(r * reader.T, name []) (t * T) {
-    (
-        var [] * variable.T
-        err
-    )
-
-    var, err = variable.ParseBlock(r)
-    ? err != 0 {
-        = nil
-    }
-
+New(name []) (t * T) {
     t = @
     t.name = name
-    t.var  = var
 }
