@@ -1,1 +1,1 @@
-github.com/oleh-malakan/std
+github.com/oleh-malakan/std/base
