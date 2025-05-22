@@ -1,8 +1,4 @@
 T (
-    alias []
-    path  []
+    Alias []
+    Path  []
 )
-
-New(alias [], path []) (t * T) {
-    t = @
-}
