@@ -5,5 +5,5 @@ T (
 )
 
 New(name [], type []) (t * T) {    
-    t = []
+    t = @
 }
