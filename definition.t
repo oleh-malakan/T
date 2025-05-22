@@ -4,7 +4,6 @@ T (
     value []
 )
 
-New(firstName [], firstType []) (arr [] * T) {
-    
-    arr = []
+New(name [], type []) (t * T) {    
+    t = []
 }
