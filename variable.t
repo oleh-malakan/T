@@ -1,8 +1,4 @@
 T (
-    name []
-    type []
+    Name []
+    Type []
 )
-
-New(name [], type []) (t * T) {
-    t = @
-}
