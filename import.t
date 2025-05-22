@@ -3,6 +3,6 @@ T (
     path  []
 )
 
-Parse(alias [], path []) (t * T) {
+New(alias [], path []) (t * T) {
     t = []
 }
