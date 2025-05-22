@@ -1,5 +1,7 @@
-(
-    module
+definition (
+    name  []
+    type  []
+    value []
 )
 
 Main() {
