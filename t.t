@@ -4,7 +4,7 @@
 )
 
 import (
-    alias []
+    name []
     path  []
 )
 
