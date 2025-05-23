@@ -9,16 +9,30 @@ import (
 )
 
 code (
-    name []
     offset uint 
     size   uint
 )
 
+definition (
+    name []
+    code * code
+)
+
+structure (
+    name []
+    code * code
+)
+
+function (
+    name []
+    code * code
+)
+
 module (
     impt [] * import
-    strc [] * code
-    func [] * code
-    defn [] * code
+    strc [] * structure
+    func [] * function
+    defn [] * definition
 
     path []
 )
