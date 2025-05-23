@@ -1,5 +1,4 @@
 (
-    external
     std/file
 )
 
@@ -35,9 +34,19 @@ module (
     strc [] * structure
     func [] * function
     defn [] * definition
-}
+)
+
+external (
+    alias []
+    path  []
+    vers  []
+)
 
 parse(path []) (m * module) {
+    = nil
+}
+
+parseExt(path []) (arr [] * external) {
     = nil
 }
 
