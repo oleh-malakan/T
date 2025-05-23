@@ -32,7 +32,7 @@ openExternal(path []) (arr [] * external) {
     = nil
 }
 
-analysisModule(path [], impt [][]) (m * module, imptSum [][]) {
+analysisModule(path [], impt [][]) (m * module, imptMerge [][]) {
     = nil, impt
 }
 
