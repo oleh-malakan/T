@@ -8,24 +8,22 @@ import (
     path  []
 )
 
-code (
+definition (
+    name []
     offset uint 
     size   uint
 )
 
-definition (
-    name []
-    code * code
-)
-
 structure (
     name []
-    code * code
+    offset uint 
+    size   uint
 )
 
 function (
     name []
-    code * code
+    offset uint 
+    size   uint
 )
 
 module (
