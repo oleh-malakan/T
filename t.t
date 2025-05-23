@@ -27,7 +27,6 @@ function (
 )
 
 module (
-    path     []
     imptName [] []
     imptPath [] []
     strcName [] []
