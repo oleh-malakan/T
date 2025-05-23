@@ -32,7 +32,7 @@ parse(path []) (m * module) {
     = nil
 }
 
-parseExt(path []) (arr [] * external) {
+openExt(path []) (arr [] * external) {
     = nil
 }
 
