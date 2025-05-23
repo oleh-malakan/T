@@ -16,24 +16,22 @@ definition (
     val  []
 )
 
-variable (
-    name []
-    type []
-)
-
 structure (
     name []
     offset uint 
     size   uint
-    var  [] * variable 
+    varName [] []
+    varType [] []
 )
 
 function (
     name []
     offset uint 
     size   uint
-    in   [] * variable
-    out  [] * variable
+    inName  [] []
+    inType  [] []
+    outName [] []
+    outType [] []
 )
 
 module (
