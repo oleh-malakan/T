@@ -14,6 +14,11 @@ definition (
     size   uint
 )
 
+variable (
+    name []
+    type []
+)
+
 structure (
     name []
     offset uint 
