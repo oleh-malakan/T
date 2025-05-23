@@ -12,6 +12,8 @@ definition (
     name []
     offset uint 
     size   uint
+    type []
+    val  []
 )
 
 variable (
