@@ -14,12 +14,10 @@ code (
 )
 
 module (
-    impt [] * import
+    path []
     strc [] * code
     func [] * code
     defn [] * code
-
-    path []
 )
 
 external (
@@ -28,8 +26,8 @@ external (
     vers  []
 )
 
-parse(path []) (m * module) {
-    = nil
+parse(path []) (m * module, im [] * import) {
+    = nil, nil
 }
 
 openExt(path []) (arr [] * external) {
