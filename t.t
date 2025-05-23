@@ -3,42 +3,38 @@
     std/file
 )
 
-import (
-    name []
-    path []
-)
-
 definition (
-    name []
-    offset uint 
-    size   uint
     type []
     val  []
+    offset uint
+    size   uint
 )
 
 structure (
-    name []
-    offset uint 
-    size   uint
     varName [] []
     varType [] []
+    offset uint
+    size   uint
 )
 
 function (
-    name []
-    offset uint 
-    size   uint
     inName  [] []
     inType  [] []
     outName [] []
     outType [] []
+    offset uint
+    size   uint
 )
 
 module (
-    impt [] * import
-    strc [] * structure
-    func [] * function
-    defn [] * definition
+    imptName [] []
+    imptPath [] []
+    strcName [] []
+    strc     [] * structure
+    funcName [] []
+    func     [] * function
+    defnName [] []
+    defn     [] * definition
 
     path []
 )
