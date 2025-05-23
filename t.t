@@ -22,7 +22,7 @@ module (
     path []
 )
 
-analysisModule(path [], impt [][]) (m * module, imptMerge [][]) {
+analysis(path [], impt [][]) (m * module, imptMerge [][]) {
     = nil, impt
 }
 
