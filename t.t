@@ -1,5 +1,5 @@
 (
-    ../std/file
+    std/file
 )
 
 import (
@@ -7,14 +7,14 @@ import (
     path  []
 )
 
-variable (
+definition (
     name []
     type []
+    value []
 )
 
-definition (
-    var * variable
-    value []
+variable (
+    
 )
 
 structure (
