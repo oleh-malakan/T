@@ -10,7 +10,7 @@ import (
 code (
     name []
     offset uint 
-    sixe   uint
+    size   uint
 )
 
 module (
