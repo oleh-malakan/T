@@ -2,15 +2,6 @@
     std/file
 )
 
-tMod (
-    alias []
-    path  []
-    vers  []
-)
-
-parseTMod(path []) (arr [] * tMod) {
-}
-
 import (
     alias []
     path  []
