@@ -23,12 +23,15 @@ structure (
     name []
     offset uint 
     size   uint
+    var  [] * variable 
 )
 
 function (
     name []
     offset uint 
     size   uint
+    in   [] * variable
+    out  [] * variable
 )
 
 module (
