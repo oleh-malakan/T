@@ -2,6 +2,12 @@
     std/file
 )
 
+external (
+    alias []
+    path  []
+    vers  []
+)
+
 import (
     alias []
     path  []
@@ -22,17 +28,11 @@ module (
     path []
 )
 
-external (
-    alias []
-    path  []
-    vers  []
-)
-
-analysisModule(path []) (m * module) {
+openExternal(path []) (arr [] * external) {
     = nil
 }
 
-openExternal(path []) (arr [] * external) {
+analysisModule(path []) (m * module) {
     = nil
 }
 
