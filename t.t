@@ -27,6 +27,7 @@ function (
 )
 
 module (
+    path     []
     imptName [] []
     imptPath [] []
     strcName [] []
@@ -35,8 +36,6 @@ module (
     func     [] * function
     defnName [] []
     defn     [] * definition
-
-    path []
 )
 
 analysis(path [], impt [][]) (m * module, imptMerge [][]) {
