@@ -5,7 +5,7 @@
 
 import (
     name []
-    path  []
+    path []
 )
 
 definition (
