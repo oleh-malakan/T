@@ -1,9 +1,9 @@
-TMod (
+T (
     Alias []
     Path  []
     Vers  []
 )
 
-Open(path []) (arr [] * tMod) {
+Open(path []) (arr [] * T) {
     = nil
 }
