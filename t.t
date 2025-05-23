@@ -37,8 +37,8 @@ module (
     defn     [] * definition
 )
 
-analysis(path [], impt [][]) (m * module, imptMerge [][]) {
-    = nil, impt
+analysis(path [], imName [] [], imPath [] []) (m * module, imNameMerge [] [], imPathMerge [] []) {
+    = nil, imName, imPath 
 }
 
 Main() {
