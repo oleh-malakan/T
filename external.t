@@ -3,11 +3,11 @@
 )
 
 T (
-    Name []
-    Path []
-    Vers [] uint
+    Name [] []
+    Path [] []
+    Vers [] [] uint
 )
 
-Open(path []) (arr [] * T) {
+Open(path []) (t * T) {
     = nil
 }
