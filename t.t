@@ -1,5 +1,11 @@
 (
-    ../std/file
+    std/file
+)
+
+external (
+    alias []
+    path  []
+    vers  []
 )
 
 import (
@@ -21,6 +27,10 @@ module (
 
     path []
 )
+
+openExternal(path []) (arr [] * external) {
+    = nil
+}
 
 analysis(path [], impt [][]) (m * module, imptMerge [][]) {
     = nil, impt
