@@ -1,6 +1,6 @@
 (
-    std/file
     external
+    std/file
 )
 
 import (
