@@ -7,33 +7,17 @@ import (
     path  []
 )
 
-definition (
+code (
     name []
-    type []
-    value []
-)
-
-variable (
-    name []
-    type []
-)
-
-structure (
-    name []
-    var  [] * variable
-)
-
-function (
-    name []
-    in   [] * variable
-    out  [] * variable
+    offset uint 
+    sixe   uint
 )
 
 module (
     impt [] * import
-    strc [] * structure
-    func [] * function
-    defn [] * definition
+    strc [] * code
+    func [] * code
+    defn [] * code
 )
 
 external (
