@@ -47,6 +47,7 @@ parse(path []) (m * module) {
 }
 
 parseTMod(path []) (arr [] * tMod) {
+    = nil
 }
 
 Main() {
