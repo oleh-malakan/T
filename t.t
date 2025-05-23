@@ -2,15 +2,6 @@
     std/file
 )
 
-tMod (
-    alias []
-    path  []
-    vers  []
-)
-
-parseTMod(path []) (arr [] * tMod) {
-}
-
 import (
     alias []
     path  []
@@ -45,8 +36,17 @@ module (
     defn [] * definition
 }
 
+tMod (
+    alias []
+    path  []
+    vers  []
+)
+
 parse(path []) (m * module) {
     = nil
+}
+
+parseTMod(path []) (arr [] * tMod) {
 }
 
 Main() {
