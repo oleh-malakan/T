@@ -36,17 +36,7 @@ module (
     defn [] * definition
 }
 
-tMod (
-    alias []
-    path  []
-    vers  []
-)
-
 parse(path []) (m * module) {
-    = nil
-}
-
-parseTMod(path []) (arr [] * tMod) {
     = nil
 }
 
