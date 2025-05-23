@@ -37,7 +37,8 @@ module (
     defn     [] * definition
 )
 
-analysis(path [], imName [] [], imPath [] []) (m * module, imNameMerge [] [], imPathMerge [] []) {
+analysis(path [], imName [] [], imPath [] [])
+        (m * module, imNameMerge [] [], imPathMerge [] []) {
     = nil, imName, imPath 
 }
 
