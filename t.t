@@ -28,11 +28,11 @@ external (
     vers  []
 )
 
-parse(path []) (m * module) {
+analysisModule(path []) (m * module) {
     = nil
 }
 
-openExt(path []) (arr [] * external) {
+openExternal(path []) (arr [] * external) {
     = nil
 }
 
