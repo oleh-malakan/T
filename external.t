@@ -3,11 +3,12 @@
 )
 
 T (
-    Name [] []
-    Path [] []
-    Vers [] [] uint
+    Path []
+    VerX uint
+    VerY uint
+    VerZ uint
 )
 
-Open(path []) (t * T) {
-    = nil
+Open(path []) (name [] [], t [] * T) {
+    = nil, nil
 }
