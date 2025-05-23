@@ -32,8 +32,8 @@ openExternal(path []) (arr [] * external) {
     = nil
 }
 
-analysisModule(path []) (m * module) {
-    = nil
+analysisModule(path []) (m * module, impt [][]) {
+    = nil, nil
 }
 
 Main() {
