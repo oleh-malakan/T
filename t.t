@@ -18,6 +18,8 @@ module (
     strc [] * code
     func [] * code
     defn [] * code
+
+    path []
 )
 
 external (
