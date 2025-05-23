@@ -3,9 +3,9 @@
 )
 
 T (
-    Alias []
-    Path  []
-    Vers  [] uint
+    Name []
+    Path []
+    Vers [] uint
 )
 
 Open(path []) (arr [] * T) {
