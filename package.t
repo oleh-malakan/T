@@ -5,8 +5,8 @@
 T (
     Name []
 
-    ExtName [] []
-    External * External
+    ExtName  [] []
+    External [] * External
 )
 
 External (
