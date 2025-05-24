@@ -43,7 +43,7 @@ module (
 )
 
 analysis(path [], imptName [] [], impt [] * import, extName [] [], ext [] * external.T)
-        (m * module, imptNameMerge [] [], imptMerge [] []) {
+        (m * module, imptNameMerge [] [], imptMerge [] * import) {
     = nil, imptName, impt
 }
 
