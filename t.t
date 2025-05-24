@@ -1,6 +1,12 @@
 (
-    external
     std/file
+)
+
+external (
+    path []
+    verX uint
+    verY uint
+    verZ uint
 )
 
 import (
@@ -41,6 +47,9 @@ module (
     defnName [] []
     defn     [] * definition
 )
+
+openExternal(path []) (name [] [], t [] * T) {
+}
 
 analysis(path [], imptName [] [], impt [] * import, extName [] [], ext [] * external.T)
         (m * module, imptNameMerge [] [], imptMerge [] * import) {
