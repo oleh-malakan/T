@@ -3,6 +3,11 @@
     std/file
 )
 
+import (
+    path []
+    extIdx
+)
+
 definition (
     type []
     val  []
@@ -28,7 +33,7 @@ function (
 
 module (
     imptName [] []
-    imptPath [] []
+    impt     [] * import
     strcName [] []
     strc     [] * structure
     funcName [] []
@@ -37,9 +42,9 @@ module (
     defn     [] * definition
 )
 
-analysis(path [], imName [] [], imPath [] [])
-        (m * module, imNameMerge [] [], imPathMerge [] []) {
-    = nil, imName, imPath 
+analysis(path [], imptName [] [], impt [] [], ext * external.T)
+        (m * module, imptNameMerge [] [], imptMerge [] []) {
+    = nil, imptName, impt
 }
 
 Main() {
