@@ -1,5 +1,6 @@
 (
-    external
+    workspace
+    catalog
     std/file
 )
 
