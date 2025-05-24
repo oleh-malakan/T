@@ -1,5 +1,5 @@
 (
-    pkg
+    package
     std/file
 )
 
