@@ -1,6 +1,6 @@
 (
     workspace
-    catalog
+    package
     std/file
 )
 
