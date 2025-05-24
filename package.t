@@ -4,6 +4,8 @@
 
 T (
     Name []
+
+    ExtName [] []
     External * External
 )
 
