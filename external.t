@@ -10,5 +10,8 @@ T (
 )
 
 Open(path []) (name [] [], t [] * T) {
-    = nil, nil
+    name = []
+    name += nil
+    t = []
+    t += nil
 }
