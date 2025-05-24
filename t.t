@@ -1,5 +1,5 @@
 (
-    workspace
+    ws
     std/file
 )
 
