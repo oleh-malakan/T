@@ -42,7 +42,7 @@ module (
     defn     [] * definition
 )
 
-analysis(path [], imptName [] [], impt [] [],,extName [] [], ext [] * external.T)
+analysis(path [], imptName [] [], impt [] [], extName [] [], ext [] * external.T)
         (m * module, imptNameMerge [] [], imptMerge [] []) {
     = nil, imptName, impt
 }
