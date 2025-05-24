@@ -1,5 +1,5 @@
 (
-    ws
+    pkg
     std/file
 )
 
