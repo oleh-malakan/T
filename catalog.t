@@ -3,15 +3,16 @@
 )
 
 T (
+    Name []
+    External * External
+)
+
+External (
     Path []
     VerX uint
     VerY uint
     VerZ uint
 )
 
-Open(path []) (name [] [], t [] * T) {
-    name = []
-    name += nil
-    t = []
-    t += path
+Open(path []) (t * T) {
 }
