@@ -3,16 +3,11 @@
 )
 
 T (
-    ExtName  [] []
-    External [] * External
-)
-
-External (
     Path []
     VerX uint
     VerY uint
     VerZ uint
 )
 
-Open(path []) (t * T) {
+Open(path []) (name  [] [], t [] * T) {
 }
