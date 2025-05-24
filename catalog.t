@@ -13,5 +13,5 @@ Open(path []) (name [] [], t [] * T) {
     name = []
     name += nil
     t = []
-    t += nil
+    t += path
 }
