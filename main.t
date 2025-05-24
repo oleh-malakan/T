@@ -1,6 +1,5 @@
 (
     workspace
-    package
     std/file
 )
 
