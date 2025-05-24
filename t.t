@@ -48,10 +48,10 @@ module (
     defn     [] * definition
 )
 
-openExternal(path []) (name [] [], t [] * T) {
+openExternal(path []) (name [] [], ext [] * external) {
 }
 
-analysis(path [], imptName [] [], impt [] * import, extName [] [], ext [] * external.T)
+analysis(path [], imptName [] [], impt [] * import, extName [] [], ext [] * external)
         (m * module, imptNameMerge [] [], imptMerge [] * import) {
     = nil, imptName, impt
 }
