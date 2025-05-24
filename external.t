@@ -9,5 +9,5 @@ T (
     VerZ uint
 )
 
-Open(path []) (name  [] [], t [] * T) {
+Open(path []) (name [] [], t [] * T) {
 }
