@@ -1,5 +1,5 @@
 (
-    package
+    external
     std/file
 )
 
