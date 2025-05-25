@@ -3,17 +3,13 @@
 )
 
 T (
-    Name [] []
-    Impt [] * Import 
-)
-
-Import (
     Path []
     VerX uint
     VerY uint
     VerZ uint
 )
 
-Open(path []) (t * T) {
-    t = @
+Open(path []) (name [] [], t [] @ T) {
+    name = []
+    t = []
 }
