@@ -5,7 +5,7 @@
 
 import (
     path []
-    ext * external.T
+    ext  * external.T
 )
 
 definition (
