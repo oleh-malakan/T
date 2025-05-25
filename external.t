@@ -9,7 +9,5 @@ T (
     VerZ uint
 )
 
-Read(path []) (name [] [], t [] @ T) {
-    name = []
-    t = []
+Read(path []) (name [] [], arr [] @ T) {
 }
