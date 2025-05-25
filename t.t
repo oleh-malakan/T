@@ -34,10 +34,10 @@ analysis(path [], extName [] [], extPath [] [],
             defnName [] [], defn [] * definition,
             strcName [] [], strc [] * structure,
             funcName [] [], func [] * function)
-        (imptNameMerge [] [], imptPathMerge [] [],
-            defnNameMerge [] [], defnMerge [] * definition,
-            strcNameMerge [] [], strcMerge [] * structure,
-            funcNameMerge [] [], funcMerge [] * function) {
+        (imptNameUpd [] [], imptPathUpd [] [],
+            defnNameUpd [] [], defnUpd [] * definition,
+            strcNameUpd [] [], strcUpd [] * structure,
+            funcNameUpd [] [], funcUpd [] * function) {
     = imptName, imptPath, defnName, defn, strcName, strc, funcName, func
 }
 
