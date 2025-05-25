@@ -51,8 +51,8 @@ readExt(path []) (ext * external) {
     = nil
 }
 
-analysis(path [], impt * import, ext * external)
-        (name [], u * unit, imptMerge * import) {
+analysis(path [], ext * external)
+        (name [], u * unit) {
     = nil, nil
 }
 
