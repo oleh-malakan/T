@@ -53,7 +53,7 @@ readExt(path []) (name [] [], ext [] @ external) {
 }
 
 analysis(path [], imptName [] [], impt [] * import, extName [] [], ext [] * external)
-        (name [], m * module, imptNameMerge [] [], imptMerge [] * import) {
+        (name [], u * unit, imptNameMerge [] [], imptMerge [] * import) {
     = nil, nil, imptName, impt
 }
 
