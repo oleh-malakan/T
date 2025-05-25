@@ -25,23 +25,19 @@ function (
     size   uint
 )
 
-unit (
-    imptName [] []
-    imptPath [] []
-    defnName [] []
-    defn     [] * definition
-    strcName [] []
-    strc     [] * structure
-    funcName [] []
-    func     [] * function
-)
-
 external(path []) (name [] [], path [] [], vers [] [] uint) {
     = nil, nil, nil
 }
 
-analysis(path []) (u * unit) {
-    = nil
+analysis(path [], imptName [] [], imptPath [] [],
+            defnName [] [], defn [] * definition,
+            strcName [] [], strc [] * structure,
+            funcName [] [], func [] * function)
+        (imptNameMerge [] [], imptPathMerge [] [],
+            defnNameMerge [] [], defnMerge [] * definition,
+            strcNameMerge [] [], strcMerge [] * structure,
+            funcNameMerge [] [], funcMerge [] * function) {
+    = nil, nil, nil, nil, nil, nil, nil, nil
 }
 
 Main() {
