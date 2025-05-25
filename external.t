@@ -9,7 +9,7 @@ T (
     VerZ uint
 )
 
-Open(path []) (name [] [], t [] @ T) {
+Read(path []) (name [] [], t [] @ T) {
     name = []
     t = []
 }
