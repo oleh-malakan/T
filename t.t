@@ -3,15 +3,15 @@
 )
 
 external (
-    path []
-    vX uint
-    vY uint
-    vZ uint
+    name [] []
+    path [] []
+    vers [] [] uint
 )
 
 import (
-    path []
-    ext * external
+    name [] []
+    path [] []
+    extPath [] []
 )
 
 definition (
@@ -38,8 +38,7 @@ function (
 )
 
 unit (
-    imptName [] []
-    impt     [] * import
+    impt * import
     strcName [] []
     strc     [] * structure
     funcName [] []
@@ -48,11 +47,11 @@ unit (
     defn     [] * definition
 )
 
-readExt(path []) (name [] [], ext [] * external) {
-    = nil, nil
+readExt(path []) (ext * external) {
+    = nil
 }
 
-analysis(path [], extName [] [], ext [] * external)
+analysis(path [], ext * external)
         (name [], u * unit) {
     = nil, nil
 }
