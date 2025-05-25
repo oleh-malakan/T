@@ -36,7 +36,7 @@ unit (
     func     [] * function
 )
 
-readExternal(path []) (name [] [], path [] [], vers [] [] uint) {
+external(path []) (name [] [], path [] [], vers [] [] uint) {
     = nil, nil, nil
 }
 
