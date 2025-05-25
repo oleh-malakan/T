@@ -42,9 +42,6 @@ unit (
     defn     [] * definition
 )
 
-openExternal(path []) (name [] [], ext [] * external) {
-}
-
 analysis(path [], imptName [] [], impt [] * import, ext * external.T)
         (u * unit, imptNameMerge [] [], imptMerge [] * import) {
     = nil, imptName, impt
