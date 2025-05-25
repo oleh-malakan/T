@@ -37,7 +37,7 @@ analysis(path [], imptName [] [], imptPath [] [],
             defnNameMerge [] [], defnMerge [] * definition,
             strcNameMerge [] [], strcMerge [] * structure,
             funcNameMerge [] [], funcMerge [] * function) {
-    = nil, nil, nil, nil, nil, nil, nil, nil
+    = imptName, imptPath, defnName, defn, strcName, strc, funcName, func
 }
 
 Main() {
