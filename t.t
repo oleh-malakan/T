@@ -42,7 +42,7 @@ unit (
     defn     [] * definition
 )
 
-analysis(path [], imptName [] [], impt [] * import, ext * external.T)
+analysis(path [], imptName [] [], impt [] * import, extName [] [], ext [] * external.T)
         (u * unit, imptNameMerge [] [], imptMerge [] * import) {
     = nil, imptName, impt
 }
