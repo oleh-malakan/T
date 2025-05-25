@@ -1,1 +1,1 @@
-# The T high level assembly language
+# The T programming language
