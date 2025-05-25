@@ -34,7 +34,7 @@ analysis(path [], extName [] [], extPath [] [],
             defnName [] [], defn [] * definition,
             strcName [] [], strc [] * structure,
             funcName [] [], func [] * function)
-        (imptNameUpd [] [], imptPathUpd [] [],
+        (imptNameMerge [] [], imptPathMerge [] [],
             defnNameUpd [] [], defnUpd [] * definition,
             strcNameUpd [] [], strcUpd [] * structure,
             funcNameUpd [] [], funcUpd [] * function) {
