@@ -15,4 +15,5 @@ Import (
 )
 
 Open(path []) (t * T) {
+    t = @
 }
