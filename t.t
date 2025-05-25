@@ -48,7 +48,7 @@ module (
     defn     [] * definition
 )
 
-readExt(path []) (name [] [], ext [] @ external) {
+readExt(path []) (name [] [], ext [] * external) {
     = nil, nil
 }
 
