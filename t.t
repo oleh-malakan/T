@@ -54,7 +54,7 @@ readExt(path []) (name [] [], ext [] * external) {
 
 analysis(path [], extName [] [], ext [] * external)
         (name [], u * unit) {
-    = nil, nil, imptName, impt
+    = nil, nil
 }
 
 Main() {
