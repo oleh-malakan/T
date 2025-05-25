@@ -40,8 +40,8 @@ readExternal(path []) (name [] [], path [] [], vers [] [] uint) {
     = nil, nil, nil
 }
 
-analysis(path []) (name [], u * unit) {
-    = nil, nil
+analysis(path []) (u * unit) {
+    = nil
 }
 
 Main() {
