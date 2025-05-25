@@ -13,3 +13,6 @@ Import (
     VerY uint
     VerZ uint
 )
+
+Open(path []) (t * T) {
+}
