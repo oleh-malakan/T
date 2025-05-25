@@ -38,12 +38,12 @@ function (
 
 unit (
     impt * import
+    defnName [] []
+    defn     [] * definition
     strcName [] []
     strc     [] * structure
     funcName [] []
     func     [] * function
-    defnName [] []
-    defn     [] * definition
 )
 
 readExt(path []) (ext * external) {
