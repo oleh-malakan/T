@@ -1,11 +1,17 @@
 (
-    external
     std/file
+)
+
+external (
+    path []
+    vX uint
+    vY uint
+    vZ uint
 )
 
 import (
     path []
-    ext * external.T
+    ext * external
 )
 
 definition (
@@ -42,7 +48,10 @@ unit (
     defn     [] * definition
 )
 
-analysis(path [], imptName [] [], impt [] * import, extName [] [], ext [] * external.T)
+readExt(path []) (name [] [], ext [] @ external) {
+}
+
+analysis(path [], imptName [] [], impt [] * import, extName [] [], ext [] * external)
         (name [], u * unit, imptNameMerge [] [], imptMerge [] * import) {
     = nil, nil, imptName, impt
 }
