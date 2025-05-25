@@ -1,12 +1,6 @@
 (
+    external
     std/file
-)
-
-external (
-    path []
-    verX uint
-    verY uint
-    verZ uint
 )
 
 import (
@@ -51,7 +45,7 @@ unit (
 openExternal(path []) (name [] [], ext [] * external) {
 }
 
-analysis(path [], imptName [] [], impt [] * import, extName [] [], ext [] * external)
+analysis(path [], imptName [] [], impt [] * import, ext * external.T)
         (u * unit, imptNameMerge [] [], imptMerge [] * import) {
     = nil, imptName, impt
 }
