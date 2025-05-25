@@ -11,7 +11,6 @@ external (
 import (
     name [] []
     path [] []
-    extPath [] []
 )
 
 definition (
