@@ -29,7 +29,8 @@ external(path []) (name [] [], path [] [], vers [] [] uint) {
     = nil, nil, nil
 }
 
-analysis(path [], imptName [] [], imptPath [] [],
+analysis(path [], extName [] [], extPath [] [],
+            imptName [] [], imptPath [] [],
             defnName [] [], defn [] * definition,
             strcName [] [], strc [] * structure,
             funcName [] [], func [] * function)
