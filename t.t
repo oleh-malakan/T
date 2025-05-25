@@ -37,7 +37,7 @@ function (
     size   uint
 )
 
-module (
+unit (
     imptName [] []
     impt     [] * import
     strcName [] []
@@ -52,7 +52,7 @@ openExternal(path []) (name [] [], ext [] * external) {
 }
 
 analysis(path [], imptName [] [], impt [] * import, extName [] [], ext [] * external)
-        (m * module, imptNameMerge [] [], imptMerge [] * import) {
+        (u * unit, imptNameMerge [] [], imptMerge [] * import) {
     = nil, imptName, impt
 }
 
