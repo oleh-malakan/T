@@ -5,7 +5,7 @@
 
 import (
     path []
-    extIdx
+    ext * external.T
 )
 
 definition (
@@ -42,7 +42,7 @@ unit (
     defn     [] * definition
 )
 
-analysis(path [], extName [] [], imptName [] [], impt [] * import)
+analysis(path [], imptName [] [], impt [] * import, extName [] [], ext [] * external.T)
         (name [], u * unit, imptNameMerge [] [], imptMerge [] * import) {
     = nil, nil, imptName, impt
 }
