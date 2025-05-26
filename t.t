@@ -27,7 +27,7 @@ unit (
     defnVal  [] []
 )
 
-external(path []) (name [] [], path [] [], vers [] [] uint) {
+external(path []) (name [] [], path [] [], vers [] []) {
     = nil, nil, nil
 }
 
