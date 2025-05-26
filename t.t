@@ -5,8 +5,6 @@
 structure (
     varName [] []
     varType [] []
-    offset uint
-    size   uint
 )
 
 function (
@@ -14,8 +12,6 @@ function (
     inType  [] []
     outName [] []
     outType [] []
-    offset uint
-    size   uint
 )
 
 unit (
