@@ -23,8 +23,8 @@ unit (
     strc     [] * structure
     funcName [] []
     func     [] * function
-    imptName [] []
-    imptPath [] []
+    intName  [] []
+    intPath  [] []
     extPath  [] []
     defnName [] []
     defnType [] []
