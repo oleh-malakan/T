@@ -28,7 +28,7 @@ unit (
 )
 
 external(path []) (name [] [], path [] []) {
-    = nil, nil, nil
+    = nil, nil
 }
 
 analysis(path [], extrName [] [], extrPath [] []) (u * unit) {
