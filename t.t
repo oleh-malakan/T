@@ -23,9 +23,9 @@ unit (
     strc     [] * structure
     funcName [] []
     func     [] * function
-    intName  [] []
-    intPath  [] []
-    extPath  [] []
+    intrName [] []
+    intrPath [] []
+    extrPath [] []
     defnName [] []
     defnType [] []
     defnVal  [] []
@@ -35,7 +35,7 @@ external(path []) (name [] [], path [] [], vers [] [] uint) {
     = nil, nil, nil
 }
 
-analysis(path [], extName [] [], extPath [] []) (u * unit) {
+analysis(path [], extrName [] [], extrPath [] []) (u * unit) {
     = nil
 }
 
