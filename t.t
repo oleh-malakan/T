@@ -30,10 +30,6 @@ unit (
     defnVal  [] []
 )
 
-external(path []) (name [] [], path [] [], vers [] [] uint) {
-    = nil, nil, nil
-}
-
 analysis(path [], extName [] [], extPath [] []) (u * unit) {
     = nil
 }
