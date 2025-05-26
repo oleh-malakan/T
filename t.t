@@ -25,6 +25,7 @@ unit (
     func     [] * function
     imptName [] []
     imptPath [] []
+    extName  [] []
     extPath  [] []
     defnName [] []
     defnType [] []
