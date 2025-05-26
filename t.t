@@ -2,6 +2,18 @@
     std/file
 )
 
+external (
+    name [] []
+    path [] []
+    vers [] [] uint
+)
+
+import (
+    name [] []
+    path [] []
+    extPath [] []
+)
+
 definition (
     type []
     val  []
@@ -25,20 +37,22 @@ function (
     size   uint
 )
 
-external(path []) (name [] [], path [] [], vers [] [] uint) {
-    = nil, nil, nil
+unit (
+    impt * import
+    strcName [] []
+    strc     [] * structure
+    funcName [] []
+    func     [] * function
+    defnName [] []
+    defn     [] * definition
+)
+
+readExt(path []) (ext * external) {
+    = nil
 }
 
-analysis(path [], extName [] [], extPath [] [],
-            imptName [] [], imptPath [] [],
-            defnName [] [], defn [] * definition,
-            strcName [] [], strc [] * structure,
-            funcName [] [], func [] * function)
-        (imptNameMerge [] [], imptPathMerge [] [],
-            defnNameUpd [] [], defnUpd [] * definition,
-            strcNameUpd [] [], strcUpd [] * structure,
-            funcNameUpd [] [], funcUpd [] * function) {
-    = imptName, imptPath, defnName, defn, strcName, strc, funcName, func
+analysis(path [], ext * external) (name [], u * unit) {
+    = nil, nil
 }
 
 Main() {
