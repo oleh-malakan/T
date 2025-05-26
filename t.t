@@ -19,7 +19,6 @@ function (
 )
 
 unit (
-    path     []
     intrName [] []
     intrPath [] []
     extrPath [] []
