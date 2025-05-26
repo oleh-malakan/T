@@ -19,13 +19,14 @@ function (
 )
 
 unit (
+    path     []
+    intrName [] []
+    intrPath [] []
+    extrPath [] []
     strcName [] []
     strc     [] * structure
     funcName [] []
     func     [] * function
-    intrName [] []
-    intrPath [] []
-    extrPath [] []
     defnName [] []
     defnType [] []
     defnVal  [] []
