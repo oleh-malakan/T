@@ -2,13 +2,6 @@
     std/file
 )
 
-definition (
-    type []
-    val  []
-    offset uint
-    size   uint
-)
-
 structure (
     varName [] []
     varType [] []
@@ -29,12 +22,13 @@ unit (
     imptName [] []
     imptPath [] []
     extPath  [] []
+    defnName [] []
+    defnType [] []
+    defnVal  [] []
     strcName [] []
     strc     [] * structure
     funcName [] []
     func     [] * function
-    defnName [] []
-    defn     [] * definition
 )
 
 external(path []) (name [] [], path [] [], vers [] [] uint) {
