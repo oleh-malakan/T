@@ -41,7 +41,7 @@ external(path []) (name [] [], path [] [], vers [] [] uint) {
     = nil, nil, nil
 }
 
-analysis(path []) (name [], u * unit) {
+analysis(path []) (u * unit) {
     = nil, nil
 }
 
