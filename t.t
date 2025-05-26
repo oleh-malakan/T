@@ -19,16 +19,16 @@ function (
 )
 
 unit (
+    strcName [] []
+    strc     [] * structure
+    funcName [] []
+    func     [] * function
     imptName [] []
     imptPath [] []
     extPath  [] []
     defnName [] []
     defnType [] []
     defnVal  [] []
-    strcName [] []
-    strc     [] * structure
-    funcName [] []
-    func     [] * function
 )
 
 external(path []) (name [] [], path [] [], vers [] [] uint) {
