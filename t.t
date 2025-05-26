@@ -27,8 +27,8 @@ unit (
     defnVal  [] []
 )
 
-external(path []) (name [] [], path [] [], vers [] []) {
-    = nil, nil, nil
+external(path []) (name [] [], path [] []) {
+    = nil, nil
 }
 
 analysis(path [], extrName [] [], extrPath [] []) (u * unit) {
