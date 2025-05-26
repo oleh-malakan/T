@@ -51,7 +51,7 @@ readExt(path []) (ext * external) {
     = nil
 }
 
-analysis(path [], ext * external) (name [], u * unit) {
+analysis(path []) (name [], u * unit) {
     = nil, nil
 }
 
