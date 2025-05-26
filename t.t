@@ -1,5 +1,5 @@
 (
-    ../std/file
+    std/file
 )
 
 structure (
@@ -19,14 +19,19 @@ unit (
     strc     [] * structure
     funcName [] []
     func     [] * function
-    imptName [] []
-    imptPath [] []
+    intrName [] []
+    intrPath [] []
+    extrPath [] []
     defnName [] []
     defnType [] []
     defnVal  [] []
 )
 
-analysis(path []) (u * unit) {
+external(path []) (name [] [], path [] [], vers [] [] uint) {
+    = nil, nil, nil
+}
+
+analysis(path [], extrName [] [], extrPath [] []) (u * unit) {
     = nil
 }
 
