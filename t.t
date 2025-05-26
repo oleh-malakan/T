@@ -2,18 +2,6 @@
     std/file
 )
 
-external (
-    name [] []
-    path [] []
-    vers [] [] uint
-)
-
-import (
-    name [] []
-    path [] []
-    extPath [] []
-)
-
 definition (
     type []
     val  []
@@ -38,7 +26,9 @@ function (
 )
 
 unit (
-    impt * import
+    imptName [] []
+    imptPath [] []
+    extPath  [] []
     strcName [] []
     strc     [] * structure
     funcName [] []
@@ -47,8 +37,8 @@ unit (
     defn     [] * definition
 )
 
-readExt(path []) (ext * external) {
-    = nil
+external(path []) (name [] [], path [] [], vers [] [] uint) {
+    = nil, nil, nil
 }
 
 analysis(path []) (name [], u * unit) {
