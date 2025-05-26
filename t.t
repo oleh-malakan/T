@@ -25,7 +25,6 @@ unit (
     func     [] * function
     imptName [] []
     imptPath [] []
-    extName  [] []
     extPath  [] []
     defnName [] []
     defnType [] []
@@ -36,7 +35,7 @@ external(path []) (name [] [], path [] [], vers [] [] uint) {
     = nil, nil, nil
 }
 
-analysis(path []) (u * unit) {
+analysis(path [], extName [] [], extPath [] []) (u * unit) {
     = nil
 }
 
