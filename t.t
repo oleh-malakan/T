@@ -4,7 +4,7 @@
 
 unit (
     strcName    [] []
-	strcVarName [] [] []
+    strcVarName [] [] []
     strcVarType [] [] []
 
     funcName    [] []
