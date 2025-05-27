@@ -7,6 +7,11 @@ external (
     path [] []
 )
 
+import (
+    name [] []
+    path [] []
+)
+
 definition (
     defnType []
     defnVal  []
@@ -43,7 +48,7 @@ readExt(path []) (ext * external) {
     = nil
 }
 
-analysis(path [], ext * external) (u * unit) {
+analysis(path [], impt * import, ext * external) (u * unit) {
     = nil
 }
 
