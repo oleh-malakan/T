@@ -7,6 +7,11 @@ external (
     path [] []
 )
 
+definition (
+    defnType [] []
+    defnVal  [] []
+)
+
 structure (
     varName [] []
     varType [] []
@@ -21,18 +26,17 @@ function (
 )
 
 unit (
+    imptName [] []
+    imptPath [] []
+
+    defnName [] []
+    defn     [] * definition
+
     strcName [] []
     strc     [] * structure
 
     funcName [] []
     func     [] * function
-
-    imptName [] []
-    imptPath [] []
-
-    defnName [] []
-    defnType [] []
-    defnVal  [] []
 )
 
 readExt(path []) (ext * external) {
