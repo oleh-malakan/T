@@ -2,21 +2,36 @@
     std/file
 )
 
-external(path []) (name [] [], path [] []) {
-    = nil, nil
+external (
+    name [] []
+    path [] []
+)
+
+unit (
+    strcName    [] []
+    strcVarName [] [] []
+    strcVarType [] [] []
+
+    funcName    [] []
+    funcInName  [] [] []
+    funcInType  [] [] []
+    funcOutName [] [] []
+    funcOutType [] [] []
+
+    imptName [] []
+    imptPath [] []
+
+    defnName [] []
+    defnType [] []
+    defnVal  [] []
+)
+
+readExt(path []) (ext * external) {
+    = nil
 }
 
-analysis(path [], extrName [] [], extrPath [] [])
-        (strcName [] [], strcVarName [] [] [], strcVarType [] [] [],
-         funcName [] [], funcInName  [] [] [], funcInType  [] [] [],
-                         funcOutName [] [] [], funcOutType [] [] [],
-         imptName [] [], imptPath [] [], 
-         defnName [] [], defnType [] [], defnVal [] []) {
-    = nil, nil, nil,
-      nil, nil, nil,
-           nil, nil,
-      nil, nil,
-      nil, nil, nil
+analysis(path [], ext * external) (u * unit) {
+    = nil
 }
 
 Main() {
