@@ -11,7 +11,7 @@ unit (
     funcInName  [] [] []
     funcInType  [] [] []
     funcOutName [] [] []
-    funtOutType [] [] []
+    funcOutType [] [] []
 
     imptName [] []
     imptPath [] []
