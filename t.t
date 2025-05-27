@@ -7,16 +7,25 @@ external (
     path [] []
 )
 
-unit (
-    strcName    [] []
-    strcVarName [] [] []
-    strcVarType [] [] []
+structure (
+    varName [] []
+    varType [] []
+)
 
-    funcName    [] []
-    funcInName  [] [] []
-    funcInType  [] [] []
-    funcOutName [] [] []
-    funcOutType [] [] []
+function (
+    inName  [] []
+    inType  [] []
+
+    outName [] []
+    outType [] []
+)
+
+unit (
+    strcName [] []
+    strc     [] * structure
+
+    funcName [] []
+    func     [] * function
 
     imptName [] []
     imptPath [] []
