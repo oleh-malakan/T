@@ -21,8 +21,8 @@ structure (
 )
 
 definition (
-    defnType [] []
-    defnVal  [] []
+    defnType []
+    defnVal  []
 )
 
 unit (
