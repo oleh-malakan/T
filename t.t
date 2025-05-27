@@ -20,9 +20,6 @@ definition (
 structure (
     varName [] []
     varType [] []
-
-    offset uint
-    size   uint
 )
 
 function (
