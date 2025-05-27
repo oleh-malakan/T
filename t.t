@@ -1,5 +1,10 @@
 (
-    ../std/file
+    std/file
+)
+
+external (
+    name [] []
+    path [] []
 )
 
 import (
@@ -39,7 +44,11 @@ unit (
     imptPath [] []
 )
 
-analysis(path [], impt * import) (u * unit) {
+readExt(path []) (ext * external) {
+    = nil
+}
+
+analysis(path [], impt * import, ext * external) (u * unit) {
     = nil
 }
 
