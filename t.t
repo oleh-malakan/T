@@ -26,17 +26,17 @@ function (
 )
 
 unit (
-    imptName [] []
-    imptPath [] []
-
-    defnName [] []
-    defn     [] * definition
-
     strcName [] []
     strc     [] * structure
 
     funcName [] []
     func     [] * function
+
+    imptName [] []
+    imptPath [] []
+
+    defnName [] []
+    defn     [] * definition
 )
 
 readExt(path []) (ext * external) {
