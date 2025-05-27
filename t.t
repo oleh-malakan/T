@@ -8,9 +8,8 @@ external (
 )
 
 import (
-    name     [] []
-    intrPath [] []
-    extrPath [] []
+    name [] []
+    path [] []
 )
 
 definition (
@@ -42,15 +41,14 @@ unit (
     defn     [] * definition
 
     imptName [] []
-    intrPath [] []
-    extrPath [] []
+    imptPath [] []
 )
 
-readExtr(path []) (extr * external) {
+readExt(path []) (ext * external) {
     = nil
 }
 
-analysis(path [], impt * import, extr * external) (u * unit) {
+analysis(path [], impt * import, ext * external) (u * unit) {
     = nil
 }
 
