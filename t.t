@@ -7,12 +7,9 @@ external (
     path [] []
 )
 
-function (
-    inName  [] []
-    inType  [] []
-
-    outName [] []
-    outType [] []
+definition (
+    defnType []
+    defnVal  []
 )
 
 structure (
@@ -20,9 +17,12 @@ structure (
     varType [] []
 )
 
-definition (
-    defnType []
-    defnVal  []
+function (
+    inName  [] []
+    inType  [] []
+
+    outName [] []
+    outType [] []
 )
 
 unit (
