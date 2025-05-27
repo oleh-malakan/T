@@ -2,26 +2,20 @@
     std/file
 )
 
-structure (
-    varName [] []
-    varType [] []
-)
-
-function (
-    inName  [] []
-    inType  [] []
-    outName [] []
-    outType [] []
-)
-
 unit (
-    strcName [] []
-    strc     [] * structure
-    funcName [] []
-    func     [] * function
-    intrName [] []
-    intrPath [] []
-    extrPath [] []
+    strcName    [] []
+	strcVarName [] [] []
+    strcVarType [] [] []
+
+    funcName    [] []
+    funcInName  [] [] []
+    funcInType  [] [] []
+    funcOutName [] [] []
+    funtOutType [] [] []
+
+    imptName [] []
+    imptPath [] []
+
     defnName [] []
     defnType [] []
     defnVal  [] []
