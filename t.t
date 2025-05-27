@@ -28,9 +28,6 @@ function (
 
     outName [] []
     outType [] []
-
-    offset uint
-    size   uint
 )
 
 unit (
