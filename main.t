@@ -1,3 +1,7 @@
+(
+    std/file
+)
+
 entry (
     name [] []
     path [] []
@@ -34,6 +38,14 @@ unit (
     entrName [] []
     entrPath [] []
 )
+
+external(path []) (entr * entry) {
+    = nil
+}
+
+analysis(path [], intr * entry, extr * entry) (u * unit) {
+    = nil
+}
 
 Main() {
 
