@@ -2,7 +2,7 @@
     std/file
 )
 
-import (
+entry (
     name [] []
     path [] []
 )
@@ -38,15 +38,15 @@ unit (
     defnName [] []
     defn     [] * definition
 
-    imptName [] []
-    imptPath [] []
+    entrName [] []
+    entrPath [] []
 )
 
-external(path []) (extr * import) {
+external(path []) (extr * entry) {
     = nil
 }
 
-analysis(path [], impt * import, extr * import) (u * unit) {
+analysis(path [], intr * entry, extr * entry) (u * unit) {
     = nil
 }
 
