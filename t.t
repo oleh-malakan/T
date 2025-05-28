@@ -8,8 +8,8 @@ entry (
 )
 
 definition (
-    defnType []
-    defnVal  []
+    type []
+    val  []
 )
 
 structure (
