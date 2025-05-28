@@ -42,7 +42,7 @@ unit (
     imptPath [] []
 )
 
-readExternal(path []) (extr * import) {
+external(path []) (extr * import) {
     = nil
 }
 
