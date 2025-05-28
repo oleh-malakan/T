@@ -48,5 +48,8 @@ analysis(path [], intr * entry, extr * entry) (u * unit) {
 }
 
 Main() {
-
+    (
+        workDir  []
+        unitMain [] []
+    )
 }
