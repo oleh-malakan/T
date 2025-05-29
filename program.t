@@ -1,6 +1,6 @@
 (
-    prog/args
-    prog/file
+    prg/args
+    prg/file
 )
 
 entry (
