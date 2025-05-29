@@ -1,6 +1,6 @@
 (
-    std/args
-    std/file
+    prog/args
+    prog/file
 )
 
 entry (
