@@ -7,11 +7,6 @@ entry (
     path [] []
 )
 
-bag (
-    name []
-    extr * entry
-)
-
 definition (
     type []
     val  []
@@ -44,7 +39,7 @@ unit (
     entrPath [] []
 )
 
-bagRead(path []) (b * bag) {
+external(b []) (extr * entry) {
     = nil
 }
 
