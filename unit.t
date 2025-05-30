@@ -9,7 +9,7 @@ T (
     Func     [] * function.T
 
     StrcName [] []
-    Strc     [] * variable.T
+    StrcVar  [] * variable.T
 
     DefnName [] []
     Defn     [] * definition.T
