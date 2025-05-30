@@ -1,7 +1,7 @@
 (
-    entry
+    common
 )
 
-Read(path []) (entr * entry.T) {
+Read(path []) (entr * common.Entry) {
     entr = @
 }
