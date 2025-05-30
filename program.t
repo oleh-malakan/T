@@ -1,5 +1,5 @@
 (
-    common
+    basic
     external
     parser
 )
