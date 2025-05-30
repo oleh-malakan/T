@@ -1,7 +1,7 @@
 (
-    unit
+    basic
 )
 
-Analysis(path [], intr * unit.Entry, extr * unit.Entry) (m * unit.Module) {
+Analysis(path [], intr * basic.Entry, extr * basic.Entry) (u * basic.Unit) {
     m = @
 }
