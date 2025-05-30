@@ -21,7 +21,7 @@ Function (
     OutType [] []
 )
 
-Module (
+Unit (
     FuncName [] []
     Func     [] * Function
 
