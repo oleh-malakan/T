@@ -5,7 +5,7 @@
     function
     unit
 
-    std/file
+    fs/file
 )
 
 Analysis(path [], intr * entry.T, extr * entry.T) (u * unit.T) {
