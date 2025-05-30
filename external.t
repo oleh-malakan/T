@@ -1,7 +1,7 @@
 (
     entry
 
-    std/file
+    fs/file
 )
 
 Read(path []) (e * entry.T) {
