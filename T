@@ -1,2 +1,2 @@
-github.com/oleh-malakan/std
 github.com/oleh-malakan/proc
+github.com/oleh-malakan/fs
