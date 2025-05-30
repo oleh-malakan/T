@@ -1,6 +1,5 @@
 (
     function
-    structure
     definition
 )
 
@@ -9,7 +8,7 @@ T (
     Func     [] * function.T
 
     StrcName [] []
-    Strc     [] * structure.T
+    Strc     [] * variable.T
 
     DefnName [] []
     Defn     [] * definition.T
