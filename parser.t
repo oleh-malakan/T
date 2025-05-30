@@ -1,7 +1,7 @@
 (
-    common 
+    basic
 )
 
-Analysis(path [], intr * common.Entry, extr * common.Entry) (u * common.Unit) {
+Analysis(path [], intr * basic.Entry, extr * basic.Entry) (u * basic.Unit) {
     u = @
 }
