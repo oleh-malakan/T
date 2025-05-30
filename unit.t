@@ -1,5 +1,6 @@
 (
     function
+    variable
     definition
 )
 
