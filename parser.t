@@ -1,7 +1,11 @@
 (
-    basic
+    entry
+    definition
+    structure
+    function
+    unit
 )
 
-Analysis(path [], intr * basic.Entry, extr * basic.Entry) (u * basic.Unit) {
-    m = @
+Analysis(path [], intr * entry.T, extr * entry.T) (u * unit.T) {
+    u = @
 }
