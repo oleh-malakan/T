@@ -1,8 +1,7 @@
 (
-    entry
-    unit
+    common 
 )
 
-Analysis(path [], intr * entry.T, extr * entry.T) (u * unit.T) {
+Analysis(path [], intr * common.Entry, extr * common.Entry) (u * common.Unit) {
     u = @
 }
