@@ -1,4 +1,4 @@
-Definition (
+T (
     Type []
     Val  []
 )
