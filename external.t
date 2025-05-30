@@ -2,6 +2,6 @@
     basic
 )
 
-Read(path []) (entr * basic.Entry) {
-    entr = @
+Read(path []) (e * basic.Entry) {
+    e = @
 }
