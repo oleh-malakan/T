@@ -8,6 +8,6 @@
     fs/file
 )
 
-Analysis(path [], external * entry.T) (u * unit.T) {
+Analysis(path []) (u * unit.T) {
     = nil
 }
