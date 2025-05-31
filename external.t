@@ -1,7 +1,7 @@
 (
     entry
 
-    fs/file
+    sys/file
 )
 
 Read(path []) (e * entry.T) {
