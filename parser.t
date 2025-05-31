@@ -1,5 +1,4 @@
 (
-    entry
     definition
     structure
     function
