@@ -1,5 +1,4 @@
 (
-    entry
     definition
     structure
     function
@@ -8,6 +7,6 @@
     fs/file
 )
 
-Analysis(path [], intr * entry.T, extr * entry.T) (u * unit.T) {
+Analysis(path []) (u * unit.T) {
     = nil
 }
