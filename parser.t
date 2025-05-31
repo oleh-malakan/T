@@ -4,7 +4,7 @@
     function
     unit
 
-    sys/file
+    fs/file
 )
 
 Analysis(path []) (u * unit.T) {
