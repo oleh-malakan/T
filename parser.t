@@ -1,4 +1,5 @@
 (
+    entry
     definition
     structure
     function
@@ -7,6 +8,6 @@
     fs/file
 )
 
-Analysis(path []) (u * unit.T) {
+Analysis(path [], external * entry.T) (u * unit.T) {
     = nil
 }
