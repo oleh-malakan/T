@@ -4,7 +4,4 @@ T (
 
     OutName [] []
     OutType [] []
-
-    Offset uint
-    Len    uint
 )
