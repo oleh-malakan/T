@@ -1,5 +1,7 @@
 (
+    entry
     unit
+    external
     parser
 )
 
