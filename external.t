@@ -4,6 +4,6 @@
     fs/file
 )
 
-Read(path []) (e * basic.Entry) {
-    e = @
+Read(path []) (entry * basic.Entry) {
+    entry = @
 }
