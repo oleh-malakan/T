@@ -4,7 +4,7 @@
     function
     unit
 
-    fs/file
+    ../fs/file
 )
 
 Analysis(path []) (u * unit.T) {
