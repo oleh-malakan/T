@@ -1,9 +1,9 @@
 (
-    entry
+    basic
 
     fs/file
 )
 
-Read(path []) (e * entry.T) {
-    = nil
+Read(path []) (e * basic.Entry) {
+    e = @
 }
