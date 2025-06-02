@@ -4,6 +4,6 @@
     fs/file
 )
 
-Analysis(path [], intr * basic.Entry, extr * basic.Entry) (u * basic.Unit) {
+Analysis(path []) (u * basic.Unit) {
     u = @
 }
