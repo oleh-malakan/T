@@ -39,7 +39,7 @@ unit (
     entrPath [] []
 )
 
-external(b []) (e * entry) {
+external(path []) (e * entry) {
     = nil
 }
 
