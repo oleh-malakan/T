@@ -5,5 +5,5 @@
 )
 
 Analysis(path [], intr * basic.Entry, extr * basic.Entry) (u * basic.Unit) {
-    un= @
+    u = @
 }
