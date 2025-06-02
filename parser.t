@@ -1,12 +1,9 @@
 (
-    definition
-    structure
-    function
-    unit
+    basic
 
     fs/file
 )
 
-Analysis(path []) (u * unit.T) {
-    = nil
+Analysis(path [], intr * basic.Entry, extr * basic.Entry) (u * basic.Unit) {
+    un= @
 }
