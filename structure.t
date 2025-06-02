@@ -1,4 +1,0 @@
-T (
-    VarName [] []
-    VarType [] []
-)
