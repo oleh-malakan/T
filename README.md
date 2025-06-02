@@ -1,1 +1,1 @@
-# The T low level programming language
+# The T programming language
