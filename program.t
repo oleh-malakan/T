@@ -13,6 +13,9 @@ function (
 
     outName [] []
     outType [] []
+
+    offset uint
+    len    uint
 )
 
 unit (
