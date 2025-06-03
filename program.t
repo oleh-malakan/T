@@ -3,8 +3,8 @@
 )
 
 function (
-    inName  [] []
-    inType  [] []
+    inName [] []
+    inType [] []
 
     outName [] []
     outType [] []
@@ -17,7 +17,7 @@ unit (
     funcName [] []
     func     [] * function
 
-    strcName [] []
+    strcName    [] []
     strcVarName [] [] []
     strcVarType [] [] []
 
