@@ -15,15 +15,21 @@ function (
     outType [] []
 )
 
-analysis(path [])
-        (strcName [] [], strc [] * structure,
-         funcName [] [], func [] * function,
-         entrName [] [], entrPath [] [],
-         defnName [] [], defnType [] [], defnVal [] []) {
-    = nil, nil,
-      nil, nil,
-      nil, nil,
-      nil, nil, nil
+unit (
+    strcName [] []
+    strc     [] * structure
+    funcName [] []
+    func     [] * function
+    entrName [] []
+    entrPath [] []
+    defnName [] []
+    defnType [] []
+    defnVal  [] []
+    
+)         
+
+analysis(path []) (u * unit) {
+    = nil
 }
 
 Main() {
