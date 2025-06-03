@@ -17,7 +17,7 @@ function (
 
 analysis(path [])
         (strcName [] [], strc [] * structure,
-         funcName [] [], func [] * function,         
+         funcName [] [], func [] * function,
          entrName [] [], entrPath [] [],
          defnName [] [], defnType [] [], defnVal [] []) {
     = nil, nil,
