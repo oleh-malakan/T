@@ -41,6 +41,6 @@ analysis(path []) (u * unit) {
     = nil
 }
 
-Main() {
+{
 
 }
