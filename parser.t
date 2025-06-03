@@ -4,15 +4,15 @@
 
 Analysis(path [])
         (
-            funcName [] [], funcInName  [] [] [], funcInType  [] [] [], 
-                            funcOutName [] [] [], funcOutType [] [] [],
-            strcName [] [], strcVarName [] [] [], strcVarType [] [] [],
+            entrName [] [], entrPath    [] [],
             defnName [] [], defnType    [] []   , defnVal     [] []   ,
-            entrName [] [], entrPath    [] []
+            strcName [] [], strcVarName [] [] [], strcVarType [] [] [],
+            funcName [] [], funcInName  [] [] [], funcInType  [] [] [], 
+                            funcOutName [] [] [], funcOutType [] [] []           
         ) {
-    = nil, nil, nil,
-           nil, nil,
+    = nil, nil,
       nil, nil, nil,
       nil, nil, nil,
-      nil, nil
+      nil, nil, nil,
+           nil, nil
 }
