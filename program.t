@@ -26,10 +26,13 @@ function (
 unit (
     funcName [] []
     func     [] * function
+
     strcName [] []
     strc     [] * structure
+
     defnName [] []
     defn     [] * definition
+
     entrName [] []
     entrPath [] []
 )
