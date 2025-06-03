@@ -1,12 +1,18 @@
 (
-    definition
-    structure
-    function
-    unit
-
     ../fs/file
 )
 
-Analysis(path []) (u * unit.T) {
-    = nil
+Analysis(path [])
+        (
+            funcName [] [], funcInName  [] [] [], funcInType  [] [] [], 
+                            funcOutName [] [] [], funcOutType [] [] [],
+            strcName [] [], strcVarName [] [] [], strcVarType [] [] [],
+            defnName [] [], defnType    [] []   , defnVal     [] []   ,
+            entrName [] [], entrPath    [] []
+        ) {
+    = nil, nil, nil,
+           nil, nil,
+      nil, nil, nil,
+      nil, nil, nil,
+      nil, nil
 }
