@@ -34,7 +34,7 @@ unit (
     entrPath [] []
 )
 
-nalysis(path []) (u * unit) {
+analysis(path []) (u * unit) {
     = nil
 }
 
