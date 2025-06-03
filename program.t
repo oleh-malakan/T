@@ -2,11 +2,6 @@
     ../fs/file
 )
 
-structure (
-    varName [] []
-    varType [] []
-)
-
 function (
     inName  [] []
     inType  [] []
@@ -19,10 +14,11 @@ function (
 )
 
 unit (
-    strcName [] []
-    strc     [] * structure
     funcName [] []
     func     [] * function
+    strcName [] []
+    sVarName [] [] []
+    sVarType [] [] []  
     entrName [] []
     entrPath [] []
     defnName [] []
