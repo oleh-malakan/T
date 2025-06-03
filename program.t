@@ -2,26 +2,37 @@
     ../fs/file
 )
 
+definition (
+    type []
+    val  []
+)
+
+structure (
+    varName [] []
+    varType [] []
+)
+
+function (
+    inName [] []
+    inType [] []
+
+    outName [] []
+    outType [] []
+
+    offset uint
+    len    uint
+)
+
 unit (
-    funcName    [] []
-    funcInName  [] [] []
-    funcInType  [] [] []
-    funcOutName [] [] []
-    funcOutType [] [] []
-    funcOffset  [] uint
-    funcLen     [] uint
-
-    strcName    [] []
-    strcVarName [] [] []
-    strcVarType [] [] []
-
+    funcName [] []
+    func     [] * function
+    strcName [] []
+    strc     [] * structure
+    defnName [] []
+    defn     [] * definition
     entrName [] []
     entrPath [] []
-
-    defnName [] []
-    defnType [] []
-    defnVal  [] []    
-)         
+)
 
 analysis(path []) (u * unit) {
     = nil
