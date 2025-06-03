@@ -34,6 +34,10 @@ unit (
     entrPath [] []
 )
 
+nalysis(path []) (u * unit) {
+    = nil
+}
+
 Main() {
 
 }
