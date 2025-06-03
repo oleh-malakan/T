@@ -2,6 +2,11 @@
     ../fs/file
 )
 
+definition (
+    type []
+    val  []
+)
+
 structure (
     varName [] []
     varType [] []
@@ -16,14 +21,14 @@ function (
 )
 
 analysis(path [])
-        (funcName [] [], func     [] * function,
-         strcName [] [], strc     [] * structure,
-         entrName [] [], entrPath [] [],
-         defnName [] [], defnType [] [], defnVal [] []) {
+        (funcName [] [], func [] * function,
+         strcName [] [], strc [] * structure,
+         defnName [] [], defn [] * definition,
+         entrName [] [], entrPath [] []) {
     = nil, nil,
       nil, nil,
       nil, nil,
-      nil, nil, nil
+      nil, nil
 }
 
 Main() {
