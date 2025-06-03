@@ -1,5 +1,5 @@
 (
-    ../fs/file.t
+    ../fs/file
 )
 
 definition (
@@ -20,22 +20,15 @@ function (
     outType [] []
 )
 
-unit (
-    funcName [] []
-    func     [] * function
-
-    strcName [] []
-    strc     [] * structure
-
-    defnName [] []
-    defn     [] * definition
-
-    entrName [] []
-    entrPath [] []
-)
-
-analysis(path []) (u * unit) {
-    = nil
+analysis(path []) 
+        (entrName [] [], entrPath [] [], 
+         defnName [] [], defn     [] * definition,
+         strcName [] [], strc     [] * structure,
+         funcName [] [], func     [] * function) {
+    = nil, nil,
+      nil, nil
+      nil, nil
+      nil, nil
 }
 
 Main() {
