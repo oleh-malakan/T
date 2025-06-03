@@ -16,15 +16,17 @@ function (
 unit (
     funcName [] []
     func     [] * function
+
     strcName [] []
-    sVarName [] [] []
-    sVarType [] [] []  
+    strcVarName [] [] []
+    strcVarType [] [] []
+
     entrName [] []
     entrPath [] []
+
     defnName [] []
     defnType [] []
-    defnVal  [] []
-    
+    defnVal  [] []    
 )         
 
 analysis(path []) (u * unit) {
