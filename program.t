@@ -2,20 +2,14 @@
     ../fs/file
 )
 
-function (
-    inName [] []
-    inType [] []
-
-    outName [] []
-    outType [] []
-
-    offset uint
-    len    uint
-)
-
 unit (
-    funcName [] []
-    func     [] * function
+    funcName    [] []
+    funcInName  [] [] []
+    funcInType  [] [] []
+    funcOutName [] [] []
+    funcOutType [] [] []
+    funcOffset  [] uint
+    funcLen     [] uint
 
     strcName    [] []
     strcVarName [] [] []
