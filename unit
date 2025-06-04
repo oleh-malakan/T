@@ -7,7 +7,4 @@ T (
 
     DefnName [] []
     Defn     [] * definition.T
-
-    EntrName [] []
-    EntrPath [] []
 )
