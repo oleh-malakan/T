@@ -1,4 +1,4 @@
-../sys/out
 ../sys/prog
+../sys/out
 
 ../fs/file
