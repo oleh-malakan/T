@@ -1,5 +1,5 @@
 (
-    unit
+    module
     function
     structure
     definition
@@ -7,6 +7,6 @@
     ../fs/file
 )
 
-Analysis(path []) (u * unit.T) {
+Analysis(path []) (m * module.T) {
     = nil
 }
