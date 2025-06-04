@@ -1,10 +1,10 @@
-function (
-    inName [] []
-    inType [] []
+T (
+    InName [] []
+    InType [] []
 
-    outName [] []
-    outType [] []
+    OutName [] []
+    OutType [] []
 
-    offset uint
-    len    uint
+    Offset uint
+    Len    uint
 )
