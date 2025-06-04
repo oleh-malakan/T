@@ -6,5 +6,5 @@ T (
     OutType [] []
 
     Offset uint
-    Len    uint
+    Size   uint
 )
