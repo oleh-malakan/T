@@ -1,9 +1,9 @@
 (
     module
+    import
     function
     structure
     definition
-    entry
 
     ../fs/file
 )
