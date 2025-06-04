@@ -1,0 +1,3 @@
+../sys/out
+../sys/args
+../fs/file
