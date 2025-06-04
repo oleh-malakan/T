@@ -1,9 +1,3 @@
-(
-    function
-    structure
-    definition
-)
-
 T (
     FuncName [] []
     Func     [] * function.T
