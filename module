@@ -17,3 +17,7 @@ T (
     UnitName [] []
     UnitPath [] []
 )
+
+Parse(path []) (t * T) {
+    = nil
+}
