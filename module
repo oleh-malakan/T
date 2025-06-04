@@ -2,13 +2,12 @@
     function
     structure
     definition
+    entry
 )
 
 T (
     Func [] * function.T
     Strc [] * structure.T
     Defn [] * definition.T
-
-    EntrName [] []
-    EntrPath [] []
+    Entr [] * entry.T
 )
