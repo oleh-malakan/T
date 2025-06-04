@@ -2,7 +2,7 @@
     function
     structure
     definition
-    entry
+    import
 )
 
 T (
@@ -10,5 +10,5 @@ T (
     Func [] * function.T
     Strc [] * structure.T
     Defn [] * definition.T
-    Entr [] * entry.T
+    Impt [] * import.T
 )
