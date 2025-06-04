@@ -1,5 +1,7 @@
+(
+    variable 
+)
 T (
     Name []
-    VarName [] []
-    VarType [] []
+    Var  [] * variable
 )
