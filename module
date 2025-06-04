@@ -5,14 +5,9 @@
 )
 
 T (
-    FuncName [] []
-    Func     [] * function.T
-
-    StrcName [] []
-    Strc     [] * structure.T
-
-    DefnName [] []
-    Defn     [] * definition.T
+    Func [] * function.T
+    Strc [] * structure.T
+    Defn [] * definition.T
 
     EntrName [] []
     EntrPath [] []
