@@ -4,5 +4,5 @@
 
 T (
     Name []
-    Var  [] * variable
+    Var  [] * variable.T
 )
