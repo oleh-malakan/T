@@ -6,6 +6,7 @@
 )
 
 T (
+    Name []
     Func [] * function.T
     Strc [] * structure.T
     Defn [] * definition.T
