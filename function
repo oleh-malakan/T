@@ -1,7 +1,9 @@
-T (
-    InName [] []
-    InType [] []
+(
+    variable
+)
 
-    OutName [] []
-    OutType [] []
+T (
+    Name []
+    In   [] * variable.T
+    Out  [] * variable.T
 )
