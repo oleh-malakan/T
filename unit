@@ -14,6 +14,6 @@ T (
     DefnName [] []
     Defn     [] * definition.T
 
-    UnitName [] []
-    UnitPath [] []
+    ImptName [] []
+    ImptPath [] []
 )
