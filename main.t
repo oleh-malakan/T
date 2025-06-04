@@ -3,6 +3,6 @@
     parser
 )
 
-Main() {
+{
 
 }
