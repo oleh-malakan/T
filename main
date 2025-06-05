@@ -35,7 +35,7 @@ module (
     defn [] * definition
 )
 
-Analysis(path []) (m * module) {
+analysis(path []) (m * module) {
     = nil
 }
 
