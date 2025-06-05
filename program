@@ -1,4 +1,4 @@
-../os/out
+../std/out
 ../fs/file
 
 entry (
