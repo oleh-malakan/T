@@ -1,5 +1,5 @@
 ../sys/out
-../fs/file
+../sys/file
 
 entry (
     name []
