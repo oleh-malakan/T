@@ -1,5 +1,43 @@
-module
-parser
+../fs/file
+
+entry (
+    name []
+    path []
+)
+
+definition (
+    name []
+    type []
+    val  []
+)
+
+variable (
+    name []
+    type []
+)
+
+structure (
+    name []
+    var  [] * variable
+)
+
+function (
+    name []
+    in   [] * variable
+    out  [] * variable
+)
+
+module (
+    path []
+    entr [] * entry
+    func [] * function
+    strc [] * structure
+    defn [] * definition
+)
+
+Analysis(path []) (m * module) {
+    = nil
+}
 
 {
 
