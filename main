@@ -1,7 +1,5 @@
-(
-    module
-    parser
-)
+module
+parser
 
 {
 
