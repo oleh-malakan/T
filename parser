@@ -1,12 +1,11 @@
-(
-    module
-    import
-    function
-    structure
-    definition
+module
+import
+function
+structure
+definition
 
-    ../fs/file
-)
+../fs/file
+
 
 Analysis(path []) (m * module.T) {
     = nil
