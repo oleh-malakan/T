@@ -1,9 +1,7 @@
-(
-    import
-    function
-    structure
-    definition
-)
+import
+function
+structure
+definition
 
 T (
     Path []
