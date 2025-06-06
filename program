@@ -1,5 +1,5 @@
-../std/out
-../std/file
+../sys/out
+../fs/file
 
 entry (
     name []
