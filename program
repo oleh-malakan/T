@@ -1,7 +1,5 @@
-(
-    ../sys/out
-    ../fs/file
-)
+../os/out
+../os/file
 
 entry (
     name []
@@ -42,6 +40,6 @@ analysis(path []) (m * module) {
     = nil
 }
 
-Main() {
+{
 
 }
