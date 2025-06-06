@@ -1,7 +1,6 @@
 ../term/out
 ../fs/file
 
-
 entry (
     name []
     path []
@@ -41,6 +40,6 @@ analysis(path []) (m * module) {
     = nil
 }
 
-{
+Main() {
 
 }
