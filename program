@@ -1,5 +1,7 @@
-../os/out
-../os/file
+(
+    ../os/out
+    ../os/file
+)
 
 entry (
     name []
