@@ -1,5 +1,5 @@
 (
-    ../term/out
+    ../console/out
     ../fs/file
 )
 
