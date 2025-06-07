@@ -1,6 +1,6 @@
 (
-    out ../out/t
-    file ../file/t
+    out ../out/x
+    file ../file/x
 )
 
 entry (
