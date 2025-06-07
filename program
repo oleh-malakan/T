@@ -1,6 +1,6 @@
 (
-    ../x/out
-    ../x/file
+    ../cons/out
+    ../fs/file
 )
 
 entry (
