@@ -1,6 +1,5 @@
 (
-    ../os/out
-    ../os/file
+    ../os/stream
 )
 
 entry (
