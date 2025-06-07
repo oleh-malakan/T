@@ -1,6 +1,6 @@
 (
-    ../console/out
     ../fs/file
+    ../x/proc/out
 )
 
 entry (
