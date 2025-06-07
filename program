@@ -1,5 +1,5 @@
 (
-    ../x/proc/out
+    ../console/out
     ../fs/file
 )
 
