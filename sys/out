@@ -1,0 +1,13 @@
+T (
+)
+
+Open() (t * T) {
+    = nil
+}
+
+Write(t * T, b []) {
+}
+
+Free(t * T) {
+    ~ t
+}
