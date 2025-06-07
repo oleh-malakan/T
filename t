@@ -1,4 +1,5 @@
 (
+    ../sys/args
     ../sys/out
     ../fs/file
 )
