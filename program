@@ -1,6 +1,6 @@
 (
-    ../os/out
-    ../os/file
+    ../proc/out
+    ../fs/file
 )
 
 entry (
