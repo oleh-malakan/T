@@ -1,46 +1,7 @@
 (
-    out  ../out/t
-    file ../file/t
+    unit
+    parser
 )
-
-entry (
-    name []
-    path []
-)
-
-definition (
-    name []
-    type []
-    val  []
-)
-
-variable (
-    name []
-    type []
-)
-
-structure (
-    name []
-    var  [] * variable
-)
-
-function (
-    name []
-    in   [] * variable
-    out  [] * variable
-)
-
-unit (
-    path []
-    entr [] * entry
-    func [] * function
-    strc [] * structure
-    defn [] * definition
-)
-
-analysis(path []) (u * unit) {
-    = nil
-}
 
 {
 
