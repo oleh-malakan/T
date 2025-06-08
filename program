@@ -1,5 +1,5 @@
 (
-    term ../term/t
+    out  ../out/t
     file ../file/t
 )
 
