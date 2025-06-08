@@ -1,6 +1,6 @@
 (
-    output ../output/t
     file   ../file/t
+    output ../output/t
 )
 
 entry (
