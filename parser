@@ -1,5 +1,10 @@
 (
     unit
+    entry
+    variable
+    function
+    structure
+    definition
 )
 
 Analysis(path []) (u * unit.T) {
