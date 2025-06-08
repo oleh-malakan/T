@@ -1,5 +1,5 @@
 (
-    ../sys/out
+    ../sys/term
     ../fs/file
 )
 
