@@ -1,0 +1,14 @@
+(
+    entry
+    function
+    structure
+    definition
+)
+
+T (
+    Path []
+    Entr [] * entry.T
+    Func [] * function.T
+    Strc [] * structure.T
+    Defn [] * definition.T
+)
