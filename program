@@ -1,6 +1,6 @@
 (
-    ../term/out
-    ../fs/file
+    out  ../out/t
+    file ../file/t
 )
 
 entry (
