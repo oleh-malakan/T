@@ -1,2 +1,3 @@
-../out
-../file
+github.com/oleh-malakan/out
+github.com/oleh-malakan/file
+github.com/oleh-malakan/proc
