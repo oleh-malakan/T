@@ -2,9 +2,16 @@ out/t
 file/t
 proc/t
 
+external (
+    name []
+    path []
+    locl []
+)
+
 entry (
     name []
     path []
+    ext * external
 )
 
 definition (
@@ -37,7 +44,7 @@ unit (
     defn [] * definition
 )
 
-external(path []) (extr * entry) {
+readExt(path []) (ext [] * external) {
     = nil
 }
 
