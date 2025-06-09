@@ -1,5 +1,5 @@
-out  out/t
-file file/t
+out/t
+file/t
 
 entry (
     name []
