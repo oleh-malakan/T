@@ -1,6 +1,7 @@
-out/t
-file/t
-proc/t
+sys/out
+sys/args
+sys/proc
+fs/file
 
 external (
     name []
