@@ -1,3 +1,2 @@
-github.com/oleh-malakan/out
-github.com/oleh-malakan/file
-github.com/oleh-malakan/proc
+github.com/oleh-malakan/sys
+github.com/oleh-malakan/fs
