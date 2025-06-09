@@ -6,7 +6,7 @@ external (
     path []
 )
 
-make (
+option (
     name []
     ext  [] * external
 )
@@ -47,7 +47,7 @@ unit (
     defn [] * definition
 )
 
-readMake(path []) (m * make) {
+readOpt(path []) (opt * option) {
     = nil
 }
 
