@@ -37,6 +37,10 @@ unit (
     defn [] * definition
 )
 
+external(path []) (extr * entry) {
+    = nil
+}
+
 analysis(path []) (u * unit) {
     = nil
 }
