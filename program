@@ -1,12 +1,9 @@
-os/out
-os/args
-os/proc
+sys/out
 fs/file
 
 external (
     name []
     path []
-    locl []
 )
 
 entry (
