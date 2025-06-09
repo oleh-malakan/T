@@ -1,6 +1,6 @@
-sys/out
-sys/args
-sys/proc
+os/out
+os/args
+os/proc
 fs/file
 
 external (
