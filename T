@@ -1,2 +1,2 @@
-../out
-../file
+github.com/oleh-malakan/out
+github.com/oleh-malakan/file
