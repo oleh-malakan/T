@@ -6,7 +6,7 @@ external (
     path []
 )
 
-option (
+board (
     name []
     ext  [] * external
 )
@@ -47,7 +47,7 @@ unit (
     defn [] * definition
 )
 
-readOpt(path []) (opt * option) {
+readBoard(path []) (b * board) {
     = nil
 }
 
