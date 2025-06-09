@@ -1,6 +1,6 @@
 = t
 
-(
-    ../out
-    ../file
-)
++ x86-64 : T /build/x86-64/t
+
+../out
+../file
