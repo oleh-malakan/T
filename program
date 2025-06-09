@@ -1,6 +1,6 @@
-out/t
-file/t
-proc/t
+out/
+file/
+proc/
 proc/args
 
 external (
