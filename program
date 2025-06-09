@@ -1,14 +1,12 @@
 out/t
 file/t
+x/args
+x/proc
 
 external (
     name []
     path []
-)
-
-board (
-    name []
-    ext  [] * external
+    locl []
 )
 
 entry (
@@ -47,7 +45,7 @@ unit (
     defn [] * definition
 )
 
-readBoard(path []) (b * board) {
+readExt(path []) (ext [] * external) {
     = nil
 }
 
