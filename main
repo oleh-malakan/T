@@ -1,6 +1,5 @@
 x/out
 x/file
-x/proc
 x/proc/args
 
 external (
