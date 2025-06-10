@@ -1,7 +1,7 @@
 x/out
-x/args
-x/proc
 x/file
+x/proc
+x/proc/args
 
 external (
     name []
