@@ -1,2 +1,1 @@
 github.com/oleh-malakan/os
-github.com/oleh-malakan/fs
