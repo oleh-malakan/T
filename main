@@ -53,6 +53,6 @@ analysis(path [], ext [] * external) (u * unit) {
     = nil
 }
 
-{
+Do() {
 
 }
