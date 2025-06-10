@@ -1,6 +1,5 @@
 x/out
 x/file
-x/proc/args
 
 external (
     name []
