@@ -7,6 +7,10 @@ external (
     locl []
 )
 
+option (
+    ext [] * external
+)
+
 entry (
     name []
     path []
@@ -43,7 +47,7 @@ unit (
     defn [] * definition
 )
 
-readExt(path []) (ext [] * external) {
+readOpt(path []) (opt * option) {
     = nil
 }
 
