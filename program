@@ -1,5 +1,5 @@
 x/out
-x/fs/file
+x/file
 
 external (
     name []
