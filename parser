@@ -1,3 +1,6 @@
+../x/out
+../x/file
+
 analysis(path []) (u * unit.t) {
     = nil
 }
