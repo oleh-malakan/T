@@ -1,19 +1,9 @@
 ../x/out
 ../x/file
 
-external (
-    name []
-    path []
-)
-
-option (
-    ext [] * external
-)
-
 entry (
     name []
     path []
-    ext * external
 )
 
 definition (
@@ -46,11 +36,7 @@ unit (
     defn [] * definition
 )
 
-readOpt(path []) (opt * option) {
-    = nil
-}
-
-analysis(path [], ext [] * external) (u * unit) {
+analysis(path []) (u * unit) {
     = nil
 }
 
