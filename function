@@ -1,5 +1,0 @@
-t (
-    name []
-    in   [] * variable.t
-    out  [] * variable.t
-)
