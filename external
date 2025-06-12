@@ -1,0 +1,8 @@
+t (
+    name []
+    path []
+)
+
+read(path []) (ext [] * t) {
+    = nil
+}
