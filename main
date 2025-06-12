@@ -1,5 +1,7 @@
-x/out
-x/file
+(
+    x/out
+    x/file
+)
 
 external (
     name []
