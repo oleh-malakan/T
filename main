@@ -4,6 +4,7 @@ x/file
 external (
     name []
     path []
+    locl []
 )
 
 entry (
