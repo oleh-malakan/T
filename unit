@@ -1,7 +1,0 @@
-t (
-    path []
-    entr [] * entry.t
-    func [] * function.t
-    strc [] * structure.t
-    defn [] * definition.t
-)
