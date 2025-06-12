@@ -6,6 +6,11 @@ external (
     path []
 )
 
+option (
+    name []
+    ext  [] * external
+)
+
 entry (
     name []
     path []
@@ -42,7 +47,7 @@ unit (
     defn [] * definition
 )
 
-readExt(path []) (ext [] * external) {
+readOpt(path []) (opt * option) {
     = nil
 }
 
