@@ -1,2 +1,2 @@
-x https://github.com/oleh-malakan/x.git
-h https://github.com/oleh-malakan/h.git
+https://github.com/oleh-malakan/x.git
+https://github.com/oleh-malakan/h.git
