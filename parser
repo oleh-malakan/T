@@ -1,6 +1,6 @@
 x/out
 x/file
 
-analysis(path []) (u * unit.t) {
+analysis(path [], ext [] * external.t) (u * unit.t) {
     = nil
 }
