@@ -1,4 +1,5 @@
 t (
     name []
     path []
+    ext * external.t
 )
