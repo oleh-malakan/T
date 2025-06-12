@@ -4,7 +4,6 @@ x/file
 external (
     name []
     path []
-    locl []
 )
 
 entry (
@@ -43,7 +42,7 @@ unit (
     defn [] * definition
 )
 
-readExt(path []) (ext [] * external) {
+readT(path []) (name [], ext [] * external) {
     = nil
 }
 
