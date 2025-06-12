@@ -1,3 +1,55 @@
+x/out
+x/file
+
+external (
+    name []
+    path []
+)
+
+entry (
+    name []
+    path []
+    ext * external
+)
+
+definition (
+    name []
+    type []
+    val  []
+)
+
+variable (
+    name []
+    type []
+)
+
+structure (
+    name []
+    var  [] * variable
+)
+
+function (
+    name []
+    in   [] * variable
+    out  [] * variable
+)
+
+unit (
+    path []
+    entr [] * entry
+    func [] * function
+    strc [] * structure
+    defn [] * definition
+)
+
+readExt(path []) (ext [] * external) {
+    = nil
+}
+
+analysis(path [], ext [] * external.t) (u * unit.t) {
+    = nil
+}
+
 {
 
 }
