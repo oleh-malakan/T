@@ -1,6 +1,6 @@
 h/proc
 
-readExt(path []) (ext [] * main.external) {
+external(path []) (ext [] * main.external) {
     = nil
 }
 
