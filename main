@@ -4,11 +4,7 @@ x/file
 external (
     name []
     path []
-)
-
-option (
-    name []
-    ext  [] * external
+    locl []
 )
 
 entry (
@@ -47,7 +43,7 @@ unit (
     defn [] * definition
 )
 
-readOpt(path []) (opt * option) {
+readExt(path []) (ext [] * external) {
     = nil
 }
 
