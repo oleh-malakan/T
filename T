@@ -1,2 +1,4 @@
-github.com/oleh-malakan/x
-github.com/oleh-malakan/h
+= t
+
+../x
+../h
