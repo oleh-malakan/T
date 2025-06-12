@@ -1,3 +1,2 @@
-= t
-
-../x
+x https://github.com/oleh-malakan/x.git
+h https://github.com/oleh-malakan/h.git
