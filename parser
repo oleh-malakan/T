@@ -1,6 +1,0 @@
-x/out
-x/file
-
-analysis(path [], ext [] * external.t) (u * unit.t) {
-    = nil
-}
