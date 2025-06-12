@@ -1,3 +1,5 @@
+x/out
+x/file
 h/proc
 
 external(path []) (ext [] * main.external) {
