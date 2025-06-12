@@ -42,10 +42,6 @@ unit (
     defn [] * definition
 )
 
-readT(path []) (name [], ext [] * external) {
-    = nil
-}
-
 analysis(path [], ext [] * external) (u * unit) {
     = nil
 }
