@@ -1,1 +1,1 @@
-https://github.com/oleh-malakan/x.git
+../x
