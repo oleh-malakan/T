@@ -1,15 +1,8 @@
-build (
-)
-
-external (
-    name []
-    path []
-)
+../File
 
 entry (
     name []
     path []
-    ext * external
 )
 
 definition (
@@ -42,11 +35,7 @@ unit (
     defn [] * definition
 )
 
-analysis(path [], ext [] * external) (u * unit) {
-    = nil
-}
-
-readT(path []) (name [], bld [] * build, ext [] * external) {
+analysis(path []) (u * unit) {
     = nil
 }
 
