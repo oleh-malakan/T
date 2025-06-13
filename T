@@ -1,3 +1,7 @@
+= t
+
+# + x86-64 : X
++ x86-64 : Windows
+
 ../Out
 ../File
-../Proc
