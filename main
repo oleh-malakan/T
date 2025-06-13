@@ -1,3 +1,6 @@
+out
+file
+
 external (
     name []
     path []
