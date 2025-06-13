@@ -45,3 +45,11 @@ unit (
 analysis(path [], ext [] * external) (u * unit) {
     = nil
 }
+
+readExt(path []) (ext [] * external) {
+    = nil
+}
+
+{
+
+}
