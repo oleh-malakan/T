@@ -1,7 +1,6 @@
 = t
 
-# + x86-64 : X       .build/x86-64/X
-# + x86-64 : Linux   .build/x86-64/Linux
+- x86-64 : Linux   .build/x86-64/Linux
 + x86-64 : Windows .build/x86-64/Windows
 
 ../Out
