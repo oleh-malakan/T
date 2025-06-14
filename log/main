@@ -1,2 +1,35 @@
+_? os == X {
+    monitor
+} : {
+    monitor out
+}
+
 t (
+    mon * monitor.T
+_? os == X {
+    id []
+}
 )
+
+open() (inst * t) {
+    inst = @
+    _? os == X {
+        inst.id  = []        
+        inst.id += 0x58 + 0x00
+        inst.mon = monitor._Open(inst.id)
+    } : {
+        inst.mon = monitor._Open()
+    }
+}
+
+write(inst * t, b []) {
+    monitor._Write(inst.mon, b)
+}
+
+free(inst * t) {
+    monitor._Free(inst.mon)
+    _? os == X {
+        ~ inst.id
+    }
+    ~ inst
+}
