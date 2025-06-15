@@ -6,6 +6,7 @@ export (
 entry (
     name []
     path []
+    exp * export
 )
 
 definition (
