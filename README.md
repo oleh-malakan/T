@@ -1,1 +1,1 @@
-# The T programming language
+# T
