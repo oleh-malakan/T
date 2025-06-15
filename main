@@ -1,4 +1,4 @@
-external (
+export (
     name []
     path []
 )
@@ -6,7 +6,7 @@ external (
 entry (
     name []
     path []
-    extr * external
+    exp * export
 )
 
 definition (
@@ -39,7 +39,7 @@ unit (
     defn [] * definition
 )
 
-readT(path []) (extr [] * external) {
+readT(path []) (exp [] * export) {
     = nil
 }
 
