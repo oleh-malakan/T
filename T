@@ -1,5 +1,9 @@
 = t
 
++ x86-64: MULTIX (
+    .build/x86-64/multix
+)
+
 + x86-64: Windows (
     .build/x86-64/windows
 )
