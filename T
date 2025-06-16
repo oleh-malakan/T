@@ -1,7 +1,7 @@
 = t
 
 - x86-64: multiX (
-    .build/x86-64/multix
+    .build/x86-64/x
 )
 
 + x86-64: Windows (
