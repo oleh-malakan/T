@@ -9,7 +9,7 @@
 )
 
 - x86-64: Linux (
-    .build/x86-64/Linux
+    .build/x86-64/linux
 )
 
 ../multix
