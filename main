@@ -1,14 +1,8 @@
 ../x
 
-export (
-    name []
-    path []
-)
-
 entry (
     name []
     path []
-    exp * export
 )
 
 definition (
@@ -40,10 +34,6 @@ unit (
     strc [] * structure
     defn [] * definition
 )
-
-readT(path []) (exp [] * export) {
-    = nil
-}
 
 analysis(path []) (u * unit) {
     = nil
