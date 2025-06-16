@@ -1,7 +1,7 @@
 = t
 
-- x86-64: multiX  /.build/x86-64/x
-+ x86-64: Windows /.build/x86-64/windows
-- x86-64: Linux   /.build/x86-64/linux
+- x86-64: multiX  .build/x86-64/x
++ x86-64: Windows .build/x86-64/windows
+- x86-64: Linux   .build/x86-64/linux
 
 ../x
