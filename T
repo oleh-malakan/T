@@ -1,6 +1,6 @@
 = t
 
-+ x86-64: MULTIX (
+- x86-64: MULTIX (
     .build/x86-64/multix
 )
 
