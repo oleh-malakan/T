@@ -1,3 +1,5 @@
+../cube
+
 export (
     name []
     path []
