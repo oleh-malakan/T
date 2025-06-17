@@ -1,6 +1,15 @@
+export (
+    name []
+    path []
+)
+
+build (
+)
+
 entry (
     name []
     path []
+    ext * export
 )
 
 definition (
@@ -33,7 +42,11 @@ unit (
     defn [] * definition
 )
 
-analysis(path []) (u * unit) {
+readT(path []) (name [], bld [] * build, exp [] * export) {
+    = nil, nil, nil
+}
+
+analysis(path [], exp [] * export) (u * unit) {
     = nil
 }
 
