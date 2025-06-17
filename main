@@ -1,18 +1,6 @@
-build (
-    p    []
-    s    []
-    path []
-)
-
 export (
     name []
     path []
-)
-
-option (
-    name []
-    bld  [] * build
-    exp  [] * export
 )
 
 entry (
@@ -51,7 +39,7 @@ unit (
     defn [] * definition
 )
 
-readOption(path []) (opt * option) {
+readExport(path []) (exp [] * export) {
     = nil
 }
 
