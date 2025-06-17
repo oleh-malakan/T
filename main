@@ -1,12 +1,18 @@
+build (
+    p    []
+    s    []
+    path []
+)
+
 export (
     name []
     path []
 )
 
-build (
-    p    []
-    s    []
-    path []
+t (
+    name []
+    bld  [] * build
+    exp  [] * export
 )
 
 entry (
@@ -45,8 +51,8 @@ unit (
     defn [] * definition
 )
 
-readT(path []) (name [], bld [] * build, exp [] * export) {
-    = nil, nil, nil
+readT(path []) (v * t) {
+    = nil
 }
 
 analysis(path [], exp [] * export) (u * unit) {
