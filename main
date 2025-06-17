@@ -4,6 +4,9 @@ export (
 )
 
 build (
+    p    []
+    s    []
+    path []
 )
 
 entry (
