@@ -1,6 +1,6 @@
 = t
 
-- x86-64: multiX (
+- x86-64: MULTIX (
     .build/x86-64/x
 )
 
@@ -12,4 +12,4 @@
     .build/x86-64/linux
 )
 
-../x
+../multix
