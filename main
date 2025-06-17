@@ -9,7 +9,7 @@ export (
     path []
 )
 
-t (
+option (
     name []
     bld  [] * build
     exp  [] * export
@@ -51,7 +51,7 @@ unit (
     defn [] * definition
 )
 
-readT(path []) (inst * t) {
+readT(path []) (opt * option) {
     = nil
 }
 
