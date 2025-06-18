@@ -1,6 +1,7 @@
 ../../../platform.RISC-V64
 ../../../space.MULTIX
+../../../main
 
 {
-
+    main.Do()
 }
