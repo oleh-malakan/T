@@ -1,8 +1,5 @@
-../../../platform
-../../../space
-
-platform = platform.RISC-V64
-space    = space.MULTIX
+../../../platform.RISC-V64
+../../../space.MULTIX
 
 {
 
