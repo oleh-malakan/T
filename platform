@@ -1,6 +1,6 @@
 _        = ?
-RISC-V32 = 0x00
-RISC-V64
+RISC532 = 0x00
+RISC564
 ARMv7
 ARMv8
-X86-86
+X86-64
