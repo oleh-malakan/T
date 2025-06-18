@@ -1,12 +1,8 @@
-export (
-    name []
-    path []
-)
+../multix
 
 entry (
     name []
     path []
-    ext * export
 )
 
 definition (
@@ -39,11 +35,7 @@ unit (
     defn [] * definition
 )
 
-readExport(path []) (exp [] * export) {
-    = nil
-}
-
-analysis(path [], exp [] * export) (u * unit) {
+analysis(path []) (u * unit) {
     = nil
 }
 
