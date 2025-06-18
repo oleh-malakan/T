@@ -38,3 +38,6 @@ unit (
 analysis(path []) (u * unit) {
     = nil
 }
+
+Do() {
+}
