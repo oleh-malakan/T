@@ -1,7 +1,8 @@
-../../../platform.RISC-V64
-../../../space.MULTIX
-../../../main
+../../../../t
+
+t.platform.RISC-V64
+t.space.MULTIX
 
 {
-    main.Do()
+    t.Do()
 }
