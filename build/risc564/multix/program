@@ -4,5 +4,5 @@ t.platform.RISC564
 t.space.MULTIX
 
 {
-    t.Do()
+
 }
