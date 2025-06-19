@@ -4,11 +4,11 @@ x86-64: Windows (
     build/x86-64/windows
 )
 
-# x86-64: Linux (
+// x86-64: Linux (
     build/x86-64/linux
 )
 
-# ARMv8 : Linux (
+// ARMv8 : Linux (
     build/armv8/linux
 )
 
