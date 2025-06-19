@@ -1,6 +1,6 @@
 ../../../../t
 
-t.platform.X8664
+t.platform.X86_64
 t.space.Windows
 
 {
