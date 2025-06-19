@@ -5,7 +5,7 @@ external (
 
 option (
     name []
-//    
+    
     extr [] * external
 )
 
