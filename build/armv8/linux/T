@@ -1,6 +1,5 @@
 = t
 
-platform = ARMv8
-space    = Linux
+ARMv8 : Linux
 
 ../../../../t
