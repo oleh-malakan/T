@@ -1,8 +1,18 @@
-../multix
+option (
+    p
+    s
+    path []
+)
+
+external (
+    name []
+    path []
+)
 
 entry (
     name []
     path []
+    ext * external
 )
 
 definition (
@@ -34,6 +44,14 @@ unit (
     strc [] * structure
     defn [] * definition
 )
+
+readT(path []) (name [], opt [] * option, ext [] * external) {
+    = nil, nil, nil
+}
+
+readExt(path []) (ext [] * external) {
+    = nil
+}
 
 analysis(path []) (u * unit) {
     = nil
