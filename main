@@ -1,8 +1,19 @@
-../multix
+external (
+    name []
+    path []
+)
+
+option (
+    name []
+    p    []
+    s    []
+    extr [] * external
+)
 
 entry (
     name []
     path []
+    extr * external
 )
 
 definition (
@@ -35,6 +46,10 @@ unit (
     defn [] * definition
 )
 
-analysis(path []) (u * unit) {
+readOption(path []) (opt [] * option) {
+    = nil
+}
+
+analysis(path [], extr [] * external) (u * unit) {
     = nil
 }
