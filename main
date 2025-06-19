@@ -12,7 +12,7 @@ external (
 entry (
     name []
     path []
-    extr * external
+    ext * external
 )
 
 definition (
@@ -45,10 +45,10 @@ unit (
     defn [] * definition
 )
 
-readT(path []) (name [], opt [] * option, extr [] * external) {
+readT(path []) (name [], opt [] * option, ext [] * external) {
     = nil, nil, nil
 }
 
-analysis(path [], extr [] * external) (u * unit) {
+analysis(path [], ext [] * external) (u * unit) {
     = nil
 }
