@@ -1,6 +1,6 @@
 option (
-    p    []
-    s    []
+    platform
+    space
     path []
 )
 
