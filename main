@@ -1,7 +1,3 @@
-spaceMULTIX = 0x00
-spaceWindows
-spaceLinux
-
 option (
     p
     s
