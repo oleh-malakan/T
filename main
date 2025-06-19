@@ -1,3 +1,6 @@
+../multix
+../file
+
 entry (
     name []
     path []
