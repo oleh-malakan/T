@@ -53,6 +53,6 @@ readExt(path []) (ext [] * external) {
     = nil
 }
 
-analysis(path []) (u * unit) {
+analysis(path [], ext [] * external) (u * unit) {
     = nil
 }
