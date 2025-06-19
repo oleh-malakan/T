@@ -1,6 +1,5 @@
-= t
+= t 
 
-platform = x86-64
-space    = Windows
+x86-64 : Windows
 
 ../../../../t
