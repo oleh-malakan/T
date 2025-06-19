@@ -1,18 +1,6 @@
-option (
-    name []
-    p
-    s
-)
-
-external (
-    name []
-    path []
-)
-
 entry (
     name []
     path []
-    ext * external
 )
 
 definition (
@@ -45,14 +33,6 @@ unit (
     defn [] * definition
 )
 
-readT(path []) (opt * option, ext [] * external) {
-    = nil, nil
-}
-
-readExt(path []) (ext [] * external) {
-    = nil
-}
-
-analysis(path [], ext [] * external) (u * unit) {
+analysis(path []) (u * unit) {
     = nil
 }
