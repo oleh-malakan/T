@@ -1,3 +1,4 @@
-multix = 0x00
-windows
-linux
+       =
+MULTIX = 0x00
+Windows
+Linux
