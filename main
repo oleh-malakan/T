@@ -1,12 +1,12 @@
-external (
-    name []
+option (
+    p    []
+    s    []
     path []
 )
 
-option (
+external (
     name []
-    
-    extr [] * external
+    path []
 )
 
 entry (
@@ -45,8 +45,8 @@ unit (
     defn [] * definition
 )
 
-readOption(path []) (opt [] * option) {
-    = nil
+readT(path []) (name [], opt [] * option, extr [] * external) {
+    = nil, nil, nil
 }
 
 analysis(path [], extr [] * external) (u * unit) {
