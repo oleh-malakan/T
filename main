@@ -1,41 +1,6 @@
 ../multix
 ../file
 
-entry (
-    name []
-    path []
-)
+analysis(path []) {
 
-definition (
-    name  []
-    type  []
-    value []
-)
-
-variable (
-    name []
-    type []
-)
-
-structure (
-    name     []
-    variable [] * variable
-)
-
-function (
-    name []
-    in   [] * variable
-    out  [] * variable
-)
-
-unit (
-    path       []
-    entry      [] * entry
-    function   [] * function
-    structure  [] * structure
-    definition [] * definition
-)
-
-analysis(path []) (u * unit) {
-    = nil
 }
