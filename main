@@ -7,9 +7,9 @@ entry (
 )
 
 definition (
-    name []
-    type []
-    val  []
+    name  []
+    type  []
+    value []
 )
 
 variable (
@@ -18,8 +18,8 @@ variable (
 )
 
 structure (
-    name []
-    var  [] * variable
+    name     []
+    variable [] * variable
 )
 
 function (
@@ -29,11 +29,11 @@ function (
 )
 
 unit (
-    path []
-    entr [] * entry
-    func [] * function
-    strc [] * structure
-    defn [] * definition
+    path       []
+    entry      [] * entry
+    function   [] * function
+    structure  [] * structure
+    definition [] * definition
 )
 
 analysis(path []) (u * unit) {
