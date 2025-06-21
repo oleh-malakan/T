@@ -1,5 +1,2 @@
        =
 RISC_V = 0x00
-ARMv7
-ARMv8
-X86_64
