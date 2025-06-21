@@ -2,3 +2,4 @@
 
 t.platform.RISC_V
 t.space.MULTIX
+t.arch.R532B0
